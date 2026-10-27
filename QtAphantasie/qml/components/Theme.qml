@@ -10,10 +10,11 @@ QtObject {
     readonly property color bgInput: "#0F172A"
     readonly property color bgGlass: "#202A40"
 
-    // Border Colors
-    readonly property color borderDim: "#1E293B"
-    readonly property color borderMedium: "#334155"
-    readonly property color borderBright: "#475569"
+    // Border Colors (high contrast for visual accessibility)
+    readonly property color borderDim: "#334155"
+    readonly property color borderMedium: "#475569"
+    readonly property color borderBright: "#94A3B8"
+    readonly property color focusRing: "#38BDF8"       // WCAG focus ring indicator
 
     // Primary Accents
     readonly property color primary: "#6366F1"        // Indigo
@@ -31,10 +32,10 @@ QtObject {
     readonly property color amber: "#F59E0B"
     readonly property color rose: "#F43F5E"
 
-    // Text Colors
-    readonly property color textPrimary: "#F8FAFC"
-    readonly property color textSecondary: "#94A3B8"
-    readonly property color textMuted: "#64748B"
+    // Text Colors - HIGH CONTRAST (WCAG AAA compliant)
+    readonly property color textPrimary: "#FFFFFF"     // Maximum contrast on dark backgrounds
+    readonly property color textSecondary: "#E2E8F0"   // High contrast soft white (~15:1 contrast)
+    readonly property color textMuted: "#94A3B8"       // Readable secondary (~7.6:1 contrast)
     readonly property color textLink: "#38BDF8"
 
     // Radii

@@ -58,20 +58,31 @@ Dialog {
 
             // Close button
             Button {
+                id: modalCloseBtn
                 anchors.right: parent.right
                 anchors.rightMargin: 16
                 anchors.verticalCenter: parent.verticalCenter
                 text: "✕"
                 onClicked: root.close()
+                activeFocusOnTab: true
+                Keys.onReturnPressed: clicked()
+                Keys.onSpacePressed: clicked()
+                Accessible.role: Accessible.Button
+                Accessible.name: qsTr("Close Dialog")
+
                 background: Rectangle {
-                    color: "transparent"
+                    color: modalCloseBtn.hovered ? Theme.bgCard : "transparent"
+                    border.color: modalCloseBtn.activeFocus ? Theme.focusRing : "transparent"
+                    border.width: modalCloseBtn.activeFocus ? 2 : 0
+                    radius: 16
                     implicitWidth: 32
                     implicitHeight: 32
                 }
                 contentItem: Text {
-                    text: parent.text
-                    color: Theme.textMuted
+                    text: modalCloseBtn.text
+                    color: modalCloseBtn.hovered ? Theme.textPrimary : Theme.textMuted
                     font.pixelSize: Theme.fontMd
+                    font.bold: true
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                 }
@@ -120,18 +131,27 @@ Dialog {
                         spacing: 12
 
                         Button {
+                            id: jsonBtn
                             text: qsTr("Download JSON (.json)")
                             onClicked: {
                                 storageManager.downloadDataAsJson();
                             }
+                            activeFocusOnTab: true
+                            Keys.onReturnPressed: clicked()
+                            Keys.onSpacePressed: clicked()
+                            Accessible.role: Accessible.Button
+                            Accessible.name: text
+
                             background: Rectangle {
-                                color: Theme.primary
+                                color: jsonBtn.down ? Theme.primaryHover : (jsonBtn.hovered ? Theme.primaryLight : Theme.primary)
+                                border.color: jsonBtn.activeFocus ? Theme.focusRing : Theme.primaryGlow
+                                border.width: jsonBtn.activeFocus ? 2 : 1
                                 radius: Theme.radiusSm
                                 implicitHeight: 38
-                                implicitWidth: 180
+                                implicitWidth: 190
                             }
                             contentItem: Text {
-                                text: parent.text
+                                text: jsonBtn.text
                                 color: "#FFFFFF"
                                 font.pixelSize: Theme.fontXs
                                 font.bold: true
@@ -141,19 +161,27 @@ Dialog {
                         }
 
                         Button {
+                            id: csvBtn
                             text: qsTr("Download CSV (.csv)")
                             onClicked: {
                                 storageManager.downloadDataAsCsv();
                             }
+                            activeFocusOnTab: true
+                            Keys.onReturnPressed: clicked()
+                            Keys.onSpacePressed: clicked()
+                            Accessible.role: Accessible.Button
+                            Accessible.name: text
+
                             background: Rectangle {
-                                color: Theme.bgCardElevated
-                                border.color: Theme.borderBright
+                                color: csvBtn.hovered ? Theme.bgCardElevated : Theme.bgInput
+                                border.color: csvBtn.activeFocus ? Theme.focusRing : Theme.borderBright
+                                border.width: csvBtn.activeFocus ? 2 : 1
                                 radius: Theme.radiusSm
                                 implicitHeight: 38
-                                implicitWidth: 180
+                                implicitWidth: 190
                             }
                             contentItem: Text {
-                                text: parent.text
+                                text: csvBtn.text
                                 color: Theme.textPrimary
                                 font.pixelSize: Theme.fontXs
                                 font.bold: true
@@ -198,17 +226,26 @@ Dialog {
                         Item { width: Math.max(10, parent.width - 340); height: 1 }
 
                         Button {
+                            id: clearBtn
                             visible: !root.showConfirmClear
                             text: qsTr("Clear All Data")
                             onClicked: root.showConfirmClear = true
+                            activeFocusOnTab: true
+                            Keys.onReturnPressed: clicked()
+                            Keys.onSpacePressed: clicked()
+                            Accessible.role: Accessible.Button
+                            Accessible.name: text
+
                             background: Rectangle {
-                                color: "#7F1D1D"
+                                color: clearBtn.hovered ? "#991B1B" : "#7F1D1D"
+                                border.color: clearBtn.activeFocus ? Theme.focusRing : "#B91C1C"
+                                border.width: clearBtn.activeFocus ? 2 : 1
                                 radius: Theme.radiusSm
-                                implicitHeight: 28
-                                implicitWidth: 120
+                                implicitHeight: 30
+                                implicitWidth: 130
                             }
                             contentItem: Text {
-                                text: parent.text
+                                text: clearBtn.text
                                 color: "#FFFFFF"
                                 font.pixelSize: Theme.fontXs
                                 font.bold: true
@@ -236,20 +273,29 @@ Dialog {
                             spacing: 10
 
                             Button {
+                                id: confirmDeleteBtn
                                 text: qsTr("Yes, Permanently Delete All Data")
                                 onClicked: {
                                     storageManager.clearAllData();
                                     root.showConfirmClear = false;
                                     root.close();
                                 }
+                                activeFocusOnTab: true
+                                Keys.onReturnPressed: clicked()
+                                Keys.onSpacePressed: clicked()
+                                Accessible.role: Accessible.Button
+                                Accessible.name: text
+
                                 background: Rectangle {
-                                    color: Theme.rose
+                                    color: confirmDeleteBtn.hovered ? "#E11D48" : Theme.rose
+                                    border.color: confirmDeleteBtn.activeFocus ? Theme.focusRing : "transparent"
+                                    border.width: confirmDeleteBtn.activeFocus ? 2 : 0
                                     radius: Theme.radiusSm
-                                    implicitHeight: 30
-                                    implicitWidth: 230
+                                    implicitHeight: 32
+                                    implicitWidth: 240
                                 }
                                 contentItem: Text {
-                                    text: parent.text
+                                    text: confirmDeleteBtn.text
                                     color: "#FFFFFF"
                                     font.pixelSize: Theme.fontXs
                                     font.bold: true
@@ -259,18 +305,28 @@ Dialog {
                             }
 
                             Button {
+                                id: cancelDeleteBtn
                                 text: qsTr("Cancel")
                                 onClicked: root.showConfirmClear = false
+                                activeFocusOnTab: true
+                                Keys.onReturnPressed: clicked()
+                                Keys.onSpacePressed: clicked()
+                                Accessible.role: Accessible.Button
+                                Accessible.name: text
+
                                 background: Rectangle {
-                                    color: Theme.bgCardElevated
+                                    color: cancelDeleteBtn.hovered ? Theme.bgCardElevated : Theme.bgInput
+                                    border.color: cancelDeleteBtn.activeFocus ? Theme.focusRing : Theme.borderMedium
+                                    border.width: cancelDeleteBtn.activeFocus ? 2 : 1
                                     radius: Theme.radiusSm
-                                    implicitHeight: 30
-                                    implicitWidth: 80
+                                    implicitHeight: 32
+                                    implicitWidth: 90
                                 }
                                 contentItem: Text {
-                                    text: parent.text
-                                    color: Theme.textSecondary
+                                    text: cancelDeleteBtn.text
+                                    color: Theme.textPrimary
                                     font.pixelSize: Theme.fontXs
+                                    font.bold: true
                                     horizontalAlignment: Text.AlignHCenter
                                     verticalAlignment: Text.AlignVCenter
                                 }

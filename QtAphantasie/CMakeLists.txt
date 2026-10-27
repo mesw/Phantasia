@@ -31,6 +31,11 @@ qt_add_executable(appQtAphantasie
     src/wasm_helper.cpp
 )
 
+set_source_files_properties(qml/components/Theme.qml
+    PROPERTIES
+        QT_QML_SINGLETON_TYPE TRUE
+)
+
 qt_add_qml_module(appQtAphantasie
     URI QtAphantasie
     QML_FILES

@@ -105,19 +105,28 @@ Item {
 
                     // Right action: Launch Current Session
                     Button {
+                        id: launchTodayBtn
                         anchors.verticalCenter: parent.verticalCenter
                         text: qsTr("Launch Today's Session\n(Week %1, Day %2) →").arg(storageManager.currentWeek).arg(storageManager.currentDay)
                         onClicked: {
                             root.launchSession(storageManager.currentWeek, storageManager.currentDay);
                         }
+                        activeFocusOnTab: true
+                        Keys.onReturnPressed: clicked()
+                        Keys.onSpacePressed: clicked()
+                        Accessible.role: Accessible.Button
+                        Accessible.name: text
+
                         background: Rectangle {
-                            color: Theme.primary
+                            color: launchTodayBtn.down ? Theme.primaryHover : (launchTodayBtn.hovered ? Theme.primaryLight : Theme.primary)
+                            border.color: launchTodayBtn.activeFocus ? Theme.focusRing : Theme.primaryGlow
+                            border.width: launchTodayBtn.activeFocus ? 2 : 1
                             radius: Theme.radiusMd
                             implicitHeight: 60
                             implicitWidth: 240
                         }
                         contentItem: Text {
-                            text: parent.text
+                            text: launchTodayBtn.text
                             color: "#FFFFFF"
                             font.pixelSize: Theme.fontSm
                             font.bold: true

@@ -73,19 +73,28 @@ Item {
             }
 
             Button {
+                id: exitBtn
                 text: qsTr("Exit Session")
                 onClicked: root.exitRequested()
+                activeFocusOnTab: true
+                Keys.onReturnPressed: clicked()
+                Keys.onSpacePressed: clicked()
+                Accessible.role: Accessible.Button
+                Accessible.name: text
+
                 background: Rectangle {
-                    color: "transparent"
-                    border.color: Theme.borderMedium
+                    color: exitBtn.hovered ? Theme.bgCardElevated : Theme.bgInput
+                    border.color: exitBtn.activeFocus ? Theme.focusRing : Theme.borderMedium
+                    border.width: exitBtn.activeFocus ? 2 : 1
                     radius: Theme.radiusMd
-                    implicitHeight: 34
-                    implicitWidth: 110
+                    implicitHeight: 36
+                    implicitWidth: 120
                 }
                 contentItem: Text {
-                    text: parent.text
+                    text: exitBtn.text
                     color: Theme.textSecondary
                     font.pixelSize: Theme.fontXs
+                    font.bold: true
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                 }
@@ -99,32 +108,42 @@ Item {
 
             Repeater {
                 model: [
-                    { id: 1, label: qsTr("1. Breath Calibration (2m)") },
-                    { id: 2, label: qsTr("2. Guided Exercise (8m)") },
-                    { id: 3, label: qsTr("3. Reflection & Rating (2m)") }
+                    { phaseNumber: 1, label: qsTr("1. Breath Calibration (2m)") },
+                    { phaseNumber: 2, label: qsTr("2. Guided Exercise (8m)") },
+                    { phaseNumber: 3, label: qsTr("3. Reflection & Rating (2m)") }
                 ]
 
                 Rectangle {
+                    id: phaseTab
+                    required property var modelData
+                    readonly property int phaseVal: modelData ? modelData.phaseNumber : 1
+                    readonly property bool isActive: (root.currentPhase === phaseVal)
+                    readonly property bool isDone: (root.currentPhase > phaseVal)
+
                     width: (parent.width - 16) / 3
-                    height: 36
+                    height: 38
                     radius: Theme.radiusSm
-                    color: (root.currentPhase === modelData.id) ? Theme.primary : Theme.bgCard
-                    border.color: (root.currentPhase === modelData.id) ? Theme.primaryLight : Theme.borderDim
-                    border.width: 1
+                    color: isActive ? Theme.primary : (isDone ? Theme.bgCardElevated : Theme.bgCard)
+                    border.color: phaseTab.activeFocus ? Theme.focusRing : (isActive ? Theme.primaryLight : Theme.borderDim)
+                    border.width: phaseTab.activeFocus ? 2 : 1
+                    activeFocusOnTab: true
+
+                    Keys.onReturnPressed: root.currentPhase = phaseVal
+                    Keys.onSpacePressed: root.currentPhase = phaseVal
 
                     Row {
                         anchors.centerIn: parent
                         spacing: 6
                         Text {
-                            text: (root.currentPhase > modelData.id) ? "✓" : modelData.id.toString()
-                            color: (root.currentPhase === modelData.id) ? "#FFFFFF" : Theme.textMuted
+                            text: isDone ? "✓" : phaseVal.toString()
+                            color: isActive ? "#FFFFFF" : (isDone ? Theme.emeraldLight : Theme.textMuted)
                             font.bold: true
                             font.pixelSize: Theme.fontXs
                         }
                         Text {
-                            text: modelData.label
-                            color: (root.currentPhase === modelData.id) ? "#FFFFFF" : Theme.textSecondary
-                            font.bold: (root.currentPhase === modelData.id)
+                            text: modelData ? modelData.label : ""
+                            color: isActive ? "#FFFFFF" : Theme.textSecondary
+                            font.bold: isActive
                             font.pixelSize: Theme.fontXs
                         }
                     }
@@ -132,7 +151,10 @@ Item {
                     MouseArea {
                         anchors.fill: parent
                         cursorShape: Qt.PointingHandCursor
-                        onClicked: root.currentPhase = modelData.id
+                        onClicked: {
+                            phaseTab.forceActiveFocus();
+                            root.currentPhase = phaseTab.phaseVal;
+                        }
                     }
                 }
             }
@@ -148,7 +170,7 @@ Item {
 
             Column {
                 anchors.centerIn: parent
-                spacing: 24
+                spacing: 16
 
                 Text {
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -168,18 +190,97 @@ Item {
                     }
                 }
 
+                // PeakFrequency Guided Resonance Breathing Link
+                Rectangle {
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    width: 560
+                    height: 52
+                    radius: Theme.radiusMd
+                    color: Theme.bgCardElevated
+                    border.color: Theme.borderBright
+                    border.width: 1
+
+                    Row {
+                        anchors.fill: parent
+                        anchors.margins: 10
+                        spacing: 12
+
+                        Text {
+                            text: "🫁"
+                            font.pixelSize: 22
+                            anchors.verticalCenter: parent.verticalCenter
+                        }
+
+                        Column {
+                            anchors.verticalCenter: parent.verticalCenter
+                            spacing: 2
+                            width: parent.width - 180
+
+                            Text {
+                                text: qsTr("PeakFrequency: Resonance Breathing Pacer")
+                                color: Theme.textPrimary
+                                font.pixelSize: Theme.fontXs
+                                font.bold: true
+                            }
+                            Text {
+                                text: qsTr("Open external guided resonance pacer (~5.5-6 bpm / 0.1 Hz) ↗")
+                                color: Theme.textMuted
+                                font.pixelSize: 11
+                            }
+                        }
+
+                        Button {
+                            id: peakBtn
+                            anchors.verticalCenter: parent.verticalCenter
+                            text: qsTr("Open Pacer ↗")
+                            onClicked: Qt.openUrlExternally("https://mesw.github.io/PeakFrequency/")
+                            activeFocusOnTab: true
+                            Keys.onReturnPressed: clicked()
+                            Keys.onSpacePressed: clicked()
+                            Accessible.role: Accessible.Button
+                            Accessible.name: text
+
+                            background: Rectangle {
+                                color: peakBtn.hovered ? Theme.cyan : Theme.bgInput
+                                border.color: peakBtn.activeFocus ? Theme.focusRing : Theme.cyanLight
+                                border.width: peakBtn.activeFocus ? 2 : 1
+                                radius: Theme.radiusSm
+                                implicitHeight: 32
+                                implicitWidth: 120
+                            }
+                            contentItem: Text {
+                                text: peakBtn.text
+                                color: peakBtn.hovered ? "#0B0F19" : Theme.cyanLight
+                                font.pixelSize: Theme.fontXs
+                                font.bold: true
+                                horizontalAlignment: Text.AlignHCenter
+                                verticalAlignment: Text.AlignVCenter
+                            }
+                        }
+                    }
+                }
+
                 Button {
+                    id: proceedToPhase2Btn
                     anchors.horizontalCenter: parent.horizontalCenter
                     text: qsTr("Proceed to Exercise (Phase 2) →")
                     onClicked: root.currentPhase = 2
+                    activeFocusOnTab: true
+                    Keys.onReturnPressed: clicked()
+                    Keys.onSpacePressed: clicked()
+                    Accessible.role: Accessible.Button
+                    Accessible.name: text
+
                     background: Rectangle {
-                        color: Theme.primary
+                        color: proceedToPhase2Btn.down ? Theme.primaryHover : (proceedToPhase2Btn.hovered ? Theme.primaryLight : Theme.primary)
+                        border.color: proceedToPhase2Btn.activeFocus ? Theme.focusRing : Theme.primaryGlow
+                        border.width: proceedToPhase2Btn.activeFocus ? 2 : 1
                         radius: Theme.radiusMd
-                        implicitHeight: 42
-                        implicitWidth: 260
+                        implicitHeight: 44
+                        implicitWidth: 280
                     }
                     contentItem: Text {
-                        text: parent.text
+                        text: proceedToPhase2Btn.text
                         color: "#FFFFFF"
                         font.pixelSize: Theme.fontSm
                         font.bold: true
@@ -369,19 +470,28 @@ Item {
                         }
 
                         Button {
+                            id: pauseBtn
                             text: root.exerciseTimerRunning ? qsTr("Pause") : qsTr("Resume")
                             onClicked: root.exerciseTimerRunning = !root.exerciseTimerRunning
+                            activeFocusOnTab: true
+                            Keys.onReturnPressed: clicked()
+                            Keys.onSpacePressed: clicked()
+                            Accessible.role: Accessible.Button
+                            Accessible.name: text
+
                             background: Rectangle {
-                                color: Theme.bgCardElevated
-                                border.color: Theme.borderMedium
+                                color: pauseBtn.hovered ? Theme.bgCardElevated : Theme.bgInput
+                                border.color: pauseBtn.activeFocus ? Theme.focusRing : Theme.borderMedium
+                                border.width: pauseBtn.activeFocus ? 2 : 1
                                 radius: Theme.radiusSm
-                                implicitHeight: 32
-                                implicitWidth: 80
+                                implicitHeight: 34
+                                implicitWidth: 90
                             }
                             contentItem: Text {
-                                text: parent.text
+                                text: pauseBtn.text
                                 color: Theme.textPrimary
                                 font.pixelSize: Theme.fontXs
+                                font.bold: true
                                 horizontalAlignment: Text.AlignHCenter
                                 verticalAlignment: Text.AlignVCenter
                             }
@@ -390,16 +500,25 @@ Item {
                         Item { width: Math.max(10, parent.width - 550); height: 1 }
 
                         Button {
+                            id: proceedToPhase3Btn
                             text: qsTr("Proceed to Reflection (Phase 3) →")
                             onClicked: root.currentPhase = 3
+                            activeFocusOnTab: true
+                            Keys.onReturnPressed: clicked()
+                            Keys.onSpacePressed: clicked()
+                            Accessible.role: Accessible.Button
+                            Accessible.name: text
+
                             background: Rectangle {
-                                color: Theme.primary
+                                color: proceedToPhase3Btn.down ? Theme.primaryHover : (proceedToPhase3Btn.hovered ? Theme.primaryLight : Theme.primary)
+                                border.color: proceedToPhase3Btn.activeFocus ? Theme.focusRing : Theme.primaryGlow
+                                border.width: proceedToPhase3Btn.activeFocus ? 2 : 1
                                 radius: Theme.radiusMd
-                                implicitHeight: 38
-                                implicitWidth: 260
+                                implicitHeight: 40
+                                implicitWidth: 270
                             }
                             contentItem: Text {
-                                text: parent.text
+                                text: proceedToPhase3Btn.text
                                 color: "#FFFFFF"
                                 font.pixelSize: Theme.fontSm
                                 font.bold: true
@@ -548,20 +667,29 @@ Item {
 
                     // Save Button
                     Button {
+                        id: saveSessionBtn
                         anchors.horizontalCenter: parent.horizontalCenter
                         text: qsTr("Save Session & Complete Day %1 ✓").arg(root.day)
                         onClicked: {
                             storageManager.saveTrainingSession(root.week, root.day, root.sessionRating, root.sessionNotes, 600);
                             root.sessionCompleted();
                         }
+                        activeFocusOnTab: true
+                        Keys.onReturnPressed: clicked()
+                        Keys.onSpacePressed: clicked()
+                        Accessible.role: Accessible.Button
+                        Accessible.name: text
+
                         background: Rectangle {
-                            color: Theme.emerald
+                            color: saveSessionBtn.down ? Theme.emerald : (saveSessionBtn.hovered ? Theme.emeraldLight : Theme.emerald)
+                            border.color: saveSessionBtn.activeFocus ? Theme.focusRing : Theme.borderMedium
+                            border.width: saveSessionBtn.activeFocus ? 2 : 1
                             radius: Theme.radiusMd
                             implicitHeight: 48
-                            implicitWidth: 340
+                            implicitWidth: 350
                         }
                         contentItem: Text {
-                            text: parent.text
+                            text: saveSessionBtn.text
                             color: "#FFFFFF"
                             font.pixelSize: Theme.fontMd
                             font.bold: true

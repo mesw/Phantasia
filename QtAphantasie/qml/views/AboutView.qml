@@ -213,38 +213,64 @@ Item {
                 spacing: 16
 
                 Button {
+                    id: aboutDownloadBtn
                     text: qsTr("Download Participant Data (JSON / CSV)")
                     onClicked: root.downloadDataRequested()
+                    activeFocusOnTab: true
+                    Keys.onReturnPressed: clicked()
+                    Keys.onSpacePressed: clicked()
+                    Accessible.role: Accessible.Button
+                    Accessible.name: text
+
                     background: Rectangle {
-                        color: Theme.primary
+                        color: aboutDownloadBtn.down ? Theme.primaryHover : (aboutDownloadBtn.hovered ? Theme.primaryLight : Theme.primary)
+                        border.color: aboutDownloadBtn.activeFocus ? Theme.focusRing : Theme.primaryGlow
+                        border.width: aboutDownloadBtn.activeFocus ? 2 : 1
+                        radius: Theme.radiusMd
+                        implicitHeight: 44
+                        implicitWidth: 320
+                    }
+                    contentItem: Row {
+                        anchors.centerIn: parent
+                        spacing: 8
+                        Text {
+                            text: "💾"
+                            font.pixelSize: 14
+                            anchors.verticalCenter: parent.verticalCenter
+                        }
+                        Text {
+                            text: aboutDownloadBtn.text
+                            color: "#FFFFFF"
+                            font.pixelSize: Theme.fontSm
+                            font.bold: true
+                            anchors.verticalCenter: parent.verticalCenter
+                        }
+                    }
+                }
+
+                Button {
+                    id: aboutGithubBtn
+                    text: qsTr("View Public Source Code on GitHub ↗")
+                    onClicked: storageManager.openSourceCodeUrl()
+                    activeFocusOnTab: true
+                    Keys.onReturnPressed: clicked()
+                    Keys.onSpacePressed: clicked()
+                    Accessible.role: Accessible.Button
+                    Accessible.name: text
+
+                    background: Rectangle {
+                        color: aboutGithubBtn.hovered ? Theme.bgCardElevated : Theme.bgInput
+                        border.color: aboutGithubBtn.activeFocus ? Theme.focusRing : Theme.borderBright
+                        border.width: aboutGithubBtn.activeFocus ? 2 : 1
                         radius: Theme.radiusMd
                         implicitHeight: 44
                         implicitWidth: 300
                     }
                     contentItem: Text {
-                        text: parent.text
-                        color: "#FFFFFF"
-                        font.pixelSize: Theme.fontSm
-                        font.bold: true
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                    }
-                }
-
-                Button {
-                    text: qsTr("View Public Source Code on GitHub ↗")
-                    onClicked: storageManager.openSourceCodeUrl()
-                    background: Rectangle {
-                        color: Theme.bgCardElevated
-                        border.color: Theme.borderBright
-                        radius: Theme.radiusMd
-                        implicitHeight: 44
-                        implicitWidth: 280
-                    }
-                    contentItem: Text {
-                        text: parent.text
+                        text: aboutGithubBtn.text
                         color: Theme.textPrimary
                         font.pixelSize: Theme.fontSm
+                        font.bold: true
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                     }

@@ -1,6 +1,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
+#include <QQuickStyle>
 #include <QIcon>
 #include "src/languagemanager.h"
 #include "src/storagemanager.h"
@@ -9,6 +10,10 @@
 
 int main(int argc, char *argv[])
 {
+    // Force the Basic Qt Quick Controls style for consistent dark-theme rendering
+    // and to prevent OS-native styles (e.g. Windows) from overriding button colors with black text
+    QQuickStyle::setStyle("Basic");
+
     QGuiApplication app(argc, argv);
     app.setOrganizationName("AphantasiaStudy");
     app.setOrganizationDomain("aphantasiastudy.org");

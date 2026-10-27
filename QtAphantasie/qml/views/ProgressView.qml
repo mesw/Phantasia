@@ -36,21 +36,38 @@ Item {
             }
 
             Button {
+                id: exportBtn
                 text: qsTr("Export Data")
                 onClicked: root.downloadDataRequested()
+                activeFocusOnTab: true
+                Keys.onReturnPressed: clicked()
+                Keys.onSpacePressed: clicked()
+                Accessible.role: Accessible.Button
+                Accessible.name: text
+
                 background: Rectangle {
-                    color: Theme.primary
+                    color: exportBtn.down ? Theme.primaryHover : (exportBtn.hovered ? Theme.primaryLight : Theme.primary)
+                    border.color: exportBtn.activeFocus ? Theme.focusRing : Theme.primaryGlow
+                    border.width: exportBtn.activeFocus ? 2 : 1
                     radius: Theme.radiusMd
-                    implicitHeight: 38
-                    implicitWidth: 140
+                    implicitHeight: 40
+                    implicitWidth: 150
                 }
-                contentItem: Text {
-                    text: parent.text
-                    color: "#FFFFFF"
-                    font.pixelSize: Theme.fontSm
-                    font.bold: true
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
+                contentItem: Row {
+                    anchors.centerIn: parent
+                    spacing: 6
+                    Text {
+                        text: "💾"
+                        font.pixelSize: 13
+                        anchors.verticalCenter: parent.verticalCenter
+                    }
+                    Text {
+                        text: exportBtn.text
+                        color: "#FFFFFF"
+                        font.pixelSize: Theme.fontSm
+                        font.bold: true
+                        anchors.verticalCenter: parent.verticalCenter
+                    }
                 }
             }
         }

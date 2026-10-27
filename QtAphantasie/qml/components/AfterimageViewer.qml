@@ -232,18 +232,27 @@ Item {
                 spacing: 12
 
                 Button {
+                    id: logAfterimageBtn
                     text: qsTr("Afterimage Faded (Log %1s)").arg(root.afterimageElapsedSec)
                     onClicked: {
                         root.afterimageLogged(root.afterimageElapsedSec);
                     }
+                    activeFocusOnTab: true
+                    Keys.onReturnPressed: clicked()
+                    Keys.onSpacePressed: clicked()
+                    Accessible.role: Accessible.Button
+                    Accessible.name: text
+
                     background: Rectangle {
-                        color: Theme.emerald
+                        color: logAfterimageBtn.down ? Theme.emeraldLight : Theme.emerald
+                        border.color: logAfterimageBtn.activeFocus ? Theme.focusRing : "transparent"
+                        border.width: logAfterimageBtn.activeFocus ? 2 : 0
                         radius: Theme.radiusMd
                         implicitHeight: 40
-                        implicitWidth: 200
+                        implicitWidth: 210
                     }
                     contentItem: Text {
-                        text: parent.text
+                        text: logAfterimageBtn.text
                         color: "#FFFFFF"
                         font.bold: true
                         horizontalAlignment: Text.AlignHCenter
@@ -252,20 +261,28 @@ Item {
                 }
 
                 Button {
+                    id: restartFixationBtn
                     text: qsTr("Restart Fixation")
                     onClicked: {
                         root.remainingFixation = root.fixationSeconds;
                         root.isFixating = true;
                     }
+                    activeFocusOnTab: true
+                    Keys.onReturnPressed: clicked()
+                    Keys.onSpacePressed: clicked()
+                    Accessible.role: Accessible.Button
+                    Accessible.name: text
+
                     background: Rectangle {
-                        color: Theme.bgCardElevated
-                        border.color: Theme.borderBright
+                        color: restartFixationBtn.hovered ? Theme.bgCardElevated : Theme.bgInput
+                        border.color: restartFixationBtn.activeFocus ? Theme.focusRing : Theme.borderBright
+                        border.width: restartFixationBtn.activeFocus ? 2 : 1
                         radius: Theme.radiusMd
                         implicitHeight: 40
-                        implicitWidth: 140
+                        implicitWidth: 150
                     }
                     contentItem: Text {
-                        text: parent.text
+                        text: restartFixationBtn.text
                         color: Theme.textPrimary
                         font.bold: true
                         horizontalAlignment: Text.AlignHCenter

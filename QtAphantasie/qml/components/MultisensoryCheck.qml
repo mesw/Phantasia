@@ -98,6 +98,12 @@ Item {
                     model: root.modalities
 
                     Rectangle {
+                        id: modCard
+                        required property var modelData
+                        readonly property string modKey: modelData.key
+                        readonly property string modName: modelData.name
+                        readonly property string modPrompt: modelData.prompt
+
                         width: parent.width
                         height: 76
                         radius: Theme.radiusMd
@@ -116,14 +122,14 @@ Item {
                                 spacing: 4
 
                                 Text {
-                                    text: modelData.name
+                                    text: modCard.modName
                                     color: Theme.textPrimary
                                     font.pixelSize: Theme.fontSm
                                     font.bold: true
                                 }
 
                                 Text {
-                                    text: modelData.prompt
+                                    text: modCard.modPrompt
                                     color: Theme.textSecondary
                                     font.pixelSize: Theme.fontXs
                                     wrapMode: Text.WordWrap
@@ -141,23 +147,33 @@ Item {
 
                                     Rectangle {
                                         id: scoreBtn
+                                        required property int modelData
+                                        readonly property int scoreVal: modelData
+                                        readonly property bool isCurrent: (root.scores[modCard.modKey] === scoreVal)
+
                                         width: 38
                                         height: 38
                                         radius: Theme.radiusSm
-                                        property bool isCurrent: (root.scores[modelData.key] === modelData)
                                         color: isCurrent ? Theme.primary : Theme.bgInput
-                                        border.color: isCurrent ? Theme.primaryLight : Theme.borderMedium
-                                        border.width: 1
+                                        border.color: scoreBtn.activeFocus ? Theme.focusRing : (isCurrent ? Theme.primaryLight : Theme.borderMedium)
+                                        border.width: scoreBtn.activeFocus ? 2 : 1
+                                        activeFocusOnTab: true
+
+                                        Keys.onReturnPressed: root.setScore(modCard.modKey, scoreVal)
+                                        Keys.onSpacePressed: root.setScore(modCard.modKey, scoreVal)
 
                                         MouseArea {
                                             anchors.fill: parent
                                             cursorShape: Qt.PointingHandCursor
-                                            onClicked: root.setScore(modelData.key, modelData)
+                                            onClicked: {
+                                                scoreBtn.forceActiveFocus();
+                                                root.setScore(modCard.modKey, scoreBtn.scoreVal);
+                                            }
                                         }
 
                                         Text {
                                             anchors.centerIn: parent
-                                            text: modelData.toString()
+                                            text: scoreBtn.scoreVal.toString()
                                             color: scoreBtn.isCurrent ? "#FFFFFF" : Theme.textSecondary
                                             font.bold: scoreBtn.isCurrent
                                             font.pixelSize: Theme.fontSm
@@ -173,19 +189,26 @@ Item {
 
         // Submit Button
         Button {
+            id: submitBtn
             anchors.horizontalCenter: parent.horizontalCenter
             text: qsTr("Generate Diagnostic Report & Baseline Profile →")
-            onClicked: {
-                root.completed(root.scores);
-            }
+            onClicked: root.completed(root.scores)
+            activeFocusOnTab: true
+            Keys.onReturnPressed: clicked()
+            Keys.onSpacePressed: clicked()
+            Accessible.role: Accessible.Button
+            Accessible.name: text
+
             background: Rectangle {
-                color: Theme.primary
+                color: submitBtn.down ? Theme.primaryHover : (submitBtn.hovered ? Theme.primaryLight : Theme.primary)
+                border.color: submitBtn.activeFocus ? Theme.focusRing : Theme.primaryGlow
+                border.width: submitBtn.activeFocus ? 2 : 1
                 radius: Theme.radiusMd
                 implicitHeight: 46
                 implicitWidth: 380
             }
             contentItem: Text {
-                text: parent.text
+                text: submitBtn.text
                 color: "#FFFFFF"
                 font.pixelSize: Theme.fontSm
                 font.bold: true

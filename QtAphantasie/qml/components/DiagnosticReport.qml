@@ -262,16 +262,25 @@ Item {
                 spacing: 16
 
                 Button {
+                    id: startTrainingBtn
                     text: qsTr("Start 6-Week Functional Training →")
                     onClicked: root.startTrainingClicked()
+                    activeFocusOnTab: true
+                    Keys.onReturnPressed: clicked()
+                    Keys.onSpacePressed: clicked()
+                    Accessible.role: Accessible.Button
+                    Accessible.name: text
+
                     background: Rectangle {
-                        color: Theme.primary
+                        color: startTrainingBtn.down ? Theme.primaryHover : (startTrainingBtn.hovered ? Theme.primaryLight : Theme.primary)
+                        border.color: startTrainingBtn.activeFocus ? Theme.focusRing : Theme.primaryGlow
+                        border.width: startTrainingBtn.activeFocus ? 2 : 1
                         radius: Theme.radiusMd
                         implicitHeight: 46
                         implicitWidth: 320
                     }
                     contentItem: Text {
-                        text: parent.text
+                        text: startTrainingBtn.text
                         color: "#FFFFFF"
                         font.pixelSize: Theme.fontSm
                         font.bold: true
@@ -281,38 +290,64 @@ Item {
                 }
 
                 Button {
+                    id: downloadReportBtn
                     text: qsTr("Download Participant Data")
                     onClicked: root.downloadReportClicked()
+                    activeFocusOnTab: true
+                    Keys.onReturnPressed: clicked()
+                    Keys.onSpacePressed: clicked()
+                    Accessible.role: Accessible.Button
+                    Accessible.name: text
+
                     background: Rectangle {
-                        color: Theme.bgCardElevated
-                        border.color: Theme.borderBright
+                        color: downloadReportBtn.hovered ? Theme.bgCardElevated : Theme.bgInput
+                        border.color: downloadReportBtn.activeFocus ? Theme.focusRing : Theme.borderBright
+                        border.width: downloadReportBtn.activeFocus ? 2 : 1
                         radius: Theme.radiusMd
                         implicitHeight: 46
-                        implicitWidth: 200
+                        implicitWidth: 220
                     }
-                    contentItem: Text {
-                        text: parent.text
-                        color: Theme.textPrimary
-                        font.pixelSize: Theme.fontSm
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
+                    contentItem: Row {
+                        anchors.centerIn: parent
+                        spacing: 6
+                        Text {
+                            text: "💾"
+                            font.pixelSize: 13
+                            anchors.verticalCenter: parent.verticalCenter
+                        }
+                        Text {
+                            text: downloadReportBtn.text
+                            color: Theme.textPrimary
+                            font.pixelSize: Theme.fontSm
+                            font.bold: true
+                            anchors.verticalCenter: parent.verticalCenter
+                        }
                     }
                 }
 
                 Button {
+                    id: retakeBtn
                     text: qsTr("Retake Test")
                     onClicked: root.retakeClicked()
+                    activeFocusOnTab: true
+                    Keys.onReturnPressed: clicked()
+                    Keys.onSpacePressed: clicked()
+                    Accessible.role: Accessible.Button
+                    Accessible.name: text
+
                     background: Rectangle {
-                        color: "transparent"
-                        border.color: Theme.borderMedium
+                        color: retakeBtn.hovered ? Theme.bgCardElevated : Theme.bgCard
+                        border.color: retakeBtn.activeFocus ? Theme.focusRing : Theme.borderMedium
+                        border.width: retakeBtn.activeFocus ? 2 : 1
                         radius: Theme.radiusMd
                         implicitHeight: 46
                         implicitWidth: 140
                     }
                     contentItem: Text {
-                        text: parent.text
-                        color: Theme.textSecondary
+                        text: retakeBtn.text
+                        color: Theme.textPrimary
                         font.pixelSize: Theme.fontSm
+                        font.bold: true
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                     }

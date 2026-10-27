@@ -133,22 +133,30 @@ Item {
 
             // L1
             Button {
+                id: btnL1
                 text: qsTr("1. Outline")
                 checkable: true
                 checked: root.showContour
                 onToggled: { root.showContour = checked; canvas.requestPaint(); }
+                activeFocusOnTab: true
+                Keys.onReturnPressed: toggle()
+                Keys.onSpacePressed: toggle()
+                Accessible.role: Accessible.CheckBox
+                Accessible.name: text
+
                 background: Rectangle {
-                    color: parent.checked ? Theme.primary : Theme.bgCardElevated
-                    border.color: Theme.borderBright
+                    color: btnL1.checked ? Theme.primary : Theme.bgCardElevated
+                    border.color: btnL1.activeFocus ? Theme.focusRing : Theme.borderBright
+                    border.width: btnL1.activeFocus ? 2 : 1
                     radius: Theme.radiusSm
-                    implicitHeight: 32
-                    implicitWidth: 85
+                    implicitHeight: 34
+                    implicitWidth: 92
                 }
                 contentItem: Text {
-                    text: parent.text
+                    text: btnL1.text
                     color: "#FFFFFF"
                     font.pixelSize: Theme.fontXs
-                    font.bold: parent.checked
+                    font.bold: btnL1.checked
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                 }
@@ -156,22 +164,30 @@ Item {
 
             // L2
             Button {
+                id: btnL2
                 text: qsTr("2. Color")
                 checkable: true
                 checked: root.showColor
                 onToggled: { root.showColor = checked; canvas.requestPaint(); }
+                activeFocusOnTab: true
+                Keys.onReturnPressed: toggle()
+                Keys.onSpacePressed: toggle()
+                Accessible.role: Accessible.CheckBox
+                Accessible.name: text
+
                 background: Rectangle {
-                    color: parent.checked ? Theme.rose : Theme.bgCardElevated
-                    border.color: Theme.borderBright
+                    color: btnL2.checked ? Theme.rose : Theme.bgCardElevated
+                    border.color: btnL2.activeFocus ? Theme.focusRing : Theme.borderBright
+                    border.width: btnL2.activeFocus ? 2 : 1
                     radius: Theme.radiusSm
-                    implicitHeight: 32
-                    implicitWidth: 85
+                    implicitHeight: 34
+                    implicitWidth: 92
                 }
                 contentItem: Text {
-                    text: parent.text
+                    text: btnL2.text
                     color: "#FFFFFF"
                     font.pixelSize: Theme.fontXs
-                    font.bold: parent.checked
+                    font.bold: btnL2.checked
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                 }
@@ -179,22 +195,30 @@ Item {
 
             // L3
             Button {
+                id: btnL3
                 text: qsTr("3. Texture")
                 checkable: true
                 checked: root.showTexture
                 onToggled: { root.showTexture = checked; canvas.requestPaint(); }
+                activeFocusOnTab: true
+                Keys.onReturnPressed: toggle()
+                Keys.onSpacePressed: toggle()
+                Accessible.role: Accessible.CheckBox
+                Accessible.name: text
+
                 background: Rectangle {
-                    color: parent.checked ? Theme.emerald : Theme.bgCardElevated
-                    border.color: Theme.borderBright
+                    color: btnL3.checked ? Theme.emerald : Theme.bgCardElevated
+                    border.color: btnL3.activeFocus ? Theme.focusRing : Theme.borderBright
+                    border.width: btnL3.activeFocus ? 2 : 1
                     radius: Theme.radiusSm
-                    implicitHeight: 32
-                    implicitWidth: 85
+                    implicitHeight: 34
+                    implicitWidth: 92
                 }
                 contentItem: Text {
-                    text: parent.text
+                    text: btnL3.text
                     color: "#FFFFFF"
                     font.pixelSize: Theme.fontXs
-                    font.bold: parent.checked
+                    font.bold: btnL3.checked
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                 }
@@ -202,22 +226,30 @@ Item {
 
             // L4
             Button {
+                id: btnL4
                 text: qsTr("4. Light")
                 checkable: true
                 checked: root.showLighting
                 onToggled: { root.showLighting = checked; canvas.requestPaint(); }
+                activeFocusOnTab: true
+                Keys.onReturnPressed: toggle()
+                Keys.onSpacePressed: toggle()
+                Accessible.role: Accessible.CheckBox
+                Accessible.name: text
+
                 background: Rectangle {
-                    color: parent.checked ? Theme.amber : Theme.bgCardElevated
-                    border.color: Theme.borderBright
+                    color: btnL4.checked ? Theme.amber : Theme.bgCardElevated
+                    border.color: btnL4.activeFocus ? Theme.focusRing : Theme.borderBright
+                    border.width: btnL4.activeFocus ? 2 : 1
                     radius: Theme.radiusSm
-                    implicitHeight: 32
-                    implicitWidth: 85
+                    implicitHeight: 34
+                    implicitWidth: 92
                 }
                 contentItem: Text {
-                    text: parent.text
+                    text: btnL4.text
                     color: "#FFFFFF"
                     font.pixelSize: Theme.fontXs
-                    font.bold: parent.checked
+                    font.bold: btnL4.checked
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                 }

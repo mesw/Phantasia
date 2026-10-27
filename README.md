@@ -77,7 +77,41 @@ Before users can launch either the testing questionnaire or the training modules
 
 ---
 
-## 4. Test Procedure Outline
+## 4. Accessibility, Neuro-Inclusivity & Audio Guidance (WCAG 2.1 AA/AAA)
+
+To ensure that the application is fully accessible and welcoming to users with visual impairments, aphantasic individuals, and neurodivergent participants, the platform adheres to rigorous accessibility standards:
+
+### A. High Contrast Visual Design (WCAG AAA)
+* **Contrast Compliance:** All text colors exceed WCAG 2.1 AA requirements (4.5:1 for normal text) and achieve **WCAG AAA** ratios:
+  * Primary Text (`#FFFFFF` on `#0B0F19`): **18.7:1** contrast ratio.
+  * Secondary Text (`#E2E8F0` on `#1E293B`): **11.2:1** contrast ratio.
+  * Muted / Meta Text (`#94A3B8` on `#0B0F19`): **7.6:1** contrast ratio.
+* **Cross-Platform Basic Style Enforcement:** Native OS styles (such as Windows default UxTheme) that historically forced low-contrast dark text onto dark backgrounds are permanently overridden via `QQuickStyle::setStyle("Basic")`. Button captions and states remain consistently bright and legible on Windows, macOS, Linux, and WebAssembly.
+* **Distinct Focus Rings:** A high-visibility cyan focus indicator (`Theme.focusRing: #38BDF8`, 9.4:1 contrast) outlines any element currently holding keyboard focus.
+
+### B. Keyboard-Only Navigation & Straightforward Wizards
+The entire user journey can be completed without a mouse or touch screen:
+* **The Assessment Wizard:**
+  * **Step 1 (The Apple Test):** Press number keys `1` through `5` to instantly select vividness levels. Press `Enter` or `Space` to confirm and advance.
+  * **Step 2 (VVIQ Questionnaire):** Press keys `1` through `5` to submit item ratings and auto-advance. Press `Left Arrow` or `Backspace` to return to the previous question.
+  * **Persistent Wizard Navigation Bar:** Pinned at the bottom of the viewport, the wizard footer is **always visible** (never pushed below the fold), providing clear "← Zurück / Previous" and "Weiter / Next →" controls.
+* **Navigation Header & Tabs:** `Tab` and `Shift+Tab` navigate through the 4 application areas (Diagnostic, 6-Week Training, Progress, Ethics & Sources). `Enter` or `Space` activates the tab.
+* **Training Session Player:**
+  * `Space` bar pauses and resumes active exercise countdowns.
+  * Number keys `1`, `2`, and `3` switch between Phase 1 (Breathing), Phase 2 (Exercise), and Phase 3 (Reflection).
+  * `Enter` triggers session completion and logging.
+
+### C. Audio Guidance & Text-to-Speech (TTS) Architecture
+* **Spoken Guidance for Every Exercise:** Recognizing that individuals with visual impairments or aphantasia benefit profoundly from acoustic guidance, comprehensive spoken scripts for all 42 training sessions and diagnostic tests are documented in [`docs/AUDIO_GUIDANCE_TTS.md`](file:///c:/Users/MiCHi/Documents/Aphantasie/docs/AUDIO_GUIDANCE_TTS.md).
+* **ElevenLabs Eleven v4 Optimization:** Scripts are specifically tuned for ElevenLabs `Eleven v4` / `Eleven Multilingual v2` voice models, utilizing calming, empathetic pacing and sparing audio pause tags (e.g. `<break time="1.5s" />`) for guided introspective reflection.
+
+### D. Resonance Frequency Breathing & PeakFrequency Integration
+* Prior to each cognitive training exercise, users complete a 2-minute autonomic calibration phase.
+* To support guided resonance frequency breathing (~5.5 to 6 breaths per minute, 0.1 Hz) that balances heart-rate variability (HRV) and autonomic tone, the application links directly to [**PeakFrequency**](https://mesw.github.io/PeakFrequency/), an open-source resonance pacer.
+
+---
+
+## 5. Test Procedure Outline
 
 The diagnostic section guides users through a multi-tiered evaluation to determine their imagery profile:
 
@@ -124,7 +158,7 @@ The diagnostic section guides users through a multi-tiered evaluation to determi
 
 ---
 
-## 5. Training Procedure Outline
+## 6. Training Procedure Outline
 
 The training curriculum adapts the **Functional Imagery Training (FIT)** protocol developed by Rhodes et al. (2024) into an accessible, self-paced digital program. It spans **6 weeks**, with daily micro-sessions lasting **10 to 15 minutes**.
 
@@ -183,7 +217,7 @@ The training curriculum adapts the **Functional Imagery Training (FIT)** protoco
 
 ---
 
-## 6. Technology Stack & Architecture
+## 7. Technology Stack & Architecture
 
 To achieve zero installation, instant load times, and universal cross-device execution, the application is engineered as a modern **WebAssembly** client:
 
@@ -248,7 +282,7 @@ To achieve zero installation, instant load times, and universal cross-device exe
 
 ---
 
-## 7. Directory Structure Overview
+## 8. Directory Structure Overview
 
 ```text
 Aphantasie/
@@ -279,7 +313,7 @@ Aphantasie/
 
 ---
 
-## 8. Next Steps & Development Roadmap
+## 9. Next Steps & Development Roadmap
 
 1. **Architecture & Project Setup:**
    * Create `CMakeLists.txt` configured for Qt 6 WebAssembly toolchain.

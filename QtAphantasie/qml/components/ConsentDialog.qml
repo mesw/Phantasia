@@ -222,38 +222,57 @@ Dialog {
                 spacing: 12
 
                 Button {
+                    id: githubBtn
                     text: qsTr("View Source Code (GitHub)")
                     onClicked: storageManager.openSourceCodeUrl()
+                    activeFocusOnTab: true
+                    Keys.onReturnPressed: clicked()
+                    Keys.onSpacePressed: clicked()
+                    Accessible.role: Accessible.Button
+                    Accessible.name: text
+
                     background: Rectangle {
-                        color: "transparent"
-                        border.color: Theme.borderBright
+                        color: githubBtn.hovered ? Theme.bgCardElevated : Theme.bgInput
+                        border.color: githubBtn.activeFocus ? Theme.focusRing : Theme.borderBright
+                        border.width: githubBtn.activeFocus ? 2 : 1
                         radius: Theme.radiusMd
-                        implicitHeight: 42
-                        implicitWidth: 180
+                        implicitHeight: 44
+                        implicitWidth: 190
                     }
                     contentItem: Text {
-                        text: parent.text
-                        color: Theme.textSecondary
+                        text: githubBtn.text
+                        color: Theme.textPrimary
                         font.pixelSize: Theme.fontSm
+                        font.bold: true
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                     }
                 }
 
                 Button {
+                    id: consentBtn
                     text: qsTr("I Understand & Consent to Participate")
+                    focus: true
+                    activeFocusOnTab: true
+                    Keys.onReturnPressed: clicked()
+                    Keys.onSpacePressed: clicked()
+                    Accessible.role: Accessible.Button
+                    Accessible.name: text
+
                     onClicked: {
                         storageManager.saveConsent(true);
                         root.accept();
                     }
                     background: Rectangle {
-                        color: Theme.primary
+                        color: consentBtn.down ? Theme.primaryHover : (consentBtn.hovered ? Theme.primaryLight : Theme.primary)
+                        border.color: consentBtn.activeFocus ? Theme.focusRing : Theme.primaryGlow
+                        border.width: consentBtn.activeFocus ? 2 : 1
                         radius: Theme.radiusMd
-                        implicitHeight: 42
-                        implicitWidth: 260
+                        implicitHeight: 44
+                        implicitWidth: 280
                     }
                     contentItem: Text {
-                        text: parent.text
+                        text: consentBtn.text
                         color: "#FFFFFF"
                         font.pixelSize: Theme.fontSm
                         font.bold: true

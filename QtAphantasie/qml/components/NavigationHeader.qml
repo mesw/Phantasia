@@ -92,39 +92,48 @@ Rectangle {
 
         Repeater {
             model: [
-                { id: 0, label: qsTr("Diagnostic"), icon: "📋" },
-                { id: 1, label: qsTr("6-Week Training"), icon: "🧠" },
-                { id: 2, label: qsTr("Progress"), icon: "📈" },
-                { id: 3, label: qsTr("Ethics & Sources"), icon: "📚" }
+                { tabId: 0, label: qsTr("Diagnostic"), icon: "📋" },
+                { tabId: 1, label: qsTr("6-Week Training"), icon: "🧠" },
+                { tabId: 2, label: qsTr("Progress"), icon: "📈" },
+                { tabId: 3, label: qsTr("Ethics & Sources"), icon: "📚" }
             ]
 
             Rectangle {
                 id: tabBtn
-                width: 130
+                required property var modelData
+                width: 132
                 height: 38
                 radius: Theme.radiusMd
-                color: (root.currentTab === modelData.id) ? Theme.bgCardElevated : "transparent"
-                border.color: (root.currentTab === modelData.id) ? Theme.primary : "transparent"
-                border.width: 1
+                activeFocusOnTab: true
+                Accessible.role: Accessible.PageTab
+                Accessible.name: modelData.label
+
+                color: (root.currentTab === modelData.tabId) ? Theme.bgCardElevated : (tabBtn.hovered ? Theme.bgInput : "transparent")
+                border.color: tabBtn.activeFocus ? Theme.focusRing : ((root.currentTab === modelData.tabId) ? Theme.primary : Theme.borderDim)
+                border.width: tabBtn.activeFocus ? 2 : 1
+
+                property bool hovered: false
+
+                Keys.onReturnPressed: {
+                    root.currentTab = modelData.tabId;
+                    root.tabChanged(modelData.tabId);
+                }
+                Keys.onSpacePressed: {
+                    root.currentTab = modelData.tabId;
+                    root.tabChanged(modelData.tabId);
+                }
 
                 MouseArea {
                     anchors.fill: parent
                     hoverEnabled: true
                     cursorShape: Qt.PointingHandCursor
                     onClicked: {
-                        root.currentTab = modelData.id;
-                        root.tabChanged(modelData.id);
+                        root.currentTab = modelData.tabId;
+                        root.tabChanged(modelData.tabId);
+                        tabBtn.forceActiveFocus();
                     }
-                    onEntered: {
-                        if (root.currentTab !== modelData.id) {
-                            tabBtn.color = Theme.bgInput;
-                        }
-                    }
-                    onExited: {
-                        if (root.currentTab !== modelData.id) {
-                            tabBtn.color = "transparent";
-                        }
-                    }
+                    onEntered: tabBtn.hovered = true
+                    onExited: tabBtn.hovered = false
                 }
 
                 Row {
@@ -137,9 +146,9 @@ Rectangle {
                     }
                     Text {
                         text: modelData.label
-                        color: (root.currentTab === modelData.id) ? Theme.textPrimary : Theme.textSecondary
+                        color: (root.currentTab === modelData.tabId) ? Theme.textPrimary : Theme.textSecondary
                         font.pixelSize: Theme.fontSm
-                        font.bold: (root.currentTab === modelData.id)
+                        font.bold: (root.currentTab === modelData.tabId)
                         anchors.verticalCenter: parent.verticalCenter
                     }
                 }
@@ -156,25 +165,33 @@ Rectangle {
 
         // Download My Data Button
         Button {
+            id: downloadBtn
             text: qsTr("Download My Data")
             onClicked: root.downloadDataRequested()
+            activeFocusOnTab: true
+            Keys.onReturnPressed: clicked()
+            Keys.onSpacePressed: clicked()
+            Accessible.role: Accessible.Button
+            Accessible.name: text
+
             background: Rectangle {
-                color: Theme.bgCardElevated
-                border.color: Theme.borderBright
+                color: downloadBtn.down ? Theme.primaryHover : (downloadBtn.hovered ? Theme.bgCardElevated : Theme.bgInput)
+                border.color: downloadBtn.activeFocus ? Theme.focusRing : Theme.borderBright
+                border.width: downloadBtn.activeFocus ? 2 : 1
                 radius: Theme.radiusMd
-                implicitHeight: 34
-                implicitWidth: 140
+                implicitHeight: 36
+                implicitWidth: 155
             }
             contentItem: Row {
-                anchors.centerIn: parent
                 spacing: 6
+                anchors.centerIn: parent
                 Text {
                     text: "💾"
-                    font.pixelSize: 12
+                    font.pixelSize: 13
                     anchors.verticalCenter: parent.verticalCenter
                 }
                 Text {
-                    text: parent.parent.text
+                    text: downloadBtn.text
                     color: Theme.textPrimary
                     font.pixelSize: Theme.fontXs
                     font.bold: true
@@ -185,27 +202,36 @@ Rectangle {
 
         // View Source Button (GitHub)
         Button {
+            id: sourceBtn
             text: qsTr("Source Code")
             onClicked: storageManager.openSourceCodeUrl()
+            activeFocusOnTab: true
+            Keys.onReturnPressed: clicked()
+            Keys.onSpacePressed: clicked()
+            Accessible.role: Accessible.Button
+            Accessible.name: text
+
             background: Rectangle {
-                color: "transparent"
-                border.color: Theme.borderMedium
+                color: sourceBtn.hovered ? Theme.bgCardElevated : Theme.bgInput
+                border.color: sourceBtn.activeFocus ? Theme.focusRing : Theme.borderBright
+                border.width: sourceBtn.activeFocus ? 2 : 1
                 radius: Theme.radiusMd
-                implicitHeight: 34
-                implicitWidth: 100
+                implicitHeight: 36
+                implicitWidth: 115
             }
             contentItem: Row {
-                anchors.centerIn: parent
                 spacing: 5
+                anchors.centerIn: parent
                 Text {
                     text: "⚡"
-                    font.pixelSize: 12
+                    font.pixelSize: 13
                     anchors.verticalCenter: parent.verticalCenter
                 }
                 Text {
-                    text: parent.parent.text
-                    color: Theme.textSecondary
+                    text: sourceBtn.text
+                    color: Theme.textPrimary
                     font.pixelSize: Theme.fontXs
+                    font.bold: true
                     anchors.verticalCenter: parent.verticalCenter
                 }
             }

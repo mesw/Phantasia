@@ -16,24 +16,25 @@ Rectangle {
     implicitHeight: 330
     radius: Theme.radiusMd
     color: isSelected ? Theme.bgCardElevated : Theme.bgCard
-    border.color: isSelected ? Theme.primary : Theme.borderMedium
-    border.width: isSelected ? 2 : 1
+    border.color: root.activeFocus ? Theme.focusRing : (isSelected ? Theme.primary : (mouseArea.containsMouse ? Theme.borderBright : Theme.borderMedium))
+    border.width: root.activeFocus ? 3 : (isSelected ? 2 : 1)
+
+    activeFocusOnTab: true
+    Accessible.role: Accessible.RadioButton
+    Accessible.name: qsTr("Level %1: %2").arg(root.level).arg(root.title)
+    Accessible.description: root.description
+
+    Keys.onReturnPressed: root.clicked()
+    Keys.onSpacePressed: root.clicked()
 
     MouseArea {
+        id: mouseArea
         anchors.fill: parent
         hoverEnabled: true
         cursorShape: Qt.PointingHandCursor
-        onClicked: root.clicked()
-
-        onEntered: {
-            if (!root.isSelected) {
-                root.border.color = Theme.borderBright;
-            }
-        }
-        onExited: {
-            if (!root.isSelected) {
-                root.border.color = Theme.borderMedium;
-            }
+        onClicked: {
+            root.forceActiveFocus();
+            root.clicked();
         }
     }
 

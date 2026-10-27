@@ -157,19 +157,27 @@ Item {
                 }
 
                 Button {
+                    id: spinBtn
                     text: root.autoSpin ? qsTr("Pause Spin") : qsTr("Auto Spin")
                     onClicked: {
                         root.autoSpin = !root.autoSpin;
                     }
+                    activeFocusOnTab: true
+                    Keys.onReturnPressed: clicked()
+                    Keys.onSpacePressed: clicked()
+                    Accessible.role: Accessible.Button
+                    Accessible.name: text
+
                     background: Rectangle {
-                        color: root.autoSpin ? Theme.amber : Theme.bgCardElevated
-                        border.color: Theme.borderBright
+                        color: root.autoSpin ? Theme.amber : (spinBtn.hovered ? Theme.bgCardElevated : Theme.bgInput)
+                        border.color: spinBtn.activeFocus ? Theme.focusRing : Theme.borderBright
+                        border.width: spinBtn.activeFocus ? 2 : 1
                         radius: Theme.radiusSm
-                        implicitHeight: 28
-                        implicitWidth: 100
+                        implicitHeight: 32
+                        implicitWidth: 110
                     }
                     contentItem: Text {
-                        text: parent.text
+                        text: spinBtn.text
                         color: root.autoSpin ? "#000000" : Theme.textPrimary
                         font.pixelSize: Theme.fontXs
                         font.bold: true
@@ -179,22 +187,31 @@ Item {
                 }
 
                 Button {
+                    id: modeBtn
                     text: (root.mode === "3d") ? qsTr("Switch to 2D") : qsTr("Switch to 3D")
                     onClicked: {
                         root.mode = (root.mode === "3d") ? "2d" : "3d";
                         canvas.requestPaint();
                     }
+                    activeFocusOnTab: true
+                    Keys.onReturnPressed: clicked()
+                    Keys.onSpacePressed: clicked()
+                    Accessible.role: Accessible.Button
+                    Accessible.name: text
+
                     background: Rectangle {
-                        color: Theme.bgCardElevated
-                        border.color: Theme.borderBright
+                        color: modeBtn.hovered ? Theme.bgCardElevated : Theme.bgInput
+                        border.color: modeBtn.activeFocus ? Theme.focusRing : Theme.borderBright
+                        border.width: modeBtn.activeFocus ? 2 : 1
                         radius: Theme.radiusSm
-                        implicitHeight: 28
-                        implicitWidth: 100
+                        implicitHeight: 32
+                        implicitWidth: 110
                     }
                     contentItem: Text {
-                        text: parent.text
-                        color: Theme.textSecondary
+                        text: modeBtn.text
+                        color: Theme.textPrimary
                         font.pixelSize: Theme.fontXs
+                        font.bold: true
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                     }

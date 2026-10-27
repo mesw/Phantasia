@@ -12,6 +12,14 @@ Item {
     implicitWidth: 780
     implicitHeight: 560
 
+    focus: true
+    Keys.onDigit1Pressed: root.selectRating(1)
+    Keys.onDigit2Pressed: root.selectRating(2)
+    Keys.onDigit3Pressed: root.selectRating(3)
+    Keys.onDigit4Pressed: root.selectRating(4)
+    Keys.onDigit5Pressed: root.selectRating(5)
+    Keys.onLeftPressed: if (root.currentIndex > 0) root.currentIndex--
+
     property var currentItemData: vviqEngine.getItem(root.currentIndex)
 
     function selectRating(score) {
@@ -189,30 +197,29 @@ Item {
 
                 Rectangle {
                     id: ratingBtn
+                    required property int modelData
+                    readonly property int scoreVal: modelData
                     width: parent.width
                     height: 52
                     radius: Theme.radiusMd
-                    property bool isPicked: (root.answers[root.currentIndex] === modelData)
+                    property bool isPicked: (root.answers[root.currentIndex] === scoreVal)
                     color: isPicked ? Theme.bgCardElevated : Theme.bgCard
-                    border.color: isPicked ? Theme.primary : Theme.borderMedium
-                    border.width: isPicked ? 2 : 1
+                    border.color: ratingBtn.activeFocus ? Theme.focusRing : (isPicked ? Theme.primary : Theme.borderMedium)
+                    border.width: ratingBtn.activeFocus ? 2 : (isPicked ? 2 : 1)
+                    activeFocusOnTab: true
+                    Accessible.role: Accessible.RadioButton
+                    Accessible.name: vviqEngine.getRatingLabel(scoreVal)
+
+                    Keys.onReturnPressed: root.selectRating(scoreVal)
+                    Keys.onSpacePressed: root.selectRating(scoreVal)
 
                     MouseArea {
                         anchors.fill: parent
                         hoverEnabled: true
                         cursorShape: Qt.PointingHandCursor
                         onClicked: {
-                            root.selectRating(modelData);
-                        }
-                        onEntered: {
-                            if (!ratingBtn.isPicked) {
-                                ratingBtn.border.color = Theme.borderBright;
-                            }
-                        }
-                        onExited: {
-                            if (!ratingBtn.isPicked) {
-                                ratingBtn.border.color = Theme.borderMedium;
-                            }
+                            ratingBtn.forceActiveFocus();
+                            root.selectRating(ratingBtn.scoreVal);
                         }
                     }
 
@@ -232,7 +239,7 @@ Item {
 
                             Text {
                                 anchors.centerIn: parent
-                                text: modelData.toString()
+                                text: ratingBtn.scoreVal.toString()
                                 color: ratingBtn.isPicked ? "#FFFFFF" : Theme.textSecondary
                                 font.bold: true
                                 font.pixelSize: Theme.fontSm
@@ -244,15 +251,15 @@ Item {
                             spacing: 2
 
                             Text {
-                                text: vviqEngine.getRatingLabel(modelData)
+                                text: vviqEngine.getRatingLabel(ratingBtn.scoreVal)
                                 color: ratingBtn.isPicked ? Theme.primaryLight : Theme.textPrimary
                                 font.pixelSize: Theme.fontSm
                                 font.bold: true
                             }
 
                             Text {
-                                text: vviqEngine.getRatingDescription(modelData)
-                                color: Theme.textMuted
+                                text: vviqEngine.getRatingDescription(ratingBtn.scoreVal)
+                                color: Theme.textSecondary
                                 font.pixelSize: Theme.fontXs
                             }
                         }
@@ -261,30 +268,46 @@ Item {
             }
         }
 
-        // Bottom Navigation Buttons
+        // Bottom Navigation Buttons & Accessibility Shortcut Hint
         Row {
             width: parent.width
-            spacing: 12
+            spacing: 16
 
             Button {
-                text: qsTr("Previous Item")
+                id: prevBtn
+                text: qsTr("← Previous Item")
                 enabled: root.currentIndex > 0
                 onClicked: root.currentIndex--
+                activeFocusOnTab: true
+                Keys.onReturnPressed: clicked()
+                Keys.onSpacePressed: clicked()
+                Accessible.role: Accessible.Button
+                Accessible.name: text
+
                 background: Rectangle {
-                    color: Theme.bgCard
-                    border.color: Theme.borderMedium
+                    color: prevBtn.down ? Theme.bgCardElevated : (prevBtn.hovered ? Theme.bgCardElevated : Theme.bgCard)
+                    border.color: prevBtn.activeFocus ? Theme.focusRing : Theme.borderMedium
+                    border.width: prevBtn.activeFocus ? 2 : 1
                     radius: Theme.radiusMd
-                    implicitHeight: 38
-                    implicitWidth: 140
-                    opacity: parent.enabled ? 1.0 : 0.4
+                    implicitHeight: 40
+                    implicitWidth: 160
+                    opacity: prevBtn.enabled ? 1.0 : 0.4
                 }
                 contentItem: Text {
-                    text: parent.text
-                    color: parent.enabled ? Theme.textPrimary : Theme.textMuted
+                    text: prevBtn.text
+                    color: prevBtn.enabled ? Theme.textPrimary : Theme.textMuted
                     font.pixelSize: Theme.fontSm
+                    font.bold: true
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                 }
+            }
+
+            Text {
+                anchors.verticalCenter: parent.verticalCenter
+                text: qsTr("Shortcut: Press 1-5 to rate • Left Arrow for previous")
+                color: Theme.textMuted
+                font.pixelSize: Theme.fontXs
             }
         }
     }
