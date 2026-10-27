@@ -22,22 +22,15 @@ int main(int argc, char *argv[])
     app.setApplicationName("QtAphantasie");
     app.setApplicationVersion("1.0.0");
 
-#if defined(HAS_EMOJI_FONT) && (defined(APHANTASIA_WASM) || defined(__EMSCRIPTEN__))
-    const int fontId = QFontDatabase::addApplicationFont(
+    // ── Emoji font ────────────────────────────────────────────────────────
+    // Loaded on all platforms; critical for WASM which has no system fonts.
+    // The font covers emoji codepoints as a fallback — Latin text is
+    // unaffected because Qt always prefers the primary font for those.
+#ifdef HAS_EMOJI_FONT
+    const int id = QFontDatabase::addApplicationFont(
         QStringLiteral(":/fonts/NotoColorEmoji.ttf"));
-    if (fontId == -1) {
+    if (id == -1)
         qWarning("Failed to load NotoColorEmoji.ttf from resources");
-    } else {
-        const QStringList families = QFontDatabase::applicationFontFamilies(fontId);
-        for (const QString &fam : families) {
-            QFontDatabase::addApplicationFallbackFontFamily(QChar::Script_Common, fam);
-            QFontDatabase::addApplicationFallbackFontFamily(QChar::Script_Latin, fam);
-            QFontDatabase::addApplicationFallbackFontFamily(QChar::Script_Greek, fam);
-            QFontDatabase::addApplicationFallbackFontFamily(QChar::Script_Cyrillic, fam);
-            QFontDatabase::addApplicationFallbackFontFamily(QChar::Script_Han, fam);
-        }
-        qInfo() << "Loaded emoji font from resources, id:" << fontId << "families:" << families;
-    }
 #endif
 
     QQmlApplicationEngine engine;

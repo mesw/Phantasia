@@ -88,15 +88,24 @@ else()
     message(WARNING "License file not found at ${LICENSE_FILE}")
 endif()
 
-# ── Emoji font ─────────────────────────────────────────────────────────────
-# Source: Google Noto Color Emoji font
+# ── Emoji font ────────────────────────────────────────────────────────────────
+# Source: git submodule at third_party/noto-emoji
+#   git submodule add https://github.com/googlefonts/noto-emoji.git third_party/noto-emoji
+#
 # License: SIL Open Font License 1.1 — free to embed in any application.
-set(EMOJI_FONT "${CMAKE_CURRENT_SOURCE_DIR}/../third_party/noto-emoji/fonts/NotoColorEmoji.ttf")
+#   https://github.com/googlefonts/noto-emoji/blob/main/fonts/LICENSE
+#
+# We use the monochrome TTF (not the color WOFF2) because Qt's text engine
+# handles outline fonts reliably on all platforms including WASM.
+set(EMOJI_FONT "${CMAKE_SOURCE_DIR}/third_party/noto-emoji/fonts/NotoColorEmoji.ttf")
 if(NOT EXISTS "${EMOJI_FONT}")
-    set(EMOJI_FONT "${CMAKE_SOURCE_DIR}/third_party/noto-emoji/fonts/NotoColorEmoji.ttf")
+    set(EMOJI_FONT "${CMAKE_CURRENT_SOURCE_DIR}/../third_party/noto-emoji/fonts/NotoColorEmoji.ttf")
 endif()
 
 if(EXISTS "${EMOJI_FONT}")
+    # Qt resource system requires relative paths — set an alias so the
+    # absolute submodule path is exposed as "NotoColorEmoji.ttf" inside
+    # the resource prefix /fonts/
     set_source_files_properties("${EMOJI_FONT}"
         PROPERTIES QT_RESOURCE_ALIAS "NotoColorEmoji.ttf"
     )
@@ -108,12 +117,22 @@ if(EXISTS "${EMOJI_FONT}")
     target_compile_definitions(appQtAphantasie PRIVATE HAS_EMOJI_FONT)
     message(STATUS "Emoji font found: ${EMOJI_FONT}")
 else()
-    message(WARNING "Emoji font not found at ${EMOJI_FONT}")
+    message(WARNING
+        "Emoji font not found at ${EMOJI_FONT}\n"
+        "Run: git submodule update --init --recursive")
 endif()
 
+# ── WebAssembly ───────────────────────────────────────────────────────────────
 if(EMSCRIPTEN)
     target_compile_definitions(appQtAphantasie PRIVATE APHANTASIA_WASM)
-    target_link_options(appQtAphantasie PRIVATE "SHELL:-s ALLOW_MEMORY_GROWTH=1")
+
+    target_link_options(appQtAphantasie PRIVATE
+        "SHELL:-s ALLOW_MEMORY_GROWTH=1"
+    )
+
+    set_target_properties(appQtAphantasie PROPERTIES
+        QT_WASM_INITIAL_MEMORY "64MB"
+    )
 endif()
 
 set_target_properties(appQtAphantasie PROPERTIES
