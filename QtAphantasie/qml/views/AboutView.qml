@@ -63,7 +63,7 @@ Item {
                         }
 
                         Text {
-                            text: qsTr("Open-science platform combining validated psychometrics and neurocognitive imagery training.")
+                            text: qsTr("Open-science platform combining validated psychometrics, neurocognitive training, and GPLv3 open source.")
                             color: Theme.textSecondary
                             font.pixelSize: Theme.fontSm
                         }
@@ -207,6 +207,184 @@ Item {
                 }
             }
 
+            // Section 3: Qt Toolkit & GNU General Public License v3.0 (GPLv3)
+            Rectangle {
+                width: parent.width
+                height: legalCol.height + 28
+                radius: Theme.radiusMd
+                color: Theme.bgCard
+                border.color: Theme.borderMedium
+                border.width: 1
+
+                Column {
+                    id: legalCol
+                    anchors.top: parent.top
+                    anchors.topMargin: 14
+                    anchors.left: parent.left
+                    anchors.leftMargin: 20
+                    width: parent.width - 40
+                    spacing: 12
+
+                    Row {
+                        width: parent.width
+                        spacing: 10
+
+                        Rectangle {
+                            width: 32
+                            height: 32
+                            radius: 8
+                            color: Theme.primaryGlow
+                            anchors.verticalCenter: parent.verticalCenter
+                            Text {
+                                anchors.centerIn: parent
+                                text: "📦"
+                                font.pixelSize: 16
+                            }
+                        }
+
+                        Column {
+                            anchors.verticalCenter: parent.verticalCenter
+                            spacing: 1
+                            Text {
+                                text: qsTr("Qt Framework & Open Source Licensing (GNU GPLv3)")
+                                color: Theme.textPrimary
+                                font.pixelSize: Theme.fontMd
+                                font.bold: true
+                            }
+                            Text {
+                                text: qsTr("WebAssembly Static Linking & Copyright Compliance")
+                                color: Theme.textSecondary
+                                font.pixelSize: Theme.fontXs
+                            }
+                        }
+
+                        Rectangle {
+                            width: 64
+                            height: 22
+                            radius: 11
+                            color: Theme.bgInput
+                            border.color: Theme.emeraldLight
+                            border.width: 1
+                            anchors.verticalCenter: parent.verticalCenter
+                            Text {
+                                anchors.centerIn: parent
+                                text: "GPLv3"
+                                color: Theme.emeraldLight
+                                font.pixelSize: 10
+                                font.bold: true
+                            }
+                        }
+                    }
+
+                    Text {
+                        text: qsTr("• <b>GNU General Public License v3.0:</b> Phantasia is free, open-source software licensed under the GNU General Public License version 3 (GPLv3).<br><br>" +
+                                   "• <b>Qt Framework & Static Linking:</b> This application is built with the Qt 6 framework (Qt Quick, Qt Quick Controls 2, Qt QML, Qt Gui, Qt Core). In the WebAssembly build running in the browser, all Qt libraries and C++ application modules are statically linked into a single WebAssembly binary (<code>appQtAphantasie.wasm</code>). Statically linking GPLv3 libraries combines them into a single executable work under GPLv3, which Phantasia adheres to in full.<br><br>" +
+                                   "• <b>Source Code Availability (GPLv3 §6):</b> In accordance with GPLv3 Section 6, the complete machine-readable source code, CMake scripts, assets, and instructions to rebuild and relink the application are freely accessible at <b>https://github.com/mesw/phantasia</b>. Users have the full freedom to inspect, modify, and rebuild the application, or relink it with modified Qt versions.<br><br>" +
+                                   "• <b>Trademark & Copyright:</b> Qt is a registered trademark of The Qt Company Ltd. and its subsidiaries. Qt is copyright © The Qt Company Ltd. and other contributors.<br><br>" +
+                                   "• <b>Third-Party Assets:</b> Noto Color Emoji font is copyright © Google LLC and licensed under the SIL Open Font License 1.1. PeakFrequency breathing pacer is developed by mesw under MIT/Open Access.<br><br>" +
+                                   "• <b>Disclaimer of Warranty (GPLv3 §§ 15 & 16):</b> This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for details.")
+                        color: Theme.textSecondary
+                        font.pixelSize: Theme.fontSm
+                        wrapMode: Text.WordWrap
+                        width: parent.width
+                        lineHeight: 1.35
+                    }
+
+                    Row {
+                        spacing: 12
+                        topPadding: 4
+
+                        Button {
+                            id: viewLicenseBtn
+                            text: qsTr("View Full GPLv3 License Text")
+                            onClicked: licenseModal.open()
+                            activeFocusOnTab: true
+                            Keys.onReturnPressed: clicked()
+                            Keys.onSpacePressed: clicked()
+                            Accessible.role: Accessible.Button
+                            Accessible.name: text
+
+                            background: Rectangle {
+                                color: viewLicenseBtn.down ? Theme.primaryHover : (viewLicenseBtn.hovered ? Theme.primaryLight : Theme.primary)
+                                border.color: viewLicenseBtn.activeFocus ? Theme.focusRing : Theme.primaryGlow
+                                border.width: viewLicenseBtn.activeFocus ? 2 : 1
+                                radius: Theme.radiusSm
+                                implicitHeight: 36
+                                implicitWidth: 230
+                            }
+                            contentItem: Row {
+                                anchors.centerIn: parent
+                                spacing: 6
+                                Text { text: "📜"; font.pixelSize: 13; anchors.verticalCenter: parent.verticalCenter }
+                                Text {
+                                    text: viewLicenseBtn.text
+                                    color: "#FFFFFF"
+                                    font.pixelSize: Theme.fontXs
+                                    font.bold: true
+                                    anchors.verticalCenter: parent.verticalCenter
+                                }
+                            }
+                        }
+
+                        Button {
+                            id: qtTermsBtn
+                            text: qsTr("Qt Licensing Terms ↗")
+                            onClicked: storageManager.openUrl("https://www.qt.io/licensing/")
+                            activeFocusOnTab: true
+                            Keys.onReturnPressed: clicked()
+                            Keys.onSpacePressed: clicked()
+                            Accessible.role: Accessible.Button
+                            Accessible.name: text
+
+                            background: Rectangle {
+                                color: qtTermsBtn.hovered ? Theme.bgCardElevated : Theme.bgInput
+                                border.color: qtTermsBtn.activeFocus ? Theme.focusRing : Theme.borderBright
+                                border.width: qtTermsBtn.activeFocus ? 2 : 1
+                                radius: Theme.radiusSm
+                                implicitHeight: 36
+                                implicitWidth: 180
+                            }
+                            contentItem: Text {
+                                text: qtTermsBtn.text
+                                color: Theme.emeraldLight
+                                font.pixelSize: Theme.fontXs
+                                font.bold: true
+                                horizontalAlignment: Text.AlignHCenter
+                                verticalAlignment: Text.AlignVCenter
+                            }
+                        }
+
+                        Button {
+                            id: gnuGplBtn
+                            text: qsTr("GNU GPLv3 Official Text ↗")
+                            onClicked: storageManager.openUrl("https://www.gnu.org/licenses/gpl-3.0.html")
+                            activeFocusOnTab: true
+                            Keys.onReturnPressed: clicked()
+                            Keys.onSpacePressed: clicked()
+                            Accessible.role: Accessible.Button
+                            Accessible.name: text
+
+                            background: Rectangle {
+                                color: gnuGplBtn.hovered ? Theme.bgCardElevated : Theme.bgInput
+                                border.color: gnuGplBtn.activeFocus ? Theme.focusRing : Theme.borderBright
+                                border.width: gnuGplBtn.activeFocus ? 2 : 1
+                                radius: Theme.radiusSm
+                                implicitHeight: 36
+                                implicitWidth: 200
+                            }
+                            contentItem: Text {
+                                text: gnuGplBtn.text
+                                color: Theme.primaryLight
+                                font.pixelSize: Theme.fontXs
+                                font.bold: true
+                                horizontalAlignment: Text.AlignHCenter
+                                verticalAlignment: Text.AlignVCenter
+                            }
+                        }
+                    }
+                }
+            }
+
             // Bottom Buttons
             Row {
                 anchors.horizontalCenter: parent.horizontalCenter
@@ -277,5 +455,9 @@ Item {
                 }
             }
         }
+    }
+
+    LicenseModal {
+        id: licenseModal
     }
 }

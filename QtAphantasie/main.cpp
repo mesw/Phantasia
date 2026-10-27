@@ -42,6 +42,13 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
 
+    QObject::connect(&engine, &QQmlApplicationEngine::warnings, [](const QList<QQmlError> &warnings) {
+        for (const auto &w : warnings) {
+            fprintf(stderr, "QML WARNING: %s\n", qPrintable(w.toString()));
+            fflush(stderr);
+        }
+    });
+
     LanguageManager languageManager;
     StorageManager storageManager;
     VviqEngine vviqEngine;
@@ -58,7 +65,11 @@ int main(int argc, char *argv[])
         &engine,
         &QQmlApplicationEngine::objectCreationFailed,
         &app,
-        []() { QCoreApplication::exit(-1); },
+        [](const QUrl &url) {
+            fprintf(stderr, "CRITICAL: Object creation failed for URL: %s\n", qPrintable(url.toString()));
+            fflush(stderr);
+            QCoreApplication::exit(-1);
+        },
         Qt::QueuedConnection);
 
     engine.loadFromModule("QtAphantasie", "Main");

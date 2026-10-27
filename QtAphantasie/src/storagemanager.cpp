@@ -6,6 +6,7 @@
 #include <QJsonArray>
 #include <QJsonObject>
 #include <QDateTime>
+#include <QFile>
 #include <QDebug>
 
 StorageManager::StorageManager(QObject *parent)
@@ -258,5 +259,30 @@ void StorageManager::downloadDataAsCsv()
 
 void StorageManager::openSourceCodeUrl()
 {
-    WasmHelper::openUrlInBrowser("https://github.com/mesw/phantasia");
+    openUrl("https://github.com/mesw/phantasia");
+}
+
+void StorageManager::openUrl(const QString &url)
+{
+    WasmHelper::openUrlInBrowser(url);
+}
+
+QString StorageManager::getGpl3LicenseText() const
+{
+    QFile file(":/LICENSE");
+    if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        return QString::fromUtf8(file.readAll());
+    }
+    return QStringLiteral("GNU General Public License v3.0 (GPLv3)\n\n"
+                          "This application is free software: you can redistribute it and/or modify "
+                          "it under the terms of the GNU General Public License as published by "
+                          "the Free Software Foundation, either version 3 of the License, or "
+                          "(at your option) any later version.\n\n"
+                          "This program is distributed in the hope that it will be useful, "
+                          "but WITHOUT ANY WARRANTY; without even the implied warranty of "
+                          "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the "
+                          "GNU General Public License for more details.\n\n"
+                          "Official license text: https://www.gnu.org/licenses/gpl-3.0.html\n"
+                          "Qt Framework licensing: https://www.qt.io/licensing/\n"
+                          "Source code: https://github.com/mesw/phantasia");
 }

@@ -55,6 +55,7 @@ qt_add_qml_module(appQtAphantasie
         qml/components/LayerAssemblyViewer.qml
         qml/components/ProgressChart.qml
         qml/components/DataEthicsModal.qml
+        qml/components/LicenseModal.qml
         qml/views/AssessmentView.qml
         qml/views/TrainingView.qml
         qml/views/ProgressView.qml
@@ -67,6 +68,25 @@ qt_add_resources(appQtAphantasie "translations"
         translations/aphantasia_de.qm
         translations/aphantasia_en.qm
 )
+
+# ── GNU General Public License v3.0 text ──────────────────────────────────
+set(LICENSE_FILE "${CMAKE_CURRENT_SOURCE_DIR}/../LICENSE")
+if(NOT EXISTS "${LICENSE_FILE}")
+    set(LICENSE_FILE "${CMAKE_SOURCE_DIR}/LICENSE")
+endif()
+
+if(EXISTS "${LICENSE_FILE}")
+    set_source_files_properties("${LICENSE_FILE}"
+        PROPERTIES QT_RESOURCE_ALIAS "LICENSE"
+    )
+    qt_add_resources(appQtAphantasie "applicense"
+        PREFIX "/"
+        FILES "${LICENSE_FILE}"
+    )
+    message(STATUS "License file embedded: ${LICENSE_FILE}")
+else()
+    message(WARNING "License file not found at ${LICENSE_FILE}")
+endif()
 
 # ── Emoji font ─────────────────────────────────────────────────────────────
 # Source: Google Noto Color Emoji font

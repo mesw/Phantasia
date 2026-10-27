@@ -199,6 +199,47 @@ Dialog {
                     width: parent.width
                     lineHeight: 1.3
                 }
+
+                // Section 4: Open Source & Qt License Notice
+                Rectangle {
+                    width: parent.width
+                    height: gplCol.height + 20
+                    color: Theme.bgInput
+                    radius: Theme.radiusMd
+                    border.color: Theme.borderDim
+                    border.width: 1
+
+                    Column {
+                        id: gplCol
+                        anchors.top: parent.top
+                        anchors.topMargin: 10
+                        anchors.left: parent.left
+                        anchors.leftMargin: 14
+                        anchors.right: parent.right
+                        anchors.rightMargin: 14
+                        spacing: 4
+
+                        Row {
+                            spacing: 6
+                            Text { text: "📦"; font.pixelSize: 13 }
+                            Text {
+                                text: qsTr("Open Source & Qt Framework License (GPLv3):")
+                                color: Theme.emeraldLight
+                                font.pixelSize: Theme.fontXs
+                                font.bold: true
+                            }
+                        }
+
+                        Text {
+                            text: qsTr("Phantasia is free software released under the GNU General Public License v3.0 (GPLv3). It incorporates the Qt 6 Toolkit (The Qt Company Ltd.) which is statically linked in the WebAssembly application binary. In compliance with GPLv3 Section 6, full source code and build instructions are publicly available on GitHub.")
+                            color: Theme.textSecondary
+                            font.pixelSize: Theme.fontXs
+                            wrapMode: Text.WordWrap
+                            width: parent.width
+                            lineHeight: 1.3
+                        }
+                    }
+                }
             }
         }
 
@@ -220,6 +261,34 @@ Dialog {
                 anchors.rightMargin: 24
                 anchors.verticalCenter: parent.verticalCenter
                 spacing: 12
+
+                Button {
+                    id: licenseBtn
+                    text: qsTr("License (GPLv3)")
+                    onClicked: licenseModal.open()
+                    activeFocusOnTab: true
+                    Keys.onReturnPressed: clicked()
+                    Keys.onSpacePressed: clicked()
+                    Accessible.role: Accessible.Button
+                    Accessible.name: text
+
+                    background: Rectangle {
+                        color: licenseBtn.hovered ? Theme.bgCardElevated : Theme.bgInput
+                        border.color: licenseBtn.activeFocus ? Theme.focusRing : Theme.borderBright
+                        border.width: licenseBtn.activeFocus ? 2 : 1
+                        radius: Theme.radiusMd
+                        implicitHeight: 44
+                        implicitWidth: 150
+                    }
+                    contentItem: Text {
+                        text: licenseBtn.text
+                        color: Theme.emeraldLight
+                        font.pixelSize: Theme.fontSm
+                        font.bold: true
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                    }
+                }
 
                 Button {
                     id: githubBtn
@@ -282,5 +351,9 @@ Dialog {
                 }
             }
         }
+    }
+
+    LicenseModal {
+        id: licenseModal
     }
 }

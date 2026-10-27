@@ -9,8 +9,8 @@
     </message>
     <message>
         <location filename="../qml/views/AboutView.qml" line="66" />
-        <source>Open-science platform combining validated psychometrics and neurocognitive imagery training.</source>
-        <translation>Open-science platform combining validated psychometrics and neurocognitive imagery training.</translation>
+        <source>Open-science platform combining validated psychometrics, neurocognitive training, and GPLv3 open source.</source>
+        <translation>Open-science platform combining validated psychometrics, neurocognitive training, and GPLv3 open source.</translation>
     </message>
     <message>
         <location filename="../qml/views/AboutView.qml" line="93" />
@@ -63,12 +63,42 @@
         <translation>Exhaustive synthesis of cognitive compensation strategies: propositional networks, spatial models, and dual-coding.</translation>
     </message>
     <message>
-        <location filename="../qml/views/AboutView.qml" line="217" />
+        <location filename="../qml/views/AboutView.qml" line="249" />
+        <source>Qt Framework &amp; Open Source Licensing (GNU GPLv3)</source>
+        <translation>Qt Framework &amp; Open Source Licensing (GNU GPLv3)</translation>
+    </message>
+    <message>
+        <location filename="../qml/views/AboutView.qml" line="255" />
+        <source>WebAssembly Static Linking &amp; Copyright Compliance</source>
+        <translation>WebAssembly Static Linking &amp; Copyright Compliance</translation>
+    </message>
+    <message>
+        <location filename="../qml/views/AboutView.qml" line="282" />
+        <source>• &lt;b&gt;GNU General Public License v3.0:&lt;/b&gt; Phantasia is free, open-source software licensed under the GNU General Public License version 3 (GPLv3).&lt;br&gt;&lt;br&gt;• &lt;b&gt;Qt Framework &amp; Static Linking:&lt;/b&gt; This application is built with the Qt 6 framework (Qt Quick, Qt Quick Controls 2, Qt QML, Qt Gui, Qt Core). In the WebAssembly build running in the browser, all Qt libraries and C++ application modules are statically linked into a single WebAssembly binary (&lt;code&gt;appQtAphantasie.wasm&lt;/code&gt;). Statically linking GPLv3 libraries combines them into a single executable work under GPLv3, which Phantasia adheres to in full.&lt;br&gt;&lt;br&gt;• &lt;b&gt;Source Code Availability (GPLv3 §6):&lt;/b&gt; In accordance with GPLv3 Section 6, the complete machine-readable source code, CMake scripts, assets, and instructions to rebuild and relink the application are freely accessible at &lt;b&gt;https://github.com/mesw/phantasia&lt;/b&gt;. Users have the full freedom to inspect, modify, and rebuild the application, or relink it with modified Qt versions.&lt;br&gt;&lt;br&gt;• &lt;b&gt;Trademark &amp; Copyright:&lt;/b&gt; Qt is a registered trademark of The Qt Company Ltd. and its subsidiaries. Qt is copyright © The Qt Company Ltd. and other contributors.&lt;br&gt;&lt;br&gt;• &lt;b&gt;Third-Party Assets:&lt;/b&gt; Noto Color Emoji font is copyright © Google LLC and licensed under the SIL Open Font License 1.1. PeakFrequency breathing pacer is developed by mesw under MIT/Open Access.&lt;br&gt;&lt;br&gt;• &lt;b&gt;Disclaimer of Warranty (GPLv3 §§ 15 &amp; 16):&lt;/b&gt; This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for details.</source>
+        <translation>• &lt;b&gt;GNU General Public License v3.0:&lt;/b&gt; Phantasia is free, open-source software licensed under the GNU General Public License version 3 (GPLv3).&lt;br&gt;&lt;br&gt;• &lt;b&gt;Qt Framework &amp; Static Linking:&lt;/b&gt; This application is built with the Qt 6 framework (Qt Quick, Qt Quick Controls 2, Qt QML, Qt Gui, Qt Core). In the WebAssembly build running in the browser, all Qt libraries and C++ application modules are statically linked into a single WebAssembly binary (&lt;code&gt;appQtAphantasie.wasm&lt;/code&gt;). Statically linking GPLv3 libraries combines them into a single executable work under GPLv3, which Phantasia adheres to in full.&lt;br&gt;&lt;br&gt;• &lt;b&gt;Source Code Availability (GPLv3 §6):&lt;/b&gt; In accordance with GPLv3 Section 6, the complete machine-readable source code, CMake scripts, assets, and instructions to rebuild and relink the application are freely accessible at &lt;b&gt;https://github.com/mesw/phantasia&lt;/b&gt;. Users have the full freedom to inspect, modify, and rebuild the application, or relink it with modified Qt versions.&lt;br&gt;&lt;br&gt;• &lt;b&gt;Trademark &amp; Copyright:&lt;/b&gt; Qt is a registered trademark of The Qt Company Ltd. and its subsidiaries. Qt is copyright © The Qt Company Ltd. and other contributors.&lt;br&gt;&lt;br&gt;• &lt;b&gt;Third-Party Assets:&lt;/b&gt; Noto Color Emoji font is copyright © Google LLC and licensed under the SIL Open Font License 1.1. PeakFrequency breathing pacer is developed by mesw under MIT/Open Access.&lt;br&gt;&lt;br&gt;• &lt;b&gt;Disclaimer of Warranty (GPLv3 §§ 15 &amp; 16):&lt;/b&gt; This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for details.</translation>
+    </message>
+    <message>
+        <location filename="../qml/views/AboutView.qml" line="301" />
+        <source>View Full GPLv3 License Text</source>
+        <translation>View Full GPLv3 License Text</translation>
+    </message>
+    <message>
+        <location filename="../qml/views/AboutView.qml" line="333" />
+        <source>Qt Licensing Terms ↗</source>
+        <translation>Qt Licensing Terms ↗</translation>
+    </message>
+    <message>
+        <location filename="../qml/views/AboutView.qml" line="361" />
+        <source>GNU GPLv3 Official Text ↗</source>
+        <translation>GNU GPLv3 Official Text ↗</translation>
+    </message>
+    <message>
+        <location filename="../qml/views/AboutView.qml" line="397" />
         <source>Download Participant Data (JSON / CSV)</source>
         <translation>Download Participant Data (JSON / CSV)</translation>
     </message>
     <message>
-        <location filename="../qml/views/AboutView.qml" line="253" />
+        <location filename="../qml/views/AboutView.qml" line="433" />
         <source>View Public Source Code on GitHub ↗</source>
         <translation>View Public Source Code on GitHub ↗</translation>
     </message>
@@ -340,11 +370,26 @@ Note its shape, complementary colors, and contour stability.</translation>
     </message>
     <message>
         <location filename="../qml/components/ConsentDialog.qml" line="226" />
+        <source>Open Source &amp; Qt Framework License (GPLv3):</source>
+        <translation>Open Source &amp; Qt Framework License (GPLv3):</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/ConsentDialog.qml" line="234" />
+        <source>Phantasia is free software released under the GNU General Public License v3.0 (GPLv3). It incorporates the Qt 6 Toolkit (The Qt Company Ltd.) which is statically linked in the WebAssembly application binary. In compliance with GPLv3 Section 6, full source code and build instructions are publicly available on GitHub.</source>
+        <translation>Phantasia is free software released under the GNU General Public License v3.0 (GPLv3). It incorporates the Qt 6 Toolkit (The Qt Company Ltd.) which is statically linked in the WebAssembly application binary. In compliance with GPLv3 Section 6, full source code and build instructions are publicly available on GitHub.</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/ConsentDialog.qml" line="267" />
+        <source>License (GPLv3)</source>
+        <translation>License (GPLv3)</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/ConsentDialog.qml" line="295" />
         <source>View Source Code (GitHub)</source>
         <translation>View Source Code (GitHub)</translation>
     </message>
     <message>
-        <location filename="../qml/components/ConsentDialog.qml" line="254" />
+        <location filename="../qml/components/ConsentDialog.qml" line="323" />
         <source>I Understand &amp; Consent to Participate</source>
         <translation>I Understand &amp; Consent to Participate</translation>
     </message>
@@ -433,6 +478,54 @@ Note its shape, complementary colors, and contour stability.</translation>
         <location filename="../qml/components/LayerAssemblyViewer.qml" line="230" />
         <source>4. Light</source>
         <translation>4. Light</translation>
+    </message>
+</context>
+<context>
+    <name>LicenseModal</name>
+    <message>
+        <location filename="../qml/components/LicenseModal.qml" line="64" />
+        <source>GNU General Public License v3.0 (GPLv3)</source>
+        <translation>GNU General Public License v3.0 (GPLv3)</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/LicenseModal.qml" line="71" />
+        <source>Qt Toolkit &amp; WebAssembly Static Linking Compliance</source>
+        <translation>Qt Toolkit &amp; WebAssembly Static Linking Compliance</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/LicenseModal.qml" line="90" />
+        <source>Close License Dialog</source>
+        <translation>Close License Dialog</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/LicenseModal.qml" line="132" />
+        <source>Open Source Static Linking Disclosure &amp; Legal Compliance:</source>
+        <translation>Open Source Static Linking Disclosure &amp; Legal Compliance:</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/LicenseModal.qml" line="139" />
+        <source>• &lt;b&gt;Qt Framework:&lt;/b&gt; This application is built with the Qt 6 Toolkit (The Qt Company Ltd.) under the GNU General Public License v3.0.&lt;br&gt;• &lt;b&gt;Static Linking:&lt;/b&gt; In WebAssembly, Qt libraries and C++ application code are compiled into a unified binary (&lt;code&gt;appQtAphantasie.wasm&lt;/code&gt;). As a statically linked work under GPLv3, Phantasia is released in its entirety under GPLv3.&lt;br&gt;• &lt;b&gt;Source Availability (GPLv3 §6):&lt;/b&gt; Full source code, build scripts, and relinking recipes are freely available at &lt;b&gt;https://github.com/mesw/phantasia&lt;/b&gt;.&lt;br&gt;• &lt;b&gt;Trademarks:&lt;/b&gt; Qt is a registered trademark of The Qt Company Ltd. and its subsidiaries.</source>
+        <translation>• &lt;b&gt;Qt Framework:&lt;/b&gt; This application is built with the Qt 6 Toolkit (The Qt Company Ltd.) under the GNU General Public License v3.0.&lt;br&gt;• &lt;b&gt;Static Linking:&lt;/b&gt; In WebAssembly, Qt libraries and C++ application code are compiled into a unified binary (&lt;code&gt;appQtAphantasie.wasm&lt;/code&gt;). As a statically linked work under GPLv3, Phantasia is released in its entirety under GPLv3.&lt;br&gt;• &lt;b&gt;Source Availability (GPLv3 §6):&lt;/b&gt; Full source code, build scripts, and relinking recipes are freely available at &lt;b&gt;https://github.com/mesw/phantasia&lt;/b&gt;.&lt;br&gt;• &lt;b&gt;Trademarks:&lt;/b&gt; Qt is a registered trademark of The Qt Company Ltd. and its subsidiaries.</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/LicenseModal.qml" line="161" />
+        <source>GNU GPLv3 (gnu.org) ↗</source>
+        <translation>GNU GPLv3 (gnu.org) ↗</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/LicenseModal.qml" line="189" />
+        <source>Qt Licensing Terms ↗</source>
+        <translation>Qt Licensing Terms ↗</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/LicenseModal.qml" line="217" />
+        <source>GitHub Repository ↗</source>
+        <translation>GitHub Repository ↗</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/LicenseModal.qml" line="294" />
+        <source>Close</source>
+        <translation>Close</translation>
     </message>
 </context>
 <context>

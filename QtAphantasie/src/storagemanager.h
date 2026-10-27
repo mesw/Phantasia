@@ -53,6 +53,8 @@ public:
     Q_INVOKABLE void downloadDataAsJson();
     Q_INVOKABLE void downloadDataAsCsv();
     Q_INVOKABLE void openSourceCodeUrl();
+    Q_INVOKABLE void openUrl(const QString &url);
+    Q_INVOKABLE QString getGpl3LicenseText() const;
 
 signals:
     void consentAcceptedChanged();

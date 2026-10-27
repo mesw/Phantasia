@@ -355,3 +355,23 @@ Aphantasie/
      ```
    * **Automated CI/CD Workflow (`.github/workflows/deploy.yml`):** Automatically builds and deploys via GitHub Actions on every push to `main`/`master`.
    * **Root Landing & Redirect (`index.html`):** Provides a serene dark-theme loader and instant redirect to the WebAssembly client when served from any HTTP root.
+
+---
+
+## 10. License & Qt GPLv3 Static Linking Notice
+
+### A. GNU General Public License v3.0 (GPLv3)
+**Phantasia** is free and open-source software released under the terms of the **GNU General Public License version 3 (GPLv3)**. See [`LICENSE`](LICENSE) for the full license text.
+
+### B. Qt Framework & WebAssembly Static Linking Disclosure
+* **Qt 6 Framework:** This application is developed using the Qt 6 framework (Qt Quick, Qt Quick Controls 2, Qt QML, Qt Gui, Qt Core) provided by The Qt Company Ltd.
+* **Static Linking Notice:** In the WebAssembly build distributed for web browsers, all Qt libraries and C++ application modules are statically compiled and linked into a single WebAssembly binary (`appQtAphantasie.wasm`). Under the terms of the GNU General Public License v3.0 (GPLv3), statically linking GPLv3 libraries combines them into a single executable work. Consequently, Phantasia is distributed in full compliance with the terms of GPLv3.
+* **Source Code Availability & Relinking Rights (GPLv3 Section 6):** In accordance with GPLv3 Section 6, the complete machine-readable source code, CMake build configurations (`CMakeLists.txt`), assets, and step-by-step rebuild/relink instructions are publicly and freely hosted at:  
+  **https://github.com/mesw/phantasia**  
+  Users and researchers have the unrestricted freedom to inspect, study, modify, rebuild, and relink the application with custom or modified Qt versions using the open-source MinGW and Emscripten toolchains.
+* **Trademark & Copyright Notice:** Qt is a registered trademark of The Qt Company Ltd. and its subsidiaries. Qt is copyright © The Qt Company Ltd. and other contributors. For further information on Qt licensing, refer to https://www.qt.io/licensing/.
+* **Third-Party Assets:**
+  * **Noto Color Emoji font:** Copyright © Google LLC. Licensed under the SIL Open Font License, Version 1.1.
+  * **PeakFrequency Breathing Pacer:** Resonance frequency breathing pacer resource by mesw, provided under MIT/Open Access.
+* **Warranty Disclaimer (GPLv3 §§ 15 & 16):**
+  > THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
