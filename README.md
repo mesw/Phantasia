@@ -12,7 +12,7 @@ Built with **C++** and **Qt Quick (QML)**, compiled to **Single-Threaded WebAsse
 
 ## 1. Project Motivation & Scope
 
-As documented in research literature and summarized in `wiki.txt`, aphantasia represents a significant cognitive variation in human subjective experience, affecting approximately 4% of the population. While traditionally considered a fixed trait, recent neuroscientific studies—notably by Rhodes et al. (2024) at the University of Plymouth—have demonstrated that mental imagery abilities can be systematically strengthened through structured, multi-week sensory training protocols.
+As documented in research literature and summarized in `https://de.wikipedia.org/wiki/Afantasie`, aphantasia represents a significant cognitive variation in human subjective experience, affecting approximately 4% of the population. While traditionally considered a fixed trait, recent neuroscientific studies—notably by Rhodes et al. (2024) at the University of Plymouth—have demonstrated that mental imagery abilities can be systematically strengthened through structured, multi-week sensory training protocols.
 
 This project delivers a unified, zero-install web application that:
 1. **Assesses** voluntary visual and multi-modal imagery vividness using scientifically validated instruments (VVIQ, Apple Test, and multi-sensory profiling).
@@ -287,13 +287,13 @@ To achieve zero installation, instant load times, and universal cross-device exe
 ```text
 Aphantasie/
 ├── README.md                     # Project outline, scientific basis, and architecture (this file)
-├── wiki.txt                      # Original Wikipedia reference article and citations
+├── -w-i-k-i-.-t-x-t-             # Original Wikipedia reference article and citations not included in this repo.
 ├── translations/                 # Bilingual translation catalogs (verified with linguist.exe)
 │   ├── aphantasia_de.ts          # German translation source (XML)
 │   ├── aphantasia_en.ts          # English translation source (XML)
 │   ├── aphantasia_de.qm          # Compiled binary German catalog
 │   └── aphantasia_en.qm          # Compiled binary English catalog
-├── sources/                      # Full-text research library (PDFs, books, HTML archives)
+├── sources/                      # Full-text research library (PDFs, books, HTML archives) Files not included in this repo.
 │   ├── SOURCES_INDEX.md          # Exhaustive catalog of all downloaded research papers & books
 │   ├── Dance_2022_Prevalence_...pdf
 │   ├── Zeman_2015_Lives_without_imagery_...pdf
