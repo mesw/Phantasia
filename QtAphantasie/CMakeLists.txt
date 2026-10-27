@@ -68,6 +68,34 @@ qt_add_resources(appQtAphantasie "translations"
         translations/aphantasia_en.qm
 )
 
+# ── Emoji font ─────────────────────────────────────────────────────────────
+# Source: Google Noto Color Emoji font
+# License: SIL Open Font License 1.1 — free to embed in any application.
+set(EMOJI_FONT "${CMAKE_CURRENT_SOURCE_DIR}/../third_party/noto-emoji/fonts/NotoColorEmoji.ttf")
+if(NOT EXISTS "${EMOJI_FONT}")
+    set(EMOJI_FONT "${CMAKE_SOURCE_DIR}/third_party/noto-emoji/fonts/NotoColorEmoji.ttf")
+endif()
+
+if(EXISTS "${EMOJI_FONT}")
+    set_source_files_properties("${EMOJI_FONT}"
+        PROPERTIES QT_RESOURCE_ALIAS "NotoColorEmoji.ttf"
+    )
+    qt_add_resources(appQtAphantasie "appfonts"
+        PREFIX "/fonts"
+        FILES "${EMOJI_FONT}"
+        BIG_RESOURCES
+    )
+    target_compile_definitions(appQtAphantasie PRIVATE HAS_EMOJI_FONT)
+    message(STATUS "Emoji font found: ${EMOJI_FONT}")
+else()
+    message(WARNING "Emoji font not found at ${EMOJI_FONT}")
+endif()
+
+if(EMSCRIPTEN)
+    target_compile_definitions(appQtAphantasie PRIVATE APHANTASIA_WASM)
+    target_link_options(appQtAphantasie PRIVATE "SHELL:-s ALLOW_MEMORY_GROWTH=1")
+endif()
+
 set_target_properties(appQtAphantasie PROPERTIES
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}

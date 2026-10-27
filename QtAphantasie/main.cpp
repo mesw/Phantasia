@@ -3,6 +3,8 @@
 #include <QQmlContext>
 #include <QQuickStyle>
 #include <QIcon>
+#include <QFontDatabase>
+#include <QDebug>
 #include "src/languagemanager.h"
 #include "src/storagemanager.h"
 #include "src/vviqengine.h"
@@ -19,6 +21,24 @@ int main(int argc, char *argv[])
     app.setOrganizationDomain("aphantasiastudy.org");
     app.setApplicationName("QtAphantasie");
     app.setApplicationVersion("1.0.0");
+
+#if defined(HAS_EMOJI_FONT) && (defined(APHANTASIA_WASM) || defined(__EMSCRIPTEN__))
+    const int fontId = QFontDatabase::addApplicationFont(
+        QStringLiteral(":/fonts/NotoColorEmoji.ttf"));
+    if (fontId == -1) {
+        qWarning("Failed to load NotoColorEmoji.ttf from resources");
+    } else {
+        const QStringList families = QFontDatabase::applicationFontFamilies(fontId);
+        for (const QString &fam : families) {
+            QFontDatabase::addApplicationFallbackFontFamily(QChar::Script_Common, fam);
+            QFontDatabase::addApplicationFallbackFontFamily(QChar::Script_Latin, fam);
+            QFontDatabase::addApplicationFallbackFontFamily(QChar::Script_Greek, fam);
+            QFontDatabase::addApplicationFallbackFontFamily(QChar::Script_Cyrillic, fam);
+            QFontDatabase::addApplicationFallbackFontFamily(QChar::Script_Han, fam);
+        }
+        qInfo() << "Loaded emoji font from resources, id:" << fontId << "families:" << families;
+    }
+#endif
 
     QQmlApplicationEngine engine;
 
