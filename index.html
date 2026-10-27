@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url=docs/index.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Phantasia - Diagnostic Assessment &amp; Neurocognitive Training</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0B0F19;
+            color: #F8FAFC;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            text-align: center;
+            padding: 24px;
+            max-width: 580px;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 26px;
+            color: #F8FAFC;
+            font-weight: 700;
+        }
+        .subtitle {
+            font-size: 14px;
+            color: #818CF8;
+            margin-top: -6px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 14px;
+            color: #94A3B8;
+            line-height: 1.6;
+        }
+        a {
+            color: #38BDF8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .spinner {
+            width: 44px;
+            height: 44px;
+            border: 3px solid rgba(99, 102, 241, 0.2);
+            border-top-color: #818CF8;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 20px auto;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        .meta-box {
+            margin-top: 24px;
+            padding: 18px;
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(51, 65, 85, 0.6);
+            border-radius: 12px;
+            font-size: 13px;
+            color: #94A3B8;
+            text-align: left;
+            line-height: 1.5;
+        }
+        .meta-links {
+            margin-top: 14px;
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+        }
+        .meta-links a {
+            color: #818CF8;
+            font-size: 12px;
+        }
+    </style>
+    <script>
+        (function() {
+            var path = window.location.pathname;
+            // If running inside docs/ or directly alongside appQtAphantasie.html
+            if (path.indexOf("docs") === -1 && !path.endsWith("appQtAphantasie.html")) {
+                if (window.location.protocol === "file:") {
+                    window.location.replace("docs/index.html");
+                    return;
+                }
+            }
+            window.location.replace("docs/index.html");
+        })();
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="spinner"></div>
+        <h1>Phantasia</h1>
+        <div class="subtitle">Diagnostic Assessment &amp; Neurocognitive Imagery Training</div>
+        <p>Launching WebAssembly client... If you are not redirected automatically, <a href="docs/index.html">click here to start</a>.</p>
+        
+        <div class="meta-box">
+            <div><strong>Research and Educational Instrument — Not a Medical Device</strong></div>
+            <div style="margin-top: 6px;">Empirical self-exploration platform evaluating the visual imagery spectrum (from Afantasie / Aphantasia to Hyperfantasie) via VVIQ (Marks 1973) and offering a progressive 6-week neurocognitive exercise curriculum (Rhodes et al. 2024).</div>
+            <div style="margin-top: 6px;"><strong>100% Client-Side WebAssembly:</strong> All evaluations and logs remain strictly in private browser storage (IndexedDB / localStorage).</div>
+            <div class="meta-links">
+                <a href="https://github.com/mesw/phantasia" target="_blank" rel="noopener">GitHub Repository (Source Code)</a>
+                <span>&bull;</span>
+                <a href="https://mesw.github.io/phantasia" target="_blank" rel="noopener">mesw.github.io/phantasia</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

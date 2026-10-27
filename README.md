@@ -347,5 +347,11 @@ Aphantasie/
    * Build daily guided training player with visual cues, timers, and instructions.
    * Build progress dashboard displaying longitudinal imagery scores.
 5. **CI/CD & Deployment:**
-   * Configure GitHub Actions workflow for automated CMake build via Emscripten.
-   * Deploy compiled WebAssembly artifacts directly to GitHub Pages.
+   * **One-Click Local Deployment Script (`publish-gh-pages.ps1`):** Deploys the local WebAssembly build directly to the `gh-pages` branch on GitHub Pages without consuming GitHub Actions CI minutes:
+     ```powershell
+     .\publish-gh-pages.ps1
+     # Or verify locally without pushing:
+     .\publish-gh-pages.ps1 -NoPush
+     ```
+   * **Automated CI/CD Workflow (`.github/workflows/deploy.yml`):** Automatically builds and deploys via GitHub Actions on every push to `main`/`master`.
+   * **Root Landing & Redirect (`index.html`):** Provides a serene dark-theme loader and instant redirect to the WebAssembly client when served from any HTTP root.
