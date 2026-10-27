@@ -33,11 +33,6 @@
         <translation>Der 16-Item-Goldstandard-Fragebogen zur Erfassung der willentlichen visuellen Vorstellungskraft.</translation>
     </message>
     <message>
-        <location filename="../qml/views/AboutView.qml" line="143" />
-        <source>Formally established the medical condition name Aphantasia and standardized VVIQ diagnostic classification.</source>
-        <translation>Etablierte den Fachbegriff Afantasie und standardisierte die diagnostische VVIQ-Klassifikation.</translation>
-    </message>
-    <message>
         <location filename="../qml/views/AboutView.qml" line="147" />
         <source>Established standard population norms: scores &lt; 32 indicate marked aphantasia (score 16 = total aphantasia); population mean = 56.8.</source>
         <translation>Etablierte Populationsnormen: Werte &lt; 32 zeigen Afantasie an (Wert 16 = vollständige Afantasie; Mittelwert = 56,8).</translation>
@@ -68,14 +63,19 @@
         <translation>Umfassende Dissertation über kognitive Kompensationsstrategien: propositionale Netzwerke und Spatial-Scaffolding.</translation>
     </message>
     <message>
-        <location filename="../qml/views/AboutView.qml" line="216" />
+        <location filename="../qml/views/AboutView.qml" line="217" />
         <source>Download Participant Data (JSON / CSV)</source>
         <translation>Teilnehmerdaten herunterladen (JSON / CSV)</translation>
     </message>
     <message>
-        <location filename="../qml/views/AboutView.qml" line="235" />
+        <location filename="../qml/views/AboutView.qml" line="253" />
         <source>View Public Source Code on GitHub ↗</source>
         <translation>Öffentlichen Quellcode auf GitHub ansehen ↗</translation>
+    </message>
+    <message>
+        <location filename="../qml/views/AboutView.qml" line="143" />
+        <source>Formally established the term Aphantasia and standardized VVIQ classification.</source>
+        <translation>Etablierte den Fachbegriff Afantasie und standardisierte die VVIQ-Klassifikation.</translation>
     </message>
 </context>
 <context>
@@ -98,12 +98,12 @@ Note its shape, complementary colors, and contour stability.</source>
 Achten Sie auf Form, Komplementärfarben und Umrissstabilität.</translation>
     </message>
     <message>
-        <location filename="../qml/components/AfterimageViewer.qml" line="235" />
+        <location filename="../qml/components/AfterimageViewer.qml" line="236" />
         <source>Afterimage Faded (Log %1s)</source>
         <translation>Nachbild verblasst (%1s protokollieren)</translation>
     </message>
     <message>
-        <location filename="../qml/components/AfterimageViewer.qml" line="255" />
+        <location filename="../qml/components/AfterimageViewer.qml" line="265" />
         <source>Restart Fixation</source>
         <translation>Fixierung neustarten</translation>
     </message>
@@ -111,57 +111,170 @@ Achten Sie auf Form, Komplementärfarben und Umrissstabilität.</translation>
 <context>
     <name>AppleTestCard</name>
     <message>
-        <location filename="../qml/components/AppleTestCard.qml" line="172" />
+        <location filename="../qml/components/AppleTestCard.qml" line="24" />
+        <source>Level %1: %2</source>
+        <translation type="unfinished">Level %1: %2</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/AppleTestCard.qml" line="173" />
         <source>Absolute Blackness</source>
         <translation>Vollkommene Dunkelheit</translation>
     </message>
 </context>
 <context>
+    <name>AssessmentReport</name>
+    <message>
+        <location filename="../qml/components/AssessmentReport.qml" line="85" />
+        <source>out of 80</source>
+        <translation>von 80 Punkten</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/AssessmentReport.qml" line="118" />
+        <source>Percentile: %1%</source>
+        <translation>Prozentrang: %1%</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/AssessmentReport.qml" line="196" />
+        <source>Cross-Sensory Modality Profile (Scale 1 to 5)</source>
+        <translation>Sinnesmodalitäten-Profil (Skala 1 bis 5)</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/AssessmentReport.qml" line="209" />
+        <source>Visual (VVIQ)</source>
+        <translation>Visuell (VVIQ)</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/AssessmentReport.qml" line="210" />
+        <source>Auditory</source>
+        <translation>Auditorisch (Hören)</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/AssessmentReport.qml" line="211" />
+        <source>Tactile</source>
+        <translation>Taktil (Fühlen)</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/AssessmentReport.qml" line="212" />
+        <source>Kinesthetic</source>
+        <translation>Kinästhetisch (Motorik)</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/AssessmentReport.qml" line="213" />
+        <source>Olfactory</source>
+        <translation>Olfaktorisch (Riechen)</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/AssessmentReport.qml" line="214" />
+        <source>Gustatory</source>
+        <translation>Gustatorisch (Schmecken)</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/AssessmentReport.qml" line="215" />
+        <source>Emotional</source>
+        <translation>Emotional (Körpergefühl)</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/AssessmentReport.qml" line="266" />
+        <source>Start 6-Week Functional Training →</source>
+        <translation>6-Wochen-Training starten →</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/AssessmentReport.qml" line="294" />
+        <source>Download Participant Data</source>
+        <translation>Teilnehmerdaten herunterladen</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/AssessmentReport.qml" line="330" />
+        <source>Retake Test</source>
+        <translation>Test wiederholen</translation>
+    </message>
+</context>
+<context>
     <name>AssessmentView</name>
     <message>
-        <location filename="../qml/views/AssessmentView.qml" line="35" />
+        <location filename="../qml/views/AssessmentView.qml" line="60" />
         <source>Step 1 of 3: Intuitive Onboarding ("The Apple Test")</source>
         <translation>Schritt 1 von 3: Intuitiver Einstieg ("Der Apfel-Test")</translation>
     </message>
     <message>
-        <location filename="../qml/views/AssessmentView.qml" line="36" />
+        <location filename="../qml/views/AssessmentView.qml" line="61" />
         <source>Step 2 of 3: Standardized VVIQ Evaluation (Marks 1973)</source>
         <translation>Schritt 2 von 3: Standardisierte VVIQ-Erfassung (Marks 1973)</translation>
     </message>
     <message>
-        <location filename="../qml/views/AssessmentView.qml" line="37" />
+        <location filename="../qml/views/AssessmentView.qml" line="62" />
         <source>Step 3 of 3: Multi-Sensory Modality Check (Dawes et al. 2024)</source>
         <translation>Schritt 3 von 3: Multisensorische Profilprüfung (Dawes et al. 2024)</translation>
     </message>
     <message>
-        <location filename="../qml/views/AssessmentView.qml" line="38" />
-        <source>Diagnostic Assessment Report &amp; Baseline Profile</source>
-        <translation>Diagnostischer Befundbericht &amp; Ausgangsprofil</translation>
-    </message>
-    <message>
-        <location filename="../qml/views/AssessmentView.qml" line="50" />
+        <location filename="../qml/views/AssessmentView.qml" line="75" />
         <source>Close your eyes, imagine a red apple on a table, and select the illustration closest to your subjective experience.</source>
         <translation>Schließen Sie die Augen, stellen Sie sich einen roten Apfel auf einem Tisch vor und wählen Sie die Illustration, die Ihrem Erleben am nächsten kommt.</translation>
     </message>
     <message>
-        <location filename="../qml/views/AssessmentView.qml" line="51" />
+        <location filename="../qml/views/AssessmentView.qml" line="76" />
         <source>16 standardized psychometric items across 4 vivid real-world visualization scenarios.</source>
         <translation>16 standardisierte psychometrische Items in 4 anschaulichen Alltagsszenarien.</translation>
     </message>
     <message>
-        <location filename="../qml/views/AssessmentView.qml" line="52" />
+        <location filename="../qml/views/AssessmentView.qml" line="77" />
         <source>Evaluating non-visual sensory modalities (hearing, touch, movement, smell, taste, emotion).</source>
         <translation>Erfassung nicht-visueller Sinnesmodalitäten (Hören, Tasten, Motorik, Riechen, Schmecken, Emotion).</translation>
     </message>
     <message>
-        <location filename="../qml/views/AssessmentView.qml" line="53" />
+        <location filename="../qml/views/AssessmentView.qml" line="78" />
         <source>Your validated cognitive vividness classification, percentile rank, and training recommendations.</source>
         <translation>Ihre wissenschaftliche Klassifikation der Vorstellungskraft, Prozentrang und Trainingsempfehlungen.</translation>
     </message>
     <message>
-        <location filename="../qml/views/AssessmentView.qml" line="109" />
-        <source>Confirm Selection &amp; Continue to Full VVIQ Evaluation (Step 2) →</source>
-        <translation>Auswahl bestätigen &amp; weiter zum vollständigen VVIQ-Test (Schritt 2) →</translation>
+        <location filename="../qml/views/AssessmentView.qml" line="96" />
+        <source>Apple</source>
+        <translation>Apfel</translation>
+    </message>
+    <message>
+        <location filename="../qml/views/AssessmentView.qml" line="97" />
+        <source>VVIQ</source>
+        <translation>VVIQ</translation>
+    </message>
+    <message>
+        <location filename="../qml/views/AssessmentView.qml" line="98" />
+        <source>Multisensory</source>
+        <translation>Multisensorik</translation>
+    </message>
+    <message>
+        <location filename="../qml/views/AssessmentView.qml" line="99" />
+        <source>Report</source>
+        <translation>Bericht</translation>
+    </message>
+    <message>
+        <location filename="../qml/views/AssessmentView.qml" line="274" />
+        <source>← Back to Step 1 (Apple Test)</source>
+        <translation>← Zurück zu Schritt 1 (Apfel-Test)</translation>
+    </message>
+    <message>
+        <location filename="../qml/views/AssessmentView.qml" line="274" />
+        <source>← Back to Step 2 (VVIQ)</source>
+        <translation>← Zurück zu Schritt 2 (VVIQ)</translation>
+    </message>
+    <message>
+        <location filename="../qml/views/AssessmentView.qml" line="325" />
+        <source>Selected Apple Level %1 of 5</source>
+        <translation>Ausgewählte Apfel-Stufe %1 von 5</translation>
+    </message>
+    <message>
+        <location filename="../qml/views/AssessmentView.qml" line="333" />
+        <source>Keyboard: Press 1-5 to select, Enter to advance</source>
+        <translation>Tastatur: 1–5 zur Auswahl, Eingabetaste zum Fortfahren</translation>
+    </message>
+    <message>
+        <location filename="../qml/views/AssessmentView.qml" line="348" />
+        <source>Confirm Selection &amp; Continue to Step 2 (VVIQ) →</source>
+        <translation>Auswahl bestätigen &amp; weiter zu Schritt 2 (VVIQ) →</translation>
+    </message>
+    <message>
+        <location filename="../qml/views/AssessmentView.qml" line="63" />
+        <source>Assessment Summary &amp; Baseline Profile</source>
+        <translation>Auswertungsbericht &amp; Ausgangsprofil</translation>
     </message>
 </context>
 <context>
@@ -226,19 +339,19 @@ Achten Sie auf Form, Komplementärfarben und Umrissstabilität.</translation>
         <translation>Wissenschaftliche Grundlagen &amp; Transparenz:</translation>
     </message>
     <message>
-        <location filename="../qml/components/ConsentDialog.qml" line="195" />
-        <source>The diagnostics adapt the gold-standard Visual Imagery Questionnaire (VVIQ; Marks 1973) and multisensory profiling (Dawes et al. 2024). The 6-week curriculum operationalizes Functional Imagery Training (FIT) derived from neuroscientific intervention protocols (Rhodes et al. 2024; Monzel 2025; Zeman 2024). Full algorithms and scoring rubrics are openly auditable via the public GitHub repository.</source>
-        <translation>Die Diagnostik adaptiert den standardisierten Visual Imagery Questionnaire (VVIQ; Marks 1973) sowie multisensorisches Profiling (Dawes et al. 2024). Das 6-Wochen-Curriculum operationalisiert Functional Imagery Training (FIT) basierend auf neurowissenschaftlichen Interventionsprotokollen (Rhodes et al. 2024; Monzel 2025; Zeman 2024). Sämtliche Algorithmen und Bewertungsrubriken sind über das öffentliche GitHub-Repository transparent einsehbar.</translation>
-    </message>
-    <message>
-        <location filename="../qml/components/ConsentDialog.qml" line="225" />
+        <location filename="../qml/components/ConsentDialog.qml" line="226" />
         <source>View Source Code (GitHub)</source>
         <translation>Quellcode ansehen (GitHub)</translation>
     </message>
     <message>
-        <location filename="../qml/components/ConsentDialog.qml" line="244" />
+        <location filename="../qml/components/ConsentDialog.qml" line="254" />
         <source>I Understand &amp; Consent to Participate</source>
         <translation>Ich verstehe und willige in die Teilnahme ein</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/ConsentDialog.qml" line="195" />
+        <source>The evaluations adapt the gold-standard Visual Imagery Questionnaire (VVIQ; Marks 1973) and multisensory profiling (Dawes et al. 2024). The 6-week curriculum operationalizes Functional Imagery Training (FIT) derived from neuroscientific intervention protocols (Rhodes et al. 2024; Monzel 2025; Zeman 2024). Full algorithms and scoring rubrics are openly auditable via the public GitHub repository.</source>
+        <translation>Die Erfassung adaptiert den standardisierten Visual Imagery Questionnaire (VVIQ; Marks 1973) sowie multisensorisches Profiling (Dawes et al. 2024). Das 6-Wochen-Curriculum operationalisiert Functional Imagery Training (FIT) basierend auf neurowissenschaftlichen Interventionsprotokollen (Rhodes et al. 2024; Monzel 2025; Zeman 2024). Sämtliche Algorithmen und Bewertungsrubriken sind über das öffentliche GitHub-Repository transparent einsehbar.</translation>
     </message>
 </context>
 <context>
@@ -249,148 +362,77 @@ Achten Sie auf Form, Komplementärfarben und Umrissstabilität.</translation>
         <translation>Datensouveränität &amp; Export-Zentrum</translation>
     </message>
     <message>
-        <location filename="../qml/components/DataEthicsModal.qml" line="90" />
+        <location filename="../qml/components/DataEthicsModal.qml" line="71" />
+        <source>Close Dialog</source>
+        <translation type="unfinished">Close Dialog</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/DataEthicsModal.qml" line="101" />
         <source>Your data belongs exclusively to you. All assessments, VVIQ scores, and daily training logs are stored strictly inside your browser's private local sandbox. No data is ever transmitted to remote servers.</source>
         <translation>Ihre Daten gehören ausschließlich Ihnen. Sämtliche Testergebnisse, VVIQ-Werte und Trainingsprotokolle verbleiben in der lokalen Sandbox Ihres Browsers und werden niemals an Server übertragen.</translation>
     </message>
     <message>
-        <location filename="../qml/components/DataEthicsModal.qml" line="113" />
+        <location filename="../qml/components/DataEthicsModal.qml" line="124" />
         <source>Export Participant Records:</source>
         <translation>Teilnehmerdaten exportieren:</translation>
     </message>
     <message>
-        <location filename="../qml/components/DataEthicsModal.qml" line="123" />
+        <location filename="../qml/components/DataEthicsModal.qml" line="135" />
         <source>Download JSON (.json)</source>
         <translation>JSON herunterladen (.json)</translation>
     </message>
     <message>
-        <location filename="../qml/components/DataEthicsModal.qml" line="144" />
+        <location filename="../qml/components/DataEthicsModal.qml" line="165" />
         <source>Download CSV (.csv)</source>
         <translation>CSV herunterladen (.csv)</translation>
     </message>
     <message>
-        <location filename="../qml/components/DataEthicsModal.qml" line="192" />
+        <location filename="../qml/components/DataEthicsModal.qml" line="220" />
         <source>Erase All Local Participant Data</source>
         <translation>Alle lokalen Teilnehmerdaten löschen</translation>
     </message>
     <message>
-        <location filename="../qml/components/DataEthicsModal.qml" line="202" />
+        <location filename="../qml/components/DataEthicsModal.qml" line="231" />
         <source>Clear All Data</source>
         <translation>Alle Daten löschen</translation>
     </message>
     <message>
-        <location filename="../qml/components/DataEthicsModal.qml" line="228" />
+        <location filename="../qml/components/DataEthicsModal.qml" line="265" />
         <source>Are you sure? This will irreversibly delete all your test scores and training logs from this browser.</source>
         <translation>Sind Sie sicher? Dies löscht alle Testergebnisse und Trainingsprotokolle unwiderruflich aus diesem Browser.</translation>
     </message>
     <message>
-        <location filename="../qml/components/DataEthicsModal.qml" line="239" />
+        <location filename="../qml/components/DataEthicsModal.qml" line="277" />
         <source>Yes, Permanently Delete All Data</source>
         <translation>Ja, alle Daten unwiderruflich löschen</translation>
     </message>
     <message>
-        <location filename="../qml/components/DataEthicsModal.qml" line="262" />
+        <location filename="../qml/components/DataEthicsModal.qml" line="309" />
         <source>Cancel</source>
         <translation>Abbrechen</translation>
     </message>
 </context>
 <context>
-    <name>DiagnosticReport</name>
-    <message>
-        <location filename="../qml/components/DiagnosticReport.qml" line="87" />
-        <source>out of 80</source>
-        <translation>von 80 Punkten</translation>
-    </message>
-    <message>
-        <location filename="../qml/components/DiagnosticReport.qml" line="120" />
-        <source>Percentile: %1%</source>
-        <translation>Prozentrang: %1%</translation>
-    </message>
-    <message>
-        <location filename="../qml/components/DiagnosticReport.qml" line="198" />
-        <source>Cross-Sensory Modality Profile (Scale 1 to 5)</source>
-        <translation>Sinnesmodalitäten-Profil (Skala 1 bis 5)</translation>
-    </message>
-    <message>
-        <location filename="../qml/components/DiagnosticReport.qml" line="211" />
-        <source>Visual (VVIQ)</source>
-        <translation>Visuell (VVIQ)</translation>
-    </message>
-    <message>
-        <location filename="../qml/components/DiagnosticReport.qml" line="212" />
-        <source>Auditory</source>
-        <translation>Auditorisch (Hören)</translation>
-    </message>
-    <message>
-        <location filename="../qml/components/DiagnosticReport.qml" line="213" />
-        <source>Tactile</source>
-        <translation>Taktil (Fühlen)</translation>
-    </message>
-    <message>
-        <location filename="../qml/components/DiagnosticReport.qml" line="214" />
-        <source>Kinesthetic</source>
-        <translation>Kinästhetisch (Motorik)</translation>
-    </message>
-    <message>
-        <location filename="../qml/components/DiagnosticReport.qml" line="215" />
-        <source>Olfactory</source>
-        <translation>Olfaktorisch (Riechen)</translation>
-    </message>
-    <message>
-        <location filename="../qml/components/DiagnosticReport.qml" line="216" />
-        <source>Gustatory</source>
-        <translation>Gustatorisch (Schmecken)</translation>
-    </message>
-    <message>
-        <location filename="../qml/components/DiagnosticReport.qml" line="217" />
-        <source>Emotional</source>
-        <translation>Emotional (Körpergefühl)</translation>
-    </message>
-    <message>
-        <location filename="../qml/components/DiagnosticReport.qml" line="267" />
-        <source>Start 6-Week Functional Training →</source>
-        <translation>6-Wochen-Training starten →</translation>
-    </message>
-    <message>
-        <location filename="../qml/components/DiagnosticReport.qml" line="286" />
-        <source>Download Participant Data</source>
-        <translation>Teilnehmerdaten herunterladen</translation>
-    </message>
-    <message>
-        <location filename="../qml/components/DiagnosticReport.qml" line="305" />
-        <source>Retake Test</source>
-        <translation>Test wiederholen</translation>
-    </message>
-</context>
-<context>
     <name>LayerAssemblyViewer</name>
     <message>
-        <location filename="../qml/components/LayerAssemblyViewer.qml" line="136" />
+        <location filename="../qml/components/LayerAssemblyViewer.qml" line="137" />
         <source>1. Outline</source>
         <translation>1. Umriss</translation>
     </message>
     <message>
-        <location filename="../qml/components/LayerAssemblyViewer.qml" line="159" />
+        <location filename="../qml/components/LayerAssemblyViewer.qml" line="168" />
         <source>2. Color</source>
         <translation>2. Farbe</translation>
     </message>
     <message>
-        <location filename="../qml/components/LayerAssemblyViewer.qml" line="182" />
+        <location filename="../qml/components/LayerAssemblyViewer.qml" line="199" />
         <source>3. Texture</source>
         <translation>3. Textur</translation>
     </message>
     <message>
-        <location filename="../qml/components/LayerAssemblyViewer.qml" line="205" />
+        <location filename="../qml/components/LayerAssemblyViewer.qml" line="230" />
         <source>4. Light</source>
         <translation>4. Licht</translation>
-    </message>
-</context>
-<context>
-    <name>Main</name>
-    <message>
-        <location filename="../Main.qml" line="14" />
-        <source>Aphantasia Platform | Diagnostic Assessment &amp; Neurocognitive Training</source>
-        <translation>Afantasie-Plattform | Diagnostik &amp; Neurokognitives Training</translation>
     </message>
 </context>
 <context>
@@ -401,22 +443,22 @@ Achten Sie auf Form, Komplementärfarben und Umrissstabilität.</translation>
         <translation>Rotation: %1°</translation>
     </message>
     <message>
-        <location filename="../qml/components/MentalRotationViewer.qml" line="160" />
+        <location filename="../qml/components/MentalRotationViewer.qml" line="161" />
         <source>Pause Spin</source>
         <translation>Rotation anhalten</translation>
     </message>
     <message>
-        <location filename="../qml/components/MentalRotationViewer.qml" line="160" />
+        <location filename="../qml/components/MentalRotationViewer.qml" line="161" />
         <source>Auto Spin</source>
         <translation>Auto-Drehung</translation>
     </message>
     <message>
-        <location filename="../qml/components/MentalRotationViewer.qml" line="182" />
+        <location filename="../qml/components/MentalRotationViewer.qml" line="191" />
         <source>Switch to 2D</source>
         <translation>Zu 2D wechseln</translation>
     </message>
     <message>
-        <location filename="../qml/components/MentalRotationViewer.qml" line="182" />
+        <location filename="../qml/components/MentalRotationViewer.qml" line="191" />
         <source>Switch to 3D</source>
         <translation>Zu 3D wechseln</translation>
     </message>
@@ -434,32 +476,22 @@ Achten Sie auf Form, Komplementärfarben und Umrissstabilität.</translation>
         <translation>Prüfung nicht-visueller Sinneskanäle zur Bestimmung, ob die Afantasie unimodal (rein visuell) oder multisensorisch ausgeprägt ist.</translation>
     </message>
     <message>
-        <location filename="../qml/components/MultisensoryCheck.qml" line="177" />
-        <source>Generate Diagnostic Report &amp; Baseline Profile →</source>
-        <translation>Befundbericht &amp; Ausgangsprofil erstellen →</translation>
+        <location filename="../qml/components/MultisensoryCheck.qml" line="194" />
+        <source>Generate Assessment Summary &amp; Baseline Profile →</source>
+        <translation>Auswertungsbericht &amp; Ausgangsprofil erstellen →</translation>
     </message>
 </context>
 <context>
     <name>NavigationHeader</name>
     <message>
         <location filename="../qml/components/NavigationHeader.qml" line="56" />
-        <source>Aphantasia</source>
-        <translation>Afantasie</translation>
+        <source>Phantasia</source>
+        <translation>Phantasia</translation>
     </message>
     <message>
         <location filename="../qml/components/NavigationHeader.qml" line="72" />
         <source>RESEARCH</source>
         <translation>FORSCHUNG</translation>
-    </message>
-    <message>
-        <location filename="../qml/components/NavigationHeader.qml" line="81" />
-        <source>Diagnostic Assessment &amp; Neurocognitive Training</source>
-        <translation>Diagnostische Erfassung &amp; Neurokognitives Training</translation>
-    </message>
-    <message>
-        <location filename="../qml/components/NavigationHeader.qml" line="95" />
-        <source>Diagnostic</source>
-        <translation>Diagnostik</translation>
     </message>
     <message>
         <location filename="../qml/components/NavigationHeader.qml" line="96" />
@@ -477,14 +509,24 @@ Achten Sie auf Form, Komplementärfarben und Umrissstabilität.</translation>
         <translation>Ethik &amp; Quellen</translation>
     </message>
     <message>
-        <location filename="../qml/components/NavigationHeader.qml" line="159" />
+        <location filename="../qml/components/NavigationHeader.qml" line="169" />
         <source>Download My Data</source>
         <translation>Meine Daten herunterladen</translation>
     </message>
     <message>
-        <location filename="../qml/components/NavigationHeader.qml" line="188" />
+        <location filename="../qml/components/NavigationHeader.qml" line="206" />
         <source>Source Code</source>
         <translation>Quellcode</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/NavigationHeader.qml" line="81" />
+        <source>Vividness Assessment &amp; Neurocognitive Training</source>
+        <translation>Kognitive Profilierung &amp; Neurokognitives Training</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/NavigationHeader.qml" line="95" />
+        <source>Assessment</source>
+        <translation>Erfassung</translation>
     </message>
 </context>
 <context>
@@ -553,34 +595,34 @@ Achten Sie auf Form, Komplementärfarben und Umrissstabilität.</translation>
         <translation>Verfolgen Sie Ihre Vorstellungskraft, tägliche Bewertungen und den Vergleich zur Ausgangsmessung.</translation>
     </message>
     <message>
-        <location filename="../qml/views/ProgressView.qml" line="39" />
+        <location filename="../qml/views/ProgressView.qml" line="40" />
         <source>Export Data</source>
         <translation>Daten exportieren</translation>
     </message>
     <message>
-        <location filename="../qml/views/ProgressView.qml" line="79" />
+        <location filename="../qml/views/ProgressView.qml" line="96" />
         <source>Standardized Evaluation Log (VVIQ &amp; Apple Test)</source>
         <translation>Protokoll der standardisierten Tests (VVIQ &amp; Apfel-Test)</translation>
     </message>
     <message>
-        <location filename="../qml/views/ProgressView.qml" line="123" />
+        <location filename="../qml/views/ProgressView.qml" line="140" />
         <source>Apple Test: Level %1</source>
         <translation>Apfel-Test: Stufe %1</translation>
     </message>
     <message>
-        <location filename="../qml/views/ProgressView.qml" line="130" />
+        <location filename="../qml/views/ProgressView.qml" line="147" />
         <source>VVIQ Score: %1 / 80</source>
         <translation>VVIQ-Wert: %1 / 80</translation>
     </message>
     <message>
-        <location filename="../qml/views/ProgressView.qml" line="146" />
+        <location filename="../qml/views/ProgressView.qml" line="163" />
         <source>%1% Rank</source>
         <translation>%1% Rang</translation>
     </message>
     <message>
-        <location filename="../qml/views/ProgressView.qml" line="169" />
-        <source>No baseline assessment recorded yet. Launch the Diagnostic tab to complete your initial evaluation.</source>
-        <translation>Bislang kein Ausgangstest erfasst. Starten Sie im Reiter 'Diagnostik', um Ihre Basismessung durchzuführen.</translation>
+        <location filename="../qml/views/ProgressView.qml" line="186" />
+        <source>No baseline assessment recorded yet. Launch the Assessment tab to complete your initial evaluation.</source>
+        <translation>Bislang kein Ausgangstest erfasst. Starten Sie im Reiter 'Erfassung', um Ihre Basismessung durchzuführen.</translation>
     </message>
 </context>
 <context>
@@ -611,19 +653,19 @@ Achten Sie auf Form, Komplementärfarben und Umrissstabilität.</translation>
         <translation>Serie: %1 Tage</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingDashboard.qml" line="109" />
+        <location filename="../qml/components/TrainingDashboard.qml" line="110" />
         <source>Launch Today's Session
 (Week %1, Day %2) →</source>
         <translation>Heutige Einheit starten
 (Woche %1, Tag %2) →</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingDashboard.qml" line="133" />
+        <location filename="../qml/components/TrainingDashboard.qml" line="142" />
         <source>Curriculum Schedule &amp; Modules:</source>
         <translation>Curriculum-Ablauf &amp; Module:</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingDashboard.qml" line="239" />
+        <location filename="../qml/components/TrainingDashboard.qml" line="248" />
         <source>Day %1</source>
         <translation>Tag %1</translation>
     </message>
@@ -1589,117 +1631,132 @@ Achten Sie auf Form, Komplementärfarben und Umrissstabilität.</translation>
         <translation>Woche %1, Tag %2 • %3</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingSessionPlayer.qml" line="76" />
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="77" />
         <source>Exit Session</source>
         <translation>Einheit verlassen</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingSessionPlayer.qml" line="102" />
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="111" />
         <source>1. Breath Calibration (2m)</source>
         <translation>1. Atemkalibrierung (2m)</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingSessionPlayer.qml" line="103" />
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="112" />
         <source>2. Guided Exercise (8m)</source>
         <translation>2. Angeleitete Übung (8m)</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingSessionPlayer.qml" line="104" />
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="113" />
         <source>3. Reflection &amp; Rating (2m)</source>
         <translation>3. Reflexion &amp; Bewertung (2m)</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingSessionPlayer.qml" line="173" />
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="220" />
+        <source>PeakFrequency: Resonance Breathing Pacer</source>
+        <translation>PeakFrequency: Resonanzfrequenz-Atemtaktgeber</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="226" />
+        <source>Open external guided resonance pacer (~5.5-6 bpm / 0.1 Hz) ↗</source>
+        <translation>Externen geführten Resonanztaktgeber (~5,5–6 Atemzüge/Min., 0,1 Hz) öffnen ↗</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="235" />
+        <source>Open Pacer ↗</source>
+        <translation>Taktgeber öffnen ↗</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="266" />
         <source>Proceed to Exercise (Phase 2) →</source>
         <translation>Weiter zur Übung (Phase 2) →</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingSessionPlayer.qml" line="256" />
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="357" />
         <source>Scientific Basis: %1</source>
         <translation>Wissenschaftliche Grundlage: %1</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingSessionPlayer.qml" line="283" />
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="384" />
         <source>Logged afterimage duration: %1s</source>
         <translation>Protokollierte Nachbilddauer: %1s</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingSessionPlayer.qml" line="338" />
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="439" />
         <source>Guided Neurocognitive Contemplation</source>
         <translation>Angeleitete neurokognitive Kontemplation</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingSessionPlayer.qml" line="346" />
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="447" />
         <source>Close your eyes or soften your gaze. Work through the step-by-step instructions above. Avoid forcing mental imagery; focus attentively on physical textures, spatial orientations, or somatic feelings.</source>
         <translation>Schließen Sie die Augen oder richten Sie den Blick ins Leere. Folgen Sie den Schritten oben. Erzwingen Sie keine Bilder; fokussieren Sie auf Texturen, räumliche Orientierung oder Körperempfindungen.</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingSessionPlayer.qml" line="365" />
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="466" />
         <source>Exercise Time Remaining: %1:%2</source>
         <translation>Verbleibende Übungszeit: %1:%2</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingSessionPlayer.qml" line="372" />
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="474" />
         <source>Pause</source>
         <translation>Pause</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingSessionPlayer.qml" line="372" />
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="474" />
         <source>Resume</source>
         <translation>Fortsetzen</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingSessionPlayer.qml" line="393" />
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="504" />
         <source>Proceed to Reflection (Phase 3) →</source>
         <translation>Weiter zur Reflexion (Phase 3) →</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingSessionPlayer.qml" line="451" />
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="570" />
         <source>1. How vivid, stable, or clear was your mental experience today?</source>
         <translation>1. Wie lebendig, stabil oder klar war Ihr inneres Erleben heute?</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingSessionPlayer.qml" line="463" />
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="582" />
         <source>1: No sensation</source>
         <translation>1: Keine Empfindung</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingSessionPlayer.qml" line="464" />
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="583" />
         <source>2: Dim / Vague</source>
         <translation>2: Trüb / Vage</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingSessionPlayer.qml" line="465" />
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="584" />
         <source>3: Moderate</source>
         <translation>3: Mäßig</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingSessionPlayer.qml" line="466" />
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="585" />
         <source>4: Clear / Vivid</source>
         <translation>4: Klar / Lebendig</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingSessionPlayer.qml" line="467" />
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="586" />
         <source>5: Lifelike</source>
         <translation>5: Lebensecht</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingSessionPlayer.qml" line="514" />
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="633" />
         <source>2. Sensory Reflection &amp; Modality Notes:</source>
         <translation>2. Sensorische Reflexion &amp; Notizen:</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingSessionPlayer.qml" line="521" />
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="640" />
         <source>Which sensory anchor felt most effective (e.g. tactile coldness, spatial coordinates, acoustic echo, word facts)?</source>
         <translation>Welcher Sinnesanker war am effektivsten (z.B. taktile Kälte, Raumkoordinaten, akustisches Echo, Wortwissen)?</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingSessionPlayer.qml" line="532" />
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="651" />
         <source>Enter your observations here...</source>
         <translation>Tragen Sie hier Ihre Beobachtungen ein...</translation>
     </message>
     <message>
-        <location filename="../qml/components/TrainingSessionPlayer.qml" line="552" />
+        <location filename="../qml/components/TrainingSessionPlayer.qml" line="672" />
         <source>Save Session &amp; Complete Day %1 ✓</source>
         <translation>Einheit speichern &amp; Tag %1 abschließen ✓</translation>
     </message>
@@ -2095,24 +2152,29 @@ Achten Sie auf Form, Komplementärfarben und Umrissstabilität.</translation>
 <context>
     <name>VviqQuestionnaire</name>
     <message>
-        <location filename="../qml/components/VviqQuestionnaire.qml" line="50" />
+        <location filename="../qml/components/VviqQuestionnaire.qml" line="58" />
         <source>Question %1 of 16</source>
         <translation>Frage %1 von 16</translation>
     </message>
     <message>
-        <location filename="../qml/components/VviqQuestionnaire.qml" line="83" />
+        <location filename="../qml/components/VviqQuestionnaire.qml" line="91" />
         <source>%1% Completed</source>
         <translation>%1% Abgeschlossen</translation>
     </message>
     <message>
-        <location filename="../qml/components/VviqQuestionnaire.qml" line="177" />
+        <location filename="../qml/components/VviqQuestionnaire.qml" line="185" />
         <source>Rate the vividness of the image in your mind's eye:</source>
         <translation>Bewerten Sie die Lebendigkeit des Bildes vor Ihrem inneren Auge:</translation>
     </message>
     <message>
-        <location filename="../qml/components/VviqQuestionnaire.qml" line="270" />
-        <source>Previous Item</source>
-        <translation>Vorherige Frage</translation>
+        <location filename="../qml/components/VviqQuestionnaire.qml" line="278" />
+        <source>← Previous Item</source>
+        <translation type="unfinished">← Previous Item</translation>
+    </message>
+    <message>
+        <location filename="../qml/components/VviqQuestionnaire.qml" line="308" />
+        <source>Shortcut: Press 1-5 to rate • Left Arrow for previous</source>
+        <translation>Tasten: 1–5 zur Bewertung • Pfeiltaste links für vorherige Frage</translation>
     </message>
 </context>
 </TS>

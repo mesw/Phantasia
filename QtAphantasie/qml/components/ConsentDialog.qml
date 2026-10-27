@@ -192,7 +192,7 @@ Dialog {
                 }
 
                 Text {
-                    text: qsTr("The diagnostics adapt the gold-standard Visual Imagery Questionnaire (VVIQ; Marks 1973) and multisensory profiling (Dawes et al. 2024). The 6-week curriculum operationalizes Functional Imagery Training (FIT) derived from neuroscientific intervention protocols (Rhodes et al. 2024; Monzel 2025; Zeman 2024). Full algorithms and scoring rubrics are openly auditable via the public GitHub repository.")
+                    text: qsTr("The evaluations adapt the gold-standard Visual Imagery Questionnaire (VVIQ; Marks 1973) and multisensory profiling (Dawes et al. 2024). The 6-week curriculum operationalizes Functional Imagery Training (FIT) derived from neuroscientific intervention protocols (Rhodes et al. 2024; Monzel 2025; Zeman 2024). Full algorithms and scoring rubrics are openly auditable via the public GitHub repository.")
                     color: Theme.textMuted
                     font.pixelSize: Theme.fontXs
                     wrapMode: Text.WordWrap

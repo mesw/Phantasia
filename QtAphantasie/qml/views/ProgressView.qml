@@ -183,7 +183,7 @@ Item {
                         // Empty notice
                         Text {
                             visible: storageManager.getAssessmentHistory().length === 0
-                            text: qsTr("No baseline assessment recorded yet. Launch the Diagnostic tab to complete your initial evaluation.")
+                            text: qsTr("No baseline assessment recorded yet. Launch the Assessment tab to complete your initial evaluation.")
                             color: Theme.textMuted
                             font.pixelSize: Theme.fontXs
                             font.italic: true

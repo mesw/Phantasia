@@ -17,7 +17,7 @@
 
 ---
 
-## 📋 2. Diagnostic & Onboarding Audio Scripts
+## 📋 2. Self-Assessment & Onboarding Audio Scripts
 
 ### 2.1 Study Welcome & Neurocognitive Inclusivity
 > **Spoken Audio Script:**  

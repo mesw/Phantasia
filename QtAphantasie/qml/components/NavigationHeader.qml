@@ -78,7 +78,7 @@ Rectangle {
             }
 
             Text {
-                text: qsTr("Diagnostic Assessment & Neurocognitive Training")
+                text: qsTr("Vividness Assessment & Neurocognitive Training")
                 color: Theme.textMuted
                 font.pixelSize: Theme.fontXs
             }
@@ -92,7 +92,7 @@ Rectangle {
 
         Repeater {
             model: [
-                { tabId: 0, label: qsTr("Diagnostic"), icon: "📋" },
+                { tabId: 0, label: qsTr("Assessment"), icon: "📋" },
                 { tabId: 1, label: qsTr("6-Week Training"), icon: "🧠" },
                 { tabId: 2, label: qsTr("Progress"), icon: "📈" },
                 { tabId: 3, label: qsTr("Ethics & Sources"), icon: "📚" }

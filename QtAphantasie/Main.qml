@@ -11,7 +11,7 @@ Window {
     minimumWidth: 800
     minimumHeight: 600
     visible: true
-    title: qsTr("Phantasia | Diagnostic Assessment & Neurocognitive Training")
+    title: qsTr("Phantasia | Vividness Assessment & Neurocognitive Training")
     color: Theme.bgDark
 
     property int activeTab: 0

@@ -46,7 +46,7 @@ qt_add_qml_module(appQtAphantasie
         qml/components/AppleTestCard.qml
         qml/components/VviqQuestionnaire.qml
         qml/components/MultisensoryCheck.qml
-        qml/components/DiagnosticReport.qml
+        qml/components/AssessmentReport.qml
         qml/components/TrainingDashboard.qml
         qml/components/TrainingSessionPlayer.qml
         qml/components/BreathingPacer.qml

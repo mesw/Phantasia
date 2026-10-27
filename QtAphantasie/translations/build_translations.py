@@ -5,13 +5,13 @@ import os
 # Mapping of English source strings to validated German psychological translations
 translations_de = {
     # --- Main & Navigation ---
-    "Phantasia | Diagnostic Assessment & Neurocognitive Training": "Phantasia | Diagnostische Erfassung & Neurokognitives Training",
+    "Phantasia | Vividness Assessment & Neurocognitive Training": "Phantasia | Kognitive Profilierung & Neurokognitives Training",
     "Phantasia": "Phantasia",
-    "Aphantasia Platform | Diagnostic Assessment & Neurocognitive Training": "Afantasie-Plattform | Diagnostik & Neurokognitives Training",
+    "Aphantasia Platform | Vividness Assessment & Neurocognitive Training": "Afantasie-Plattform | Kognitive Profilierung & Neurokognitives Training",
     "Aphantasia": "Afantasie",
     "RESEARCH": "FORSCHUNG",
-    "Diagnostic Assessment & Neurocognitive Training": "Diagnostische Erfassung & Neurokognitives Training",
-    "Diagnostic": "Diagnostik",
+    "Vividness Assessment & Neurocognitive Training": "Kognitive Profilierung & Neurokognitives Training",
+    "Assessment": "Erfassung",
     "6-Week Training": "6-Wochen-Training",
     "Progress": "Fortschritt",
     "Ethics & Sources": "Ethik & Quellen",
@@ -26,7 +26,7 @@ translations_de = {
     "Data Sovereignty: Your Data Stays Exclusively on Your Device": "Datensouveränität: Ihre Daten verbleiben ausschließlich auf Ihrem Gerät",
     "The application operates strictly local-first. None of your assessment answers, scores, training logs, or IP addresses are transmitted to external servers, cloud databases, or third-party trackers. All state is held in your browser's private local sandbox. You can download your data at any time via 'Download My Data' (JSON or CSV) or permanently delete it with one click.": "Die Anwendung arbeitet strikt lokal (Local-First). Weder Ihre Antworten, Punktwerte, Trainingsprotokolle noch IP-Adressen werden an externe Server, Cloud-Datenbanken oder Tracker übertragen. Alle Daten verbleiben in der privaten lokalen Sandbox Ihres Browsers. Sie können Ihre Daten jederzeit über 'Meine Daten herunterladen' (JSON oder CSV) exportieren oder mit einem Klick unwiderruflich löschen.",
     "Scientific Basis & Transparency:": "Wissenschaftliche Grundlagen & Transparenz:",
-    "The diagnostics adapt the gold-standard Visual Imagery Questionnaire (VVIQ; Marks 1973) and multisensory profiling (Dawes et al. 2024). The 6-week curriculum operationalizes Functional Imagery Training (FIT) derived from neuroscientific intervention protocols (Rhodes et al. 2024; Monzel 2025; Zeman 2024). Full algorithms and scoring rubrics are openly auditable via the public GitHub repository.": "Die Diagnostik adaptiert den standardisierten Visual Imagery Questionnaire (VVIQ; Marks 1973) sowie multisensorisches Profiling (Dawes et al. 2024). Das 6-Wochen-Curriculum operationalisiert Functional Imagery Training (FIT) basierend auf neurowissenschaftlichen Interventionsprotokollen (Rhodes et al. 2024; Monzel 2025; Zeman 2024). Sämtliche Algorithmen und Bewertungsrubriken sind über das öffentliche GitHub-Repository transparent einsehbar.",
+    "The evaluations adapt the gold-standard Visual Imagery Questionnaire (VVIQ; Marks 1973) and multisensory profiling (Dawes et al. 2024). The 6-week curriculum operationalizes Functional Imagery Training (FIT) derived from neuroscientific intervention protocols (Rhodes et al. 2024; Monzel 2025; Zeman 2024). Full algorithms and scoring rubrics are openly auditable via the public GitHub repository.": "Die Erfassung adaptiert den standardisierten Visual Imagery Questionnaire (VVIQ; Marks 1973) sowie multisensorisches Profiling (Dawes et al. 2024). Das 6-Wochen-Curriculum operationalisiert Functional Imagery Training (FIT) basierend auf neurowissenschaftlichen Interventionsprotokollen (Rhodes et al. 2024; Monzel 2025; Zeman 2024). Sämtliche Algorithmen und Bewertungsrubriken sind über das öffentliche GitHub-Repository transparent einsehbar.",
     "View Source Code (GitHub)": "Quellcode ansehen (GitHub)",
     "I Understand & Consent to Participate": "Ich verstehe und willige in die Teilnahme ein",
 
@@ -34,7 +34,7 @@ translations_de = {
     "Step 1 of 3: Intuitive Onboarding (\"The Apple Test\")": "Schritt 1 von 3: Intuitiver Einstieg (\"Der Apfel-Test\")",
     "Step 2 of 3: Standardized VVIQ Evaluation (Marks 1973)": "Schritt 2 von 3: Standardisierte VVIQ-Erfassung (Marks 1973)",
     "Step 3 of 3: Multi-Sensory Modality Check (Dawes et al. 2024)": "Schritt 3 von 3: Multisensorische Profilprüfung (Dawes et al. 2024)",
-    "Diagnostic Assessment Report & Baseline Profile": "Diagnostischer Befundbericht & Ausgangsprofil",
+    "Assessment Summary & Baseline Profile": "Auswertungsbericht & Ausgangsprofil",
     "Close your eyes, imagine a red apple on a table, and select the illustration closest to your subjective experience.": "Schließen Sie die Augen, stellen Sie sich einen roten Apfel auf einem Tisch vor und wählen Sie die Illustration, die Ihrem Erleben am nächsten kommt.",
     "16 standardized psychometric items across 4 vivid real-world visualization scenarios.": "16 standardisierte psychometrische Items in 4 anschaulichen Alltagsszenarien.",
     "Evaluating non-visual sensory modalities (hearing, touch, movement, smell, taste, emotion).": "Erfassung nicht-visueller Sinnesmodalitäten (Hören, Tasten, Motorik, Riechen, Schmecken, Emotion).",
@@ -143,7 +143,7 @@ translations_de = {
     "Imagine the somatic bodily feeling of sudden joyous excitement or profound calm.": "Stellen Sie sich das körperliche Empfinden plötzlicher freudiger Erregung oder tiefer Ruhe vor.",
     "Step 3: Multi-Sensory Profiling (Dawes et al. 2024)": "Schritt 3: Multisensorisches Profiling (Dawes et al. 2024)",
     "Assessing non-visual modalities to identify whether aphantasia is unimodal (visual-only) or multisensory.": "Prüfung nicht-visueller Sinneskanäle zur Bestimmung, ob die Afantasie unimodal (rein visuell) oder multisensorisch ausgeprägt ist.",
-    "Generate Diagnostic Report & Baseline Profile →": "Befundbericht & Ausgangsprofil erstellen →",
+    "Generate Assessment Summary & Baseline Profile →": "Auswertungsbericht & Ausgangsprofil erstellen →",
     "Typical Multi-Modal Profile": "Typisches multi-modales Profil",
     "Unimodal Visual Aphantasia": "Unimodale visuelle Afantasie",
     "Multisensory Aphantasia": "Multisensorische Afantasie",
@@ -151,7 +151,7 @@ translations_de = {
     "Based on Dawes et al. (2024), your results indicate Unimodal Visual Aphantasia. Your lack of imagery is selective to the visual modality, while non-visual channels (such as hearing, touch, or motor simulation) remain functional and provide excellent anchors for neurocognitive training.": "Gemäß Dawes et al. (2024) weisen Ihre Ergebnisse auf eine Unimodale Visuelle Afantasie hin. Die verminderte Vorstellungskraft betrifft rein den visuellen Kanal, während Hören, Tasten oder Motorik intakt sind und ideale Ankerpunkte für das Training bieten.",
     "Based on Dawes et al. (2024), your results indicate Multisensory Aphantasia. Your imagery reduction spans multiple sensory domains beyond vision. Training protocols will begin with semantic, proprioceptive, and physiological afterimage stimuli rather than auditory or sensory pegs.": "Gemäß Dawes et al. (2024) weisen Ihre Ergebnisse auf eine Multisensorische Afantasie hin. Die reduzierte Vorstellungskraft erstreckt sich über mehrere Sinne. Das Training setzt daher primär auf semantische, propriozeptive und physiologische Nachbildreize.",
 
-    # --- Diagnostic Report ---
+    # --- Assessment Report ---
     "out of 80": "von 80 Punkten",
     "Percentile: %1%": "Prozentrang: %1%",
     "Cross-Sensory Modality Profile (Scale 1 to 5)": "Sinnesmodalitäten-Profil (Skala 1 bis 5)",
@@ -282,11 +282,11 @@ translations_de = {
     "Apple Test: Level %1": "Apfel-Test: Stufe %1",
     "VVIQ Score: %1 / 80": "VVIQ-Wert: %1 / 80",
     "%1% Rank": "%1% Rang",
-    "No baseline assessment recorded yet. Launch the Diagnostic tab to complete your initial evaluation.": "Bislang kein Ausgangstest erfasst. Starten Sie im Reiter 'Diagnostik', um Ihre Basismessung durchzuführen.",
+    "No baseline assessment recorded yet. Launch the Assessment tab to complete your initial evaluation.": "Bislang kein Ausgangstest erfasst. Starten Sie im Reiter 'Erfassung', um Ihre Basismessung durchzuführen.",
 
     # --- About View ---
     "The gold-standard 16-item self-report questionnaire for voluntary visual mental imagery vividness.": "Der 16-Item-Goldstandard-Fragebogen zur Erfassung der willentlichen visuellen Vorstellungskraft.",
-    "Formally established the medical condition name Aphantasia and standardized VVIQ diagnostic classification.": "Etablierte den Fachbegriff Afantasie und standardisierte die diagnostische VVIQ-Klassifikation.",
+    "Formally established the term Aphantasia and standardized VVIQ classification.": "Etablierte den Fachbegriff Afantasie und standardisierte die VVIQ-Klassifikation.",
     "Established standard population norms: scores < 32 indicate marked aphantasia (score 16 = total aphantasia); population mean = 56.8.": "Etablierte Populationsnormen: Werte < 32 zeigen Afantasie an (Wert 16 = vollständige Afantasie; Mittelwert = 56,8).",
     "Established hyperphantasia threshold (75-80 pts) and frontoparietal-occipitotemporal neuroplastic connectivity model.": "Etablierte den Hyperfantasie-Schwellenwert (75-80 Pkt.) und das frontoparietal-okzipitotemporale Konnektivitätsmodell.",
     "Demonstrated that aphantasia can be unimodal (visual only) or multisensory (multi-modal attenuation).": "Wies nach, dass Afantasie unimodal (rein visuell) oder multisensorisch (mehrere Sinne betreffend) auftreten kann.",

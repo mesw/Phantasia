@@ -60,7 +60,7 @@ Item {
                             case 1: return qsTr("Step 1 of 3: Intuitive Onboarding (\"The Apple Test\")");
                             case 2: return qsTr("Step 2 of 3: Standardized VVIQ Evaluation (Marks 1973)");
                             case 3: return qsTr("Step 3 of 3: Multi-Sensory Modality Check (Dawes et al. 2024)");
-                            case 4: return qsTr("Diagnostic Assessment Report & Baseline Profile");
+                            case 4: return qsTr("Assessment Summary & Baseline Profile");
                             default: return "";
                             }
                         }
@@ -227,12 +227,12 @@ Item {
                 }
             }
 
-            // STEP 4: DIAGNOSTIC REPORT
+            // STEP 4: ASSESSMENT REPORT
             Item {
                 anchors.fill: parent
                 visible: root.assessmentStep === 4
 
-                DiagnosticReport {
+                AssessmentReport {
                     anchors.fill: parent
                     appleLevel: root.chosenAppleLevel
                     vviqScore: root.currentVviqScore

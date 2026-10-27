@@ -1,4 +1,4 @@
-# Phantasia: Diagnostic Assessment & Neurocognitive Training
+# Phantasia: Vividness Assessment & Neurocognitive Training
 
 **Phantasia** is an interactive, bilingual web platform combining standardized psychometric evaluation and structured neurocognitive training across the visual mental imagery continuum—from **aphantasia / Afantasie** (the complete absence of voluntary visual imagery) and **hypophantasia / Hypofantasie** (dim/attenuated imagery) through to **hyperphantasia / Hyperfantasie** (photorealistic vividness).
 
@@ -33,7 +33,7 @@ To ensure rigorous scientific accuracy across languages, the project strictly di
 
 The design of both the test batteries and the training curriculum is derived directly from empirical literature referenced in the project knowledge base:
 
-### A. Foundations for Testing & Diagnostics
+### A. Foundations for Testing & Vividness Assessment
 * **Marks, D. F. (1973):** *Visual Imagery Questionnaire (VVIQ)*.
   * *Relevance:* The gold-standard 16-item self-report questionnaire for voluntary visual mental imagery vividness.
 * **Zeman, A., Dewar, M., & Della Sala, S. (2015):** *Lives without imagery – Congenital aphantasia.* *Cortex*, 73, 378–380.
@@ -43,7 +43,7 @@ The design of both the test batteries and the training curriculum is derived dir
 * **Zeman, A., et al. (2020):** *Phantasia–The psychological significance of lifelong visual imagery vividness extremes.* *Cortex*, 130, 426–440.
   * *Relevance:* Established the upper extreme threshold: scores of **75–80** denote hyperphantasia.
 * **Monzel, M., Mitchell, D., Macpherson, F., Pearson, J., & Zeman, A. (2022):** *Proposal for a consistent definition of aphantasia and hyperphantasia.* *Cortex*, 152, 74–76.
-  * *Relevance:* Multi-laboratory consensus definitions and diagnostic criteria for cognitive imagery extremes.
+  * *Relevance:* Multi-laboratory consensus definitions and classification criteria for cognitive imagery extremes.
 * **Dawes, A. J., Keogh, R., & Pearson, J. (2024):** *Multisensory subtypes of aphantasia: Mental imagery as supramodal perception in reverse.* *Neuroscience Research*, 201, 50–59.
   * *Relevance:* Proves that aphantasia can be unimodal (purely visual) or multisensory (affecting auditory, tactile, gustatory, or kinesthetic imagery). Informs the multi-sensory profiling step.
 * **Keogh, R., & Pearson, J. (2018, 2024):** *The blind mind: No sensory visual imagery in aphantasia* & *Revisiting the blind mind.* *Cortex* & *Neuroscience Research*.
@@ -103,14 +103,14 @@ The entire user journey can be completed without a mouse or touch screen:
   * **Step 1 (The Apple Test):** Press number keys `1` through `5` to instantly select vividness levels. Press `Enter` or `Space` to confirm and advance.
   * **Step 2 (VVIQ Questionnaire):** Press keys `1` through `5` to submit item ratings and auto-advance. Press `Left Arrow` or `Backspace` to return to the previous question.
   * **Persistent Wizard Navigation Bar:** Pinned at the bottom of the viewport, the wizard footer is **always visible** (never pushed below the fold), providing clear "← Zurück / Previous" and "Weiter / Next →" controls.
-* **Navigation Header & Tabs:** `Tab` and `Shift+Tab` navigate through the 4 application areas (Diagnostic, 6-Week Training, Progress, Ethics & Sources). `Enter` or `Space` activates the tab.
+* **Navigation Header & Tabs:** `Tab` and `Shift+Tab` navigate through the 4 application areas (Assessment, 6-Week Training, Progress, Ethics & Sources). `Enter` or `Space` activates the tab.
 * **Training Session Player:**
   * `Space` bar pauses and resumes active exercise countdowns.
   * Number keys `1`, `2`, and `3` switch between Phase 1 (Breathing), Phase 2 (Exercise), and Phase 3 (Reflection).
   * `Enter` triggers session completion and logging.
 
 ### C. Audio Guidance & Text-to-Speech (TTS) Architecture
-* **Spoken Guidance for Every Exercise:** Recognizing that individuals with visual impairments or aphantasia benefit profoundly from acoustic guidance, comprehensive spoken scripts for all 42 training sessions and diagnostic tests are documented in [`docs/AUDIO_GUIDANCE_TTS.md`](file:///c:/Users/MiCHi/Documents/Aphantasie/docs/AUDIO_GUIDANCE_TTS.md).
+* **Spoken Guidance for Every Exercise:** Recognizing that individuals with visual impairments or aphantasia benefit profoundly from acoustic guidance, comprehensive spoken scripts for all 42 training sessions and self-assessment steps are documented in [`docs/AUDIO_GUIDANCE_TTS.md`](file:///c:/Users/MiCHi/Documents/Aphantasie/docs/AUDIO_GUIDANCE_TTS.md).
 * **ElevenLabs Eleven v4 Optimization:** Scripts are specifically tuned for ElevenLabs `Eleven v4` / `Eleven Multilingual v2` voice models, utilizing calming, empathetic pacing and sparing audio pause tags (e.g. `<break time="1.5s" />`) for guided introspective reflection.
 
 ### D. Resonance Frequency Breathing & PeakFrequency Integration
@@ -121,11 +121,11 @@ The entire user journey can be completed without a mouse or touch screen:
 
 ## 5. Test Procedure Outline
 
-The diagnostic section guides users through a multi-tiered evaluation to determine their imagery profile:
+The evaluation section guides users through a multi-tiered evaluation to determine their imagery profile:
 
 ```
 [ Step 1: The Apple Test ] ➔ [ Step 2: Full VVIQ Assessment ] ➔ [ Step 3: Multisensory Profiling ] ➔ [ Results & Baseline ]
- (Quick intuitive gauge)        (Standardized 16-80 score)           (Visual, Auditory, Kinesthetic)     (Diagnostic Report)
+ (Quick intuitive gauge)        (Standardized 16-80 score)           (Visual, Auditory, Kinesthetic)     (Assessment Report)
 ```
 
 ### Step 1: Intuitive Onboarding ("The Apple Test")
@@ -160,7 +160,7 @@ The diagnostic section guides users through a multi-tiered evaluation to determi
 * Evaluates non-visual sensory modalities (Auditory, Tactile, Kinesthetic/Motor, Olfactory, Gustatory, Emotional) based on Dawes et al. (2024).
 * Identifies whether the user has **unimodal aphantasia** (visual only) or **multisensory aphantasia** (multi-modal absence). This distinction is vital for tailoring the initial training anchors.
 
-### Step 4: Diagnostic Summary & Export
+### Step 4: Assessment Summary & Export
 * Generates an interactive visual profile showing vividness percentiles.
 * Saves the baseline evaluation in browser local storage for longitudinal tracking against post-training re-tests.
 

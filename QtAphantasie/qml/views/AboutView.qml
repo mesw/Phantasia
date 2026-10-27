@@ -140,7 +140,7 @@ Item {
                             },
                             {
                                 citation: "Zeman, A., Dewar, M., & Della Sala, S. (2015). Lives without imagery – Congenital aphantasia. Cortex, 73, 378–380.",
-                                note: qsTr("Formally established the medical condition name Aphantasia and standardized VVIQ diagnostic classification.")
+                                note: qsTr("Formally established the term Aphantasia and standardized VVIQ classification.")
                             },
                             {
                                 citation: "Dance, C. J., Ipser, A., & Simner, J. (2022). The prevalence of aphantasia in the general population. Consciousness and Cognition, 97, 103243.",

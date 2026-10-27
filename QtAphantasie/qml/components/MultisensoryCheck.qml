@@ -191,7 +191,7 @@ Item {
         Button {
             id: submitBtn
             anchors.horizontalCenter: parent.horizontalCenter
-            text: qsTr("Generate Diagnostic Report & Baseline Profile →")
+            text: qsTr("Generate Assessment Summary & Baseline Profile →")
             onClicked: root.completed(root.scores)
             activeFocusOnTab: true
             Keys.onReturnPressed: clicked()
