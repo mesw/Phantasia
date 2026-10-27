@@ -1,0 +1,70 @@
+Skip to main content --> #main-content
+ --> https://www.ed.ac.uk/
+Schools & departments --> https://www.ed.ac.uk/schools-departments
+MyEd --> https://www.myed.ed.ac.uk/
+School of Neurological and Cardiovascular Sciences --> https://medicine-vet-medicine.ed.ac.uk/school-of-neurological-and-cardiovascular-sciences
+Home --> /eyes-mind
+Our research --> /eyes-mind/our-research
+Our team --> /eyes-mind/our-team
+Outreach & other works --> /eyes-mind/outreach-other-works
+Media coverage --> /eyes-mind/media-coverage
+Events --> /eyes-mind/events
+Events --> /eyes-mind/events
+Extreme Imagination Exhibition 2019 --> /eyes-mind/events/extreme-imagination-exhibition-2019
+Extreme Imagination Conference 2019 --> /eyes-mind/events/extreme-imagination-conference-2019
+Visual Imagination Conference 2016 --> /eyes-mind/events/visual-imagination-conference-2016
+Latest news --> /eyes-mind/latest-news
+Get in touch / Take part --> /eyes-mind/get-in-touch-take-part
+Home --> /eyes-mind
+Our research --> /eyes-mind/our-research
+Our team --> /eyes-mind/our-team
+Outreach & other works --> /eyes-mind/outreach-other-works
+Media coverage --> /eyes-mind/media-coverage
+Events --> /eyes-mind/events
+Extreme Imagination Exhibition 2019 --> /eyes-mind/events/extreme-imagination-exhibition-2019
+Extreme Imagination Conference 2019 --> /eyes-mind/events/extreme-imagination-conference-2019
+Slides & recordings --> /eyes-mind/events/extreme-imagination-conference-2019/extreme-imagination-conference-2019-slides
+Visual Imagination Conference 2016 --> /eyes-mind/events/visual-imagination-conference-2016
+Slides & recordings --> /eyes-mind/events/visual-imagination-conference-2016/visual-imagination-conference-2016-slides
+Latest news --> /eyes-mind/latest-news
+Get in touch / Take part --> /eyes-mind/get-in-touch-take-part
+Home --> https://www.ed.ac.uk/
+College of Medicine & Veterinary Medicine --> /
+Eye's Mind --> /eyes-mind
+Join the VIA study --> https://exe.qualtrics.com/jfe/form/SV_0ALuileyI6QJb4a
+Our origin story - The Eye's Mind study --> /eyes-mind/our-origin-story-the-eyes-mind-study
+Join the study --> https://exe.qualtrics.com/jfe/form/SV_0ALuileyI6QJb4a
+Monzel et al 2026 (Consciousness: A Comprehensive Reference) --> /sites/default/files/2026-07/Monzel%20et%20al%202026%20%28Consciousness%3A%20A%20Comprehensive%20Reference%29.pdf
+Digard et al 2026b (Neuropsychologia, 2020) --> /sites/default/files/2026-07/Digard%20et%20al%202026b%20%28Neuropsychologia%2C%202020%29.pdf
+Digard et al 2026a (Neuropsychologia, 2026) --> /sites/default/files/2026-07/Digard%20et%20al%202026a%20%28Neuropsychologia%2C%202026%29.pdf
+Knight et al 2026 (Neuropsychologia) --> https://www.sciencedirect.com/science/article/pii/S002839322600076X#sec5
+Zeman et al 2026 (TiCS) --> /sites/default/files/2026-07/Zeman%20et%20al%202026%20%28TiCS%29.pdf
+Zeman et al 2025 (Cortex) --> /sites/default/files/2025-09/Zeman%20et%20al%202025%20%28Cortex%29.pdf
+Zeman 2025 (Neuropsychologia) --> https://www.sciencedirect.com/science/article/pii/S0028393225002131
+Zeman 2025 (TiCS) --> https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00238-4
+Zeman 2024 (Trends in Cognitive Sciences) --> /sites/default/files/2025-09/Zeman%202024%20%28Trends%20in%20Cognitive%20Sciences%29.pdf
+MacKisack et al 2022 (Art Journal) --> /sites/default/files/2025-09/MacKisack%20et%20al%202022%20%28Art%20Journal%29.pdf
+Monzel et al 2022 (Cortex) --> /sites/default/files/2025-09/Monzel%20et%20al%202022%20%28Cortex%29.pdf
+Keogh et al 2021 (Handbook of Clinical Neurology, Chapter 15) --> /sites/default/files/2025-09/Keogh%20et%20al%202021%20%28Handbook%20of%20Clinical%20Neurology%2C%20Chapter%2015%29%20.pdf
+Milton et al 2021 (Cerebral Cortex Communications) --> /sites/default/files/2025-09/Milton%20et%20al%202021%20%28Cerebral%20Cortex%20Communications%29.pdf
+Dance et al 2021 (Consciousness and Cognition) --> /sites/default/files/2025-09/Dance%20et%20al%202021%20%28Consciousness%20and%20Cognition%29.pdf
+Knowles et al 2021 (British Neuropsychiatry Annual Meeting Webinar) --> /sites/default/files/2025-09/Knowles%20et%20al%202021%20%28British%20Neuropsychiatry%20Annual%20Meeting%20Webinar%29.pdf
+Journal article - Zeman et al 2020 Phantasia: The Psychological Significance of Lifelong Visual Imagery Extremes --> /sites/default/files/2025-09/Journal%20article%20-%20Zeman%20et%20al%202020%20Phantasia%3A%20The%20Psychological%20Significance%20of%20Lifelong%20Visual%20Imagery%20Extremes.pdf
+Research article - Fulford et al 2018 – The neural correlates of visual imagery vividness – An fMRI study and literature review --> /sites/default/files/2025-09/Research%20article%20-%20Fulford%20et%20al%202018%20%E2%80%93%20The%20neural%20correlates%20of%20visual%20imagery%20vividness%20%E2%80%93%20An%20fMRI%20study%20and%20literature%20review.pdf
+Research article - Winlove et al - Cortex - 2018 --> /sites/default/files/2025-09/Research%20article%20-%20Winlove%20et%20al%202018%20%E2%80%93%20The%20neural%20correlates%20of%20visual%20imagery%3A%20A%20co-ordinate-based%20meta-analysis%E2%80%8C.pdf
+Research article - Zeman et al 2018 – The Eye’s mind – Visual imagination, neuroscience and the humanities‌ --> /sites/default/files/2025-09/Research%20article%20-%20Zeman%20et%20al%202018%20%E2%80%93%20The%20Eye%E2%80%99s%20mind%20%E2%80%93%20Visual%20imagination%2C%20neuroscience%20and%20the%20humanities%E2%80%8C.pdf
+MacKisack et al 2016 - On Picturing a Candle: The Prehistory of Imagery Science (Frontiers in Psychology) --> /sites/default/files/2025-09/MacKisack%20et%20al%202016%20-%20On%20Picturing%20a%20Candle%3A%20The%20Prehistory%20of%20Imagery%20Science%20%28Frontiers%20in%20Psychology%29.pdf
+Zeman et al 2016 - Reflections on aphantasia (Cortex) --> /sites/default/files/2025-09/Zeman%20et%20al%202016%20-%20Reflections%20on%20aphantasia%20%28Cortex%29.pdf
+Zeman et al 2015 - Lives without imagery – Congenital aphantasia (Cortex) --> /sites/default/files/2025-09/Zeman%20et%20al%202015%20-%20Lives%20without%20imagery%20%E2%80%93%20Congenital%20aphantasia%20%28Cortex%29.pdf
+Terms & conditions --> https://www.ed.ac.uk/about/website/website-terms-conditions
+Privacy & cookies --> https://edin.ac/privacy-information
+Complaints procedure --> https://www.ed.ac.uk/university-secretary-group/complaint-handling-procedure
+Modern slavery --> https://www.ed.ac.uk/sustainability/what-we-do/supply-chains/initiatives/modern-slavery/statement
+Website accessibility --> https://edin.ac/accessibility-statement
+Freedom of information publication scheme --> https://www.ed.ac.uk/about/website/freedom-information
+Data protection / Records Management --> https://www.ed.ac.uk/data-protection
+Digital Sustainability --> https://edin.ac/digital-sustainability
+ --> https://www.ed.ac.uk/about/mission-governance/affiliations
+MyEd login --> https://www.myed.ed.ac.uk/
+Recognised body --> https://www.gov.uk/guidance/recognised-uk-degrees
+CMS login --> /user/login?destination=/eyes-mind/our-research

@@ -1,0 +1,104 @@
+<!--
+Copyright (C) 2024 The Qt Company Ltd.
+SPDX-License-Identifier: LicenseRef-Qt-Commercial OR GPL-3.0-only
+-->
+
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=0"/>
+
+    <title>Aphantasia Platform | Diagnostic Assessment &amp; Neurocognitive Training</title>
+    <style>
+      /* Make the html body cover the entire viewport with serene dark theme */
+      html, body {
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        height: 100%;
+        background-color: #0B0F19;
+        color: #F8FAFC;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      }
+      #screen { width: 100%; height: 100%; }
+      #qtspinner {
+        color: #94A3B8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin: 0;
+      }
+      #qtstatus {
+        color: #818CF8;
+        margin-top: 15px;
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+      .loading-sub {
+        color: #64748B;
+        margin-top: 8px;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body onload="init()">
+    <figure id="qtspinner">
+      <center style="line-height:160%">
+        <div style="font-size: 48px; margin-bottom: 10px;">👁</div>
+        <strong style="font-size: 1.3rem; color: #F8FAFC;">Aphantasia Diagnostic &amp; Neurocognitive Training</strong>
+        <div class="loading-sub">Empirical Research Platform &bull; Rhodes et al. (2024) / Marks (1973)</div>
+        <div id="qtstatus">Initializing WebAssembly runtime...</div>
+        <noscript>JavaScript is disabled. Please enable JavaScript to use this application.</noscript>
+      </center>
+    </figure>
+    <div id="screen"></div>
+
+    <script type="text/javascript">
+        async function init()
+        {
+            const spinner = document.querySelector('#qtspinner');
+            const screen = document.querySelector('#screen');
+            const status = document.querySelector('#qtstatus');
+
+            const showUi = (ui) => {
+                [spinner, screen].forEach(element => element.style.display = 'none');
+                if (screen === ui)
+                    screen.style.position = 'default';
+                ui.style.display = 'block';
+            }
+
+            try {
+                showUi(spinner);
+                status.innerHTML = 'Loading WebAssembly binary (Single-Thread Mode)...';
+
+                const instance = await qtLoad({
+                    qt: {
+                        onLoaded: () => showUi(screen),
+                        onExit: exitData =>
+                        {
+                            status.innerHTML = 'Application exit';
+                            status.innerHTML +=
+                                exitData.code !== undefined ? ` with code ${exitData.code}` : '';
+                            status.innerHTML +=
+                                exitData.text !== undefined ? ` (${exitData.text})` : '';
+                            showUi(spinner);
+                        },
+                        entryFunction: window.appQtAphantasie_entry,
+                        containerElements: [screen],
+                    }
+                });
+            } catch (e) {
+                console.error(e);
+                console.error(e.stack);
+                status.innerHTML = 'Failed to load WebAssembly: ' + e;
+            }
+        }
+    </script>
+    <script src="appQtAphantasie.js"></script>
+    <script type="text/javascript" src="qtloader.js"></script>
+  </body>
+</html>

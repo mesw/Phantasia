@@ -1,0 +1,85 @@
+name: Build and Deploy Aphantasia Web Client to GitHub Pages
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Setup Ninja
+        uses: ashley-taylor/setup-ninja@v1.0.0
+        with:
+          version: '1.11.1'
+
+      - name: Install Emscripten SDK 3.1.56
+        uses: mymind/setup-emscripten@v2
+        with:
+          version: '3.1.56'
+
+      - name: Install Qt 6.8.3 (Wasm Single-Thread)
+        uses: jurplel/install-qt-action@v4
+        with:
+          version: '6.8.3'
+          target: 'all'
+          arch: 'wasm_singlethread'
+          tools: 'tools_cmake'
+
+      - name: Configure CMake for WebAssembly
+        run: |
+          source "$EMSDK/emsdk_env.sh"
+          ${{ runner.temp }}/Qt/6.8.3/wasm_singlethread/bin/qt-cmake \
+            -B build_wasm \
+            -S QtAphantasie \
+            -G Ninja \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DQT_CHAINLOAD_TOOLCHAIN_FILE="$EMSDK/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake"
+
+      - name: Compile WebAssembly Target
+        run: |
+          source "$EMSDK/emsdk_env.sh"
+          cmake --build build_wasm
+
+      - name: Prepare GitHub Pages Distribution Directory
+        run: |
+          mkdir -p dist
+          cp build_wasm/appQtAphantasie.html dist/index.html
+          cp build_wasm/appQtAphantasie.js dist/
+          cp build_wasm/appQtAphantasie.wasm dist/
+          cp build_wasm/qtloader.js dist/ || true
+
+      - name: Upload GitHub Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'dist'
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
