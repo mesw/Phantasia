@@ -258,5 +258,5 @@ void StorageManager::downloadDataAsCsv()
 
 void StorageManager::openSourceCodeUrl()
 {
-    WasmHelper::openUrlInBrowser("https://github.com/mesw/Aphantasie");
+    WasmHelper::openUrlInBrowser("https://github.com/mesw/phantasia");
 }

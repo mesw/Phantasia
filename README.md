@@ -1,6 +1,8 @@
-# Aphantasia Test & Training Application
+# Phantasia: Diagnostic Assessment & Neurocognitive Training
 
-An interactive, web-based platform combining standardized psychometric evaluation and structured neurocognitive training for **aphantasia** (the inability to voluntarily generate visual mental imagery).
+**Phantasia** is an interactive, bilingual web platform combining standardized psychometric evaluation and structured neurocognitive training across the visual mental imagery continuum—from **aphantasia / Afantasie** (the complete absence of voluntary visual imagery) and **hypophantasia / Hypofantasie** (dim/attenuated imagery) through to **hyperphantasia / Hyperfantasie** (photorealistic vividness).
+
+The application name derives from the Aristotelian root *phantasía* (φavτασία; mental representation) and directly references the landmark study by Zeman et al. (2020), *"Phantasia – The psychological significance of lifelong visual imagery vividness extremes"* (*Cortex*, 130, 426–440).
 
 Built with **C++** and **Qt Quick (QML)**, compiled to **Single-Threaded WebAssembly (Wasm)**, and hosted directly on **GitHub Pages**.
 
@@ -18,6 +20,12 @@ This project delivers a unified, zero-install web application that:
 1. **Assesses** voluntary visual and multi-modal imagery vividness using scientifically validated instruments (VVIQ, Apple Test, and multi-sensory profiling).
 2. **Trains** mental imagery capacity through a progressive, 6-week neurocognitive exercise curriculum designed specifically for low-imagers and aphantasics.
 3. **Bilingual Accessibility:** Developed bilingually from the outset in **German** and **English** using Qt's `QTranslator` system, with translations systematically verified using `linguist.exe`.
+
+### Linguistic Conventions & Terminology
+To ensure rigorous scientific accuracy across languages, the project strictly distinguishes language-specific psychological nomenclature:
+* **German (Deutsch):** The established scientific and lexical term is **Afantasie** (German Duden, Wikipedia, and German literature). Related terms across the vividness spectrum follow German orthography: **Hypofantasie** (reduced imagery) and **Hyperfantasie** (extreme imagery), with the adjective **afantasisch**.
+* **English:** The recognized neuroscientific term is **Aphantasia** (coined by Zeman et al. 2015), along with **Hypophantasia** and **Hyperphantasia**, with the adjective **aphantasic**.
+* *Note on hybrid spelling:* The hybrid term *"Aphantasie"* (mixing English "ph" with German "-ie") is explicitly avoided across all catalogs and documentation.
 
 ---
 

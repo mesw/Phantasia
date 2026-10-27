@@ -5,8 +5,10 @@ import os
 # Mapping of English source strings to validated German psychological translations
 translations_de = {
     # --- Main & Navigation ---
-    "Aphantasia Platform | Diagnostic Assessment & Neurocognitive Training": "Aphantasie-Plattform | Diagnostik & Neurokognitives Training",
-    "Aphantasia": "Aphantasie",
+    "Phantasia | Diagnostic Assessment & Neurocognitive Training": "Phantasia | Diagnostische Erfassung & Neurokognitives Training",
+    "Phantasia": "Phantasia",
+    "Aphantasia Platform | Diagnostic Assessment & Neurocognitive Training": "Afantasie-Plattform | Diagnostik & Neurokognitives Training",
+    "Aphantasia": "Afantasie",
     "RESEARCH": "FORSCHUNG",
     "Diagnostic Assessment & Neurocognitive Training": "Diagnostische Erfassung & Neurokognitives Training",
     "Diagnostic": "Diagnostik",
@@ -65,7 +67,7 @@ translations_de = {
     "Level 4: Faint / Vague": "Stufe 4: Schwach / Vage",
     "Translucent, dim, or fleeting outline. Mostly grayish silhouette, difficult to stabilize.": "Durchscheinender, trüber oder flüchtiger Umriss. Meist grau, schwer vor dem inneren Auge zu halten.",
     "\"I catch a brief, smoky gray outline or faint shape that disappears when I focus on it.\"": "\"Ich erhasche einen kurzen, rauchig-grauen Umriss, der verschwindet, sobald ich mich darauf konzentriere.\"",
-    "Level 5: Complete Aphantasia": "Stufe 5: Vollständige Aphantasie",
+    "Level 5: Complete Aphantasia": "Stufe 5: Vollständige Afantasie",
     "Absolute blackness. No visual sensation whatsoever. Conceptual knowledge only.": "Vollkommene Dunkelheit. Keinerlei visuelle Empfindung. Ausschließlich begriffliches Wissen.",
     "\"I know what an apple is, its taste and shape, but when I close my eyes there is only pitch blackness.\"": "\"Ich weiß, was ein Apfel ist, kenne Form und Geschmack, aber wenn ich die Augen schließe, sehe ich nur Schwarz.\"",
     "Absolute Blackness": "Vollkommene Dunkelheit",
@@ -115,16 +117,16 @@ translations_de = {
     "Previous Item": "Vorherige Frage",
 
     # --- VVIQ Classifications ---
-    "Total Aphantasia": "Vollständige Aphantasie",
-    "Congenital / Marked Aphantasia": "Ausgeprägte / Angeborene Aphantasie",
-    "Hypophantasia (Weak Imagery)": "Hypophantasie (Geringe Vorstellungskraft)",
+    "Total Aphantasia": "Vollständige Afantasie",
+    "Congenital / Marked Aphantasia": "Ausgeprägte / Angeborene Afantasie",
+    "Hypophantasia (Weak Imagery)": "Hypofantasie (Geringe Vorstellungskraft)",
     "Typical Imagery Vividness": "Typische Vorstellungskraft",
-    "Hyperphantasia (Extreme Imagery)": "Hyperphantasie (Extreme Vorstellungskraft)",
-    "You scored 16 out of 80 points. According to established scientific consensus (Dance et al. 2022; Zeman et al. 2015, 2020), this corresponds to complete / total aphantasia. You process visual concepts abstractly and semantically without voluntary internal visual representations.": "Sie haben 16 von 80 Punkten erreicht. Nach dem wissenschaftlichen Konsens (Dance et al. 2022; Zeman et al. 2015, 2020) entspricht dies einer vollständigen Aphantasie. Sie verarbeiten visuelle Konzepte abstrakt und semantisch ohne willentliche innere Bilder.",
-    "You scored %1 out of 80 points. Scores below 32 are classified in scientific literature as marked aphantasia (Dance et al. 2022). While occasional fleeting flashes or faint silhouettes may occur, voluntary visual reconstruction is severely attenuated.": "Sie haben %1 von 80 Punkten erreicht. Punktwerte unter 32 werden in der Fachliteratur als ausgeprägte Aphantasie klassifiziert (Dance et al. 2022). Während gelegentliche flüchtige Eindrücke auftreten können, ist eine willentliche visuelle Rekonstruktion stark gehemmt.",
-    "You scored %1 out of 80 points. This falls into the hypophantasia range (32-54 points). You have partial or dim voluntary mental imagery, with noticeable variation in clarity, detail, or stability across different scenarios.": "Sie haben %1 von 80 Punkten erreicht. Dies fällt in den Bereich der Hypophantasie (32-54 Punkte). Sie verfügen über eine teilweise oder trübe Vorstellungskraft mit spürbaren Schwankungen in Klarheit und Stabilität.",
+    "Hyperphantasia (Extreme Imagery)": "Hyperfantasie (Extreme Vorstellungskraft)",
+    "You scored 16 out of 80 points. According to established scientific consensus (Dance et al. 2022; Zeman et al. 2015, 2020), this corresponds to complete / total aphantasia. You process visual concepts abstractly and semantically without voluntary internal visual representations.": "Sie haben 16 von 80 Punkten erreicht. Nach dem wissenschaftlichen Konsens (Dance et al. 2022; Zeman et al. 2015, 2020) entspricht dies einer vollständigen Afantasie. Sie verarbeiten visuelle Konzepte abstrakt und semantisch ohne willentliche innere Bilder.",
+    "You scored %1 out of 80 points. Scores below 32 are classified in scientific literature as marked aphantasia (Dance et al. 2022). While occasional fleeting flashes or faint silhouettes may occur, voluntary visual reconstruction is severely attenuated.": "Sie haben %1 von 80 Punkten erreicht. Punktwerte unter 32 werden in der Fachliteratur als ausgeprägte Afantasie klassifiziert (Dance et al. 2022). Während gelegentliche flüchtige Eindrücke auftreten können, ist eine willentliche visuelle Rekonstruktion stark gehemmt.",
+    "You scored %1 out of 80 points. This falls into the hypophantasia range (32-54 points). You have partial or dim voluntary mental imagery, with noticeable variation in clarity, detail, or stability across different scenarios.": "Sie haben %1 von 80 Punkten erreicht. Dies fällt in den Bereich der Hypofantasie (32-54 Punkte). Sie verfügen über eine teilweise oder trübe Vorstellungskraft mit spürbaren Schwankungen in Klarheit und Stabilität.",
     "You scored %1 out of 80 points. This represents the typical / normal range of human visual imagination (55-74 points, population mean ~56.8), characterized by clear and reasonably vivid mental pictures.": "Sie haben %1 von 80 Punkten erreicht. Dies entspricht dem typischen Durchschnittsbereich menschlicher Vorstellungskraft (55-74 Punkte, Mittelwert ~56,8) mit klaren inneren Bildern.",
-    "You scored %1 out of 80 points. Scores of 75 and above denote hyperphantasia (Zeman et al. 2020), an imagery capability that is as vivid, sharp, and rich in color as real-world ocular perception.": "Sie haben %1 von 80 Punkten erreicht. Werte ab 75 bezeichnen eine Hyperphantasie (Zeman et al. 2020) – eine Vorstellungskraft, die so scharf, detailreich und farbintensiv ist wie reales Sehen.",
+    "You scored %1 out of 80 points. Scores of 75 and above denote hyperphantasia (Zeman et al. 2020), an imagery capability that is as vivid, sharp, and rich in color as real-world ocular perception.": "Sie haben %1 von 80 Punkten erreicht. Werte ab 75 bezeichnen eine Hyperfantasie (Zeman et al. 2020) – eine Vorstellungskraft, die so scharf, detailreich und farbintensiv ist wie reales Sehen.",
 
     # --- Multisensory Profiling ---
     "Auditory (Inner Hearing)": "Auditorisch (Inneres Hören)",
@@ -140,14 +142,14 @@ translations_de = {
     "Emotional (Affective Bodily Sensation)": "Emotional (Körperliche Gefühlsempfindung)",
     "Imagine the somatic bodily feeling of sudden joyous excitement or profound calm.": "Stellen Sie sich das körperliche Empfinden plötzlicher freudiger Erregung oder tiefer Ruhe vor.",
     "Step 3: Multi-Sensory Profiling (Dawes et al. 2024)": "Schritt 3: Multisensorisches Profiling (Dawes et al. 2024)",
-    "Assessing non-visual modalities to identify whether aphantasia is unimodal (visual-only) or multisensory.": "Prüfung nicht-visueller Sinneskanäle zur Bestimmung, ob die Aphantasie unimodal (rein visuell) oder multisensorisch ausgeprägt ist.",
+    "Assessing non-visual modalities to identify whether aphantasia is unimodal (visual-only) or multisensory.": "Prüfung nicht-visueller Sinneskanäle zur Bestimmung, ob die Afantasie unimodal (rein visuell) oder multisensorisch ausgeprägt ist.",
     "Generate Diagnostic Report & Baseline Profile →": "Befundbericht & Ausgangsprofil erstellen →",
     "Typical Multi-Modal Profile": "Typisches multi-modales Profil",
-    "Unimodal Visual Aphantasia": "Unimodale visuelle Aphantasie",
-    "Multisensory Aphantasia": "Multisensorische Aphantasie",
-    "Your visual imagery is in the typical or hypophantasia range. Your multi-modal sensory profile shows normal cross-sensory imagination.": "Ihre visuelle Vorstellungskraft liegt im typischen Bereich oder im Bereich der Hypophantasie. Ihr Sinnesprofil zeigt normale Fähigkeiten.",
-    "Based on Dawes et al. (2024), your results indicate Unimodal Visual Aphantasia. Your lack of imagery is selective to the visual modality, while non-visual channels (such as hearing, touch, or motor simulation) remain functional and provide excellent anchors for neurocognitive training.": "Gemäß Dawes et al. (2024) weisen Ihre Ergebnisse auf eine Unimodale Visuelle Aphantasie hin. Die verminderte Vorstellungskraft betrifft rein den visuellen Kanal, während Hören, Tasten oder Motorik intakt sind und ideale Ankerpunkte für das Training bieten.",
-    "Based on Dawes et al. (2024), your results indicate Multisensory Aphantasia. Your imagery reduction spans multiple sensory domains beyond vision. Training protocols will begin with semantic, proprioceptive, and physiological afterimage stimuli rather than auditory or sensory pegs.": "Gemäß Dawes et al. (2024) weisen Ihre Ergebnisse auf eine Multisensorische Aphantasie hin. Die reduzierte Vorstellungskraft erstreckt sich über mehrere Sinne. Das Training setzt daher primär auf semantische, propriozeptive und physiologische Nachbildreize.",
+    "Unimodal Visual Aphantasia": "Unimodale visuelle Afantasie",
+    "Multisensory Aphantasia": "Multisensorische Afantasie",
+    "Your visual imagery is in the typical or hypophantasia range. Your multi-modal sensory profile shows normal cross-sensory imagination.": "Ihre visuelle Vorstellungskraft liegt im typischen Bereich oder im Bereich der Hypofantasie. Ihr Sinnesprofil zeigt normale Fähigkeiten.",
+    "Based on Dawes et al. (2024), your results indicate Unimodal Visual Aphantasia. Your lack of imagery is selective to the visual modality, while non-visual channels (such as hearing, touch, or motor simulation) remain functional and provide excellent anchors for neurocognitive training.": "Gemäß Dawes et al. (2024) weisen Ihre Ergebnisse auf eine Unimodale Visuelle Afantasie hin. Die verminderte Vorstellungskraft betrifft rein den visuellen Kanal, während Hören, Tasten oder Motorik intakt sind und ideale Ankerpunkte für das Training bieten.",
+    "Based on Dawes et al. (2024), your results indicate Multisensory Aphantasia. Your imagery reduction spans multiple sensory domains beyond vision. Training protocols will begin with semantic, proprioceptive, and physiological afterimage stimuli rather than auditory or sensory pegs.": "Gemäß Dawes et al. (2024) weisen Ihre Ergebnisse auf eine Multisensorische Afantasie hin. Die reduzierte Vorstellungskraft erstreckt sich über mehrere Sinne. Das Training setzt daher primär auf semantische, propriozeptive und physiologische Nachbildreize.",
 
     # --- Diagnostic Report ---
     "out of 80": "von 80 Punkten",
@@ -193,7 +195,7 @@ translations_de = {
     # --- Training Dashboard ---
     "6-Week Functional Imagery Training (FIT)": "6-Wochen Functional Imagery Training (FIT)",
     "15 MIN/DAY": "15 MIN/TAG",
-    "Rhodes et al. (2024) protocol: Neuroplastic scaffolding curriculum adapted for aphantasic cognition.": "Protokoll nach Rhodes et al. (2024): Neuroplastisches Scaffolding-Curriculum, angepasst an aphantasische Kognition.",
+    "Rhodes et al. (2024) protocol: Neuroplastic scaffolding curriculum adapted for aphantasic cognition.": "Protokoll nach Rhodes et al. (2024): Neuroplastisches Scaffolding-Curriculum, angepasst an afantasische Kognition.",
     "Completed: %1 / 42 Sessions": "Abgeschlossen: %1 / 42 Einheiten",
     "Streak: %1 Days": "Serie: %1 Tage",
     "Launch Today's Session\n(Week %1, Day %2) →": "Heutige Einheit starten\n(Woche %1, Tag %2) →",
@@ -284,11 +286,11 @@ translations_de = {
 
     # --- About View ---
     "The gold-standard 16-item self-report questionnaire for voluntary visual mental imagery vividness.": "Der 16-Item-Goldstandard-Fragebogen zur Erfassung der willentlichen visuellen Vorstellungskraft.",
-    "Formally established the medical condition name Aphantasia and standardized VVIQ diagnostic classification.": "Etablierte den Fachbegriff Aphantasie und standardisierte die diagnostische VVIQ-Klassifikation.",
-    "Established standard population norms: scores < 32 indicate marked aphantasia (score 16 = total aphantasia); population mean = 56.8.": "Etablierte Populationsnormen: Werte < 32 zeigen Aphantasie an (Wert 16 = vollständige Aphantasie; Mittelwert = 56,8).",
-    "Established hyperphantasia threshold (75-80 pts) and frontoparietal-occipitotemporal neuroplastic connectivity model.": "Etablierte den Hyperphantasie-Schwellenwert (75-80 Pkt.) und das frontoparietal-okzipitotemporale Konnektivitätsmodell.",
-    "Demonstrated that aphantasia can be unimodal (visual only) or multisensory (multi-modal attenuation).": "Wies nach, dass Aphantasie unimodal (rein visuell) oder multisensorisch (mehrere Sinne betreffend) auftreten kann.",
-    "Psychophysical binocular rivalry priming proving aphantasia is a genuine sensory absence rather than metacognitive bias.": "Psychophysikalisches Priming (Binokulare Rivalität) belegt, dass Aphantasie ein echtes sensorisches Phänomen ist.",
+    "Formally established the medical condition name Aphantasia and standardized VVIQ diagnostic classification.": "Etablierte den Fachbegriff Afantasie und standardisierte die diagnostische VVIQ-Klassifikation.",
+    "Established standard population norms: scores < 32 indicate marked aphantasia (score 16 = total aphantasia); population mean = 56.8.": "Etablierte Populationsnormen: Werte < 32 zeigen Afantasie an (Wert 16 = vollständige Afantasie; Mittelwert = 56,8).",
+    "Established hyperphantasia threshold (75-80 pts) and frontoparietal-occipitotemporal neuroplastic connectivity model.": "Etablierte den Hyperfantasie-Schwellenwert (75-80 Pkt.) und das frontoparietal-okzipitotemporale Konnektivitätsmodell.",
+    "Demonstrated that aphantasia can be unimodal (visual only) or multisensory (multi-modal attenuation).": "Wies nach, dass Afantasie unimodal (rein visuell) oder multisensorisch (mehrere Sinne betreffend) auftreten kann.",
+    "Psychophysical binocular rivalry priming proving aphantasia is a genuine sensory absence rather than metacognitive bias.": "Psychophysikalisches Priming (Binokulare Rivalität) belegt, dass Afantasie ein echtes sensorisches Phänomen ist.",
     "Foundational basis for 6-week curriculum: demonstrated that structured Functional Imagery Training significantly increases imagery capacity.": "Grundlage des 6-Wochen-Trainings: Belegte, dass Functional Imagery Training (FIT) die Vorstellungskraft signifikant steigert.",
     "Exhaustive synthesis of cognitive compensation strategies: propositional networks, spatial models, and dual-coding.": "Umfassende Dissertation über kognitive Kompensationsstrategien: propositionale Netzwerke und Spatial-Scaffolding.",
     "Download Participant Data (JSON / CSV)": "Teilnehmerdaten herunterladen (JSON / CSV)",

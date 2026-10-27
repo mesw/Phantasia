@@ -53,7 +53,7 @@ Rectangle {
             Row {
                 spacing: 8
                 Text {
-                    text: qsTr("Aphantasia")
+                    text: qsTr("Phantasia")
                     color: Theme.textPrimary
                     font.pixelSize: Theme.fontLg
                     font.bold: true

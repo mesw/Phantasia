@@ -20,7 +20,7 @@ day_translations = {
     "Day 3: Acoustic Resonance Anchors": "Tag 3: Akustische Resonanz-Anker",
     "Recalling auditory pitch, timbre, and rhythm as mental anchors.": "Abruf von Tonhöhe, Klangfarbe und Rhythmus als mentale Gedächtnisanker.",
     "Focus on a specific acoustic event: the rhythmic ticking of a clock, raindrops pattering on a window, or a familiar doorbell. Replay the sound in your mind with exact timing, pitch, and timbre. Notice the spatial direction from which the sound originates.": "Fokussieren Sie ein bestimmtes Geräusch: das Ticken einer Uhr, Regentropfen am Fenster oder eine Türklingel. Spielen Sie den Klang im Geist mit exaktem Timing, Tonhöhe und Klangfarbe ab. Achten Sie auf die räumliche Richtung.",
-    "Dawes et al. (2024) demonstrated that auditory imagery is preserved in unimodal aphantasics and can prime visual association networks.": "Dawes et al. (2024) zeigten, dass auditorische Vorstellungskraft bei unimodaler Aphantasie intakt ist und Assoziationsareale bahnen kann.",
+    "Dawes et al. (2024) demonstrated that auditory imagery is preserved in unimodal aphantasics and can prime visual association networks.": "Dawes et al. (2024) zeigten, dass auditorische Vorstellungskraft bei unimodaler Afantasie intakt ist und Assoziationsareale bahnen kann.",
 
     # Day 4
     "Day 4: Thermal & Weight Invariance": "Tag 4: Thermische & Schwere-Invarianz",
@@ -32,7 +32,7 @@ day_translations = {
     "Day 5: Semantic Feature Association": "Tag 5: Semantische Merkmalsassoziation",
     "Propositional attribute matrices for object reconstruction.": "Propositionale Eigenschaftsmatrizen zur mentalen Objektrekonstruktion.",
     "Choose an everyday object (e.g., an apple). Do not try to visualize it immediately. Instead, systematically list its propositional attributes: Shape = spherical with indentations; Material = organic skin; Weight = ~180g; Smell = crisp sweet floral; Sound = sharp crunch. Feel the structural completeness of the concept.": "Wählen Sie ein Alltagsobjekt (z.B. einen Apfel). Versuchen Sie nicht, ihn bildhaft zu sehen, sondern listen Sie propositionale Merkmale auf: Form = kugelähnlich mit Dellen; Schale = glatt; Gewicht = ~180g; Duft = fruchtig; Klang = knackig. Spüren Sie die begriffliche Vollständigkeit.",
-    "Monzel (2025) highlights propositional knowledge and semantic networks as the core compensatory cognitive mechanism in aphantasia.": "Monzel (2025) hebt propositionales Wissen und semantische Netzwerke als zentralen kognitiven Kompensationsmechanismus bei Aphantasie hervor.",
+    "Monzel (2025) highlights propositional knowledge and semantic networks as the core compensatory cognitive mechanism in aphantasia.": "Monzel (2025) hebt propositionales Wissen und semantische Netzwerke als zentralen kognitiven Kompensationsmechanismus bei Afantasie hervor.",
 
     # Day 6
     "Day 6: Dual-Modal Cross-Priming": "Tag 6: Dual-modales Cross-Priming",
@@ -140,7 +140,7 @@ day_translations = {
     "Day 23: 3D Isometric Wireframe Cube": "Tag 23: Isometrischer 3D-Drahtgitterwürfel",
     "Tracking vertices and edges during 3D spatial rotation.": "Verfolgung von Ecken und Kanten während räumlicher 3D-Drehung.",
     "Look at the 3D isometric wireframe cube. Identify the front-top-right corner. Mentally rotate the cube slowly around its vertical axis by 45 degrees. Which vertex comes toward you? Which face disappears into the background? Use the interactive rotation controller to verify.": "Betrachten Sie den 3D-Würfel. Identifizieren Sie die vordere rechte obere Ecke. Drehen Sie den Würfel mental um 45 Grad um die Hochachse. Welche Ecke nähert sich? Verifizieren Sie mit der 3D-Steuerung.",
-    "3D mental rotation activates the intraparietal sulcus and dorsal visual stream, which remain intact in congenital aphantasia (Monzel 2021).": "3D-Mentalrotation aktiviert den Sulcus intraparietalis und dorsalen Pfad, welche bei angeborener Aphantasie intakt sind (Monzel 2021).",
+    "3D mental rotation activates the intraparietal sulcus and dorsal visual stream, which remain intact in congenital aphantasia (Monzel 2021).": "3D-Mentalrotation aktiviert den Sulcus intraparietalis und dorsalen Pfad, welche bei angeborener Afantasie intakt sind (Monzel 2021).",
 
     # Day 24
     "Day 24: Mental Zooming & Scale Alteration": "Tag 24: Mentaler Zoom & Skalierung",
@@ -188,7 +188,7 @@ day_translations = {
     "Day 31: Kinesthetic Motor Imagery Rehearsal": "Tag 31: Kinästhetische Bewegungsvorstellung",
     "Internal physical sensation of athletic or expressive movement.": "Spüren des Körpers bei sportlichen oder ausdrucksstarken Bewegungsabläufen.",
     "Mentally perform a physical movement you know well: swimming a stroke, swinging a racket, or dancing. Feel the exact muscle contractions, the balance adjustments, the acceleration, and the air resistance. Experience the movement from the first-person perspective ('internal imagery').": "Führen Sie eine vertraute Bewegung mental durch: Schwimmzug, Schlag, Tanzschritt. Spüren Sie Muskelanspannung, Gleichgewicht und Luftwiderstand aus der Ich-Perspektive.",
-    "Motor imagery activates supplementary motor area (SMA) and primary motor cortex even in individuals with complete visual aphantasia.": "Motorische Vorstellung aktiviert das SMA und den motorischen Kortex auch bei vollständiger Aphantasie nachweisbar.",
+    "Motor imagery activates supplementary motor area (SMA) and primary motor cortex even in individuals with complete visual aphantasia.": "Motorische Vorstellung aktiviert das SMA und den motorischen Kortex auch bei vollständiger Afantasie nachweisbar.",
 
     # Day 32
     "Day 32: Autobiographical Room Recall": "Tag 32: Autobiografische Raumerinnerung",
@@ -230,7 +230,7 @@ day_translations = {
     "Day 38: Creative Problem Solving via Spatial Models": "Tag 38: Problemlösung über räumliche Modelle",
     "Rearranging furniture or conceptual layouts mentally.": "Mentales Umstellen von Möbeln oder Konzeptentwürfen.",
     "Imagine wanting to rearrange a room or fit multiple large suitcases into the trunk of a car. Use your Week 4 mental rotation and Week 1 spatial mapping skills to test different configurations mentally before touching any physical object.": "Stellen Sie sich vor, Koffer im Kofferraum zu verstauen oder Möbel umzustellen. Nutzen Sie Mentalrotation und Raumkartierung, um Konfigurationen vorab mental zu testen.",
-    "Spatial reasoning without visual phenomenology is a documented cognitive strength in aphantasic individuals (Zeman 2010; Monzel 2025).": "Räumliches Denken ohne Bildphänomenologie ist eine dokumentierte Stärke von Personen mit Aphantasie (Zeman 2010; Monzel 2025).",
+    "Spatial reasoning without visual phenomenology is a documented cognitive strength in aphantasic individuals (Zeman 2010; Monzel 2025).": "Räumliches Denken ohne Bildphänomenologie ist eine dokumentierte Stärke von Personen mit Afantasie (Zeman 2010; Monzel 2025).",
 
     # Day 39
     "Day 39: Cognitive Flexibility & Strategy Switching": "Tag 39: Kognitive Flexibilität & Strategiewechsel",

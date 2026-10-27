@@ -35,27 +35,27 @@
     <message>
         <location filename="../qml/views/AboutView.qml" line="143" />
         <source>Formally established the medical condition name Aphantasia and standardized VVIQ diagnostic classification.</source>
-        <translation>Etablierte den Fachbegriff Aphantasie und standardisierte die diagnostische VVIQ-Klassifikation.</translation>
+        <translation>Etablierte den Fachbegriff Afantasie und standardisierte die diagnostische VVIQ-Klassifikation.</translation>
     </message>
     <message>
         <location filename="../qml/views/AboutView.qml" line="147" />
         <source>Established standard population norms: scores &lt; 32 indicate marked aphantasia (score 16 = total aphantasia); population mean = 56.8.</source>
-        <translation>Etablierte Populationsnormen: Werte &lt; 32 zeigen Aphantasie an (Wert 16 = vollständige Aphantasie; Mittelwert = 56,8).</translation>
+        <translation>Etablierte Populationsnormen: Werte &lt; 32 zeigen Afantasie an (Wert 16 = vollständige Afantasie; Mittelwert = 56,8).</translation>
     </message>
     <message>
         <location filename="../qml/views/AboutView.qml" line="151" />
         <source>Established hyperphantasia threshold (75-80 pts) and frontoparietal-occipitotemporal neuroplastic connectivity model.</source>
-        <translation>Etablierte den Hyperphantasie-Schwellenwert (75-80 Pkt.) und das frontoparietal-okzipitotemporale Konnektivitätsmodell.</translation>
+        <translation>Etablierte den Hyperfantasie-Schwellenwert (75-80 Pkt.) und das frontoparietal-okzipitotemporale Konnektivitätsmodell.</translation>
     </message>
     <message>
         <location filename="../qml/views/AboutView.qml" line="155" />
         <source>Demonstrated that aphantasia can be unimodal (visual only) or multisensory (multi-modal attenuation).</source>
-        <translation>Wies nach, dass Aphantasie unimodal (rein visuell) oder multisensorisch (mehrere Sinne betreffend) auftreten kann.</translation>
+        <translation>Wies nach, dass Afantasie unimodal (rein visuell) oder multisensorisch (mehrere Sinne betreffend) auftreten kann.</translation>
     </message>
     <message>
         <location filename="../qml/views/AboutView.qml" line="159" />
         <source>Psychophysical binocular rivalry priming proving aphantasia is a genuine sensory absence rather than metacognitive bias.</source>
-        <translation>Psychophysikalisches Priming (Binokulare Rivalität) belegt, dass Aphantasie ein echtes sensorisches Phänomen ist.</translation>
+        <translation>Psychophysikalisches Priming (Binokulare Rivalität) belegt, dass Afantasie ein echtes sensorisches Phänomen ist.</translation>
     </message>
     <message>
         <location filename="../qml/views/AboutView.qml" line="163" />
@@ -390,7 +390,7 @@ Achten Sie auf Form, Komplementärfarben und Umrissstabilität.</translation>
     <message>
         <location filename="../Main.qml" line="14" />
         <source>Aphantasia Platform | Diagnostic Assessment &amp; Neurocognitive Training</source>
-        <translation>Aphantasie-Plattform | Diagnostik &amp; Neurokognitives Training</translation>
+        <translation>Afantasie-Plattform | Diagnostik &amp; Neurokognitives Training</translation>
     </message>
 </context>
 <context>
@@ -431,7 +431,7 @@ Achten Sie auf Form, Komplementärfarben und Umrissstabilität.</translation>
     <message>
         <location filename="../qml/components/MultisensoryCheck.qml" line="74" />
         <source>Assessing non-visual modalities to identify whether aphantasia is unimodal (visual-only) or multisensory.</source>
-        <translation>Prüfung nicht-visueller Sinneskanäle zur Bestimmung, ob die Aphantasie unimodal (rein visuell) oder multisensorisch ausgeprägt ist.</translation>
+        <translation>Prüfung nicht-visueller Sinneskanäle zur Bestimmung, ob die Afantasie unimodal (rein visuell) oder multisensorisch ausgeprägt ist.</translation>
     </message>
     <message>
         <location filename="../qml/components/MultisensoryCheck.qml" line="177" />
@@ -444,7 +444,7 @@ Achten Sie auf Form, Komplementärfarben und Umrissstabilität.</translation>
     <message>
         <location filename="../qml/components/NavigationHeader.qml" line="56" />
         <source>Aphantasia</source>
-        <translation>Aphantasie</translation>
+        <translation>Afantasie</translation>
     </message>
     <message>
         <location filename="../qml/components/NavigationHeader.qml" line="72" />
@@ -598,7 +598,7 @@ Achten Sie auf Form, Komplementärfarben und Umrissstabilität.</translation>
     <message>
         <location filename="../qml/components/TrainingDashboard.qml" line="78" />
         <source>Rhodes et al. (2024) protocol: Neuroplastic scaffolding curriculum adapted for aphantasic cognition.</source>
-        <translation>Protokoll nach Rhodes et al. (2024): Neuroplastisches Scaffolding-Curriculum, angepasst an aphantasische Kognition.</translation>
+        <translation>Protokoll nach Rhodes et al. (2024): Neuroplastisches Scaffolding-Curriculum, angepasst an afantasische Kognition.</translation>
     </message>
     <message>
         <location filename="../qml/components/TrainingDashboard.qml" line="88" />
@@ -743,842 +743,842 @@ Achten Sie auf Form, Komplementärfarben und Umrissstabilität.</translation>
     <message>
         <location filename="../src/trainingengine.cpp" line="105" />
         <source>Day 1: Tactile Blueprinting</source>
-        <translation type="unfinished">Day 1: Tactile Blueprinting</translation>
+        <translation>Tag 1: Taktiles Blueprinting</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="106" />
         <source>Physical-to-mental tactile transfer using familiar textured objects.</source>
-        <translation type="unfinished">Physical-to-mental tactile transfer using familiar textured objects.</translation>
+        <translation>Taktiler Transfer vom Realobjekt ins mentale Erleben anhand vertrauter Texturen.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="108" />
         <source>Hold a textured physical object (e.g. a coin, a key, or an embossed stone) in your hand. Feel its edges, ridges, and surface temperature with your fingertips for 60 seconds with eyes open. Then close your eyes. Reconstruct purely the tactile sensations: the metallic coldness, the sharp ridges, the weight in your palm. Do not force any visual picture. Focus 100% on tactile proprioception.</source>
-        <translation type="unfinished">Hold a textured physical object (e.g. a coin, a key, or an embossed stone) in your hand. Feel its edges, ridges, and surface temperature with your fingertips for 60 seconds with eyes open. Then close your eyes. Reconstruct purely the tactile sensations: the metallic coldness, the sharp ridges, the weight in your palm. Do not force any visual picture. Focus 100% on tactile proprioception.</translation>
+        <translation>Halten Sie einen strukturierten Gegenstand (Münze, Schlüssel, Stein) 60 Sekunden lang in der Hand. Ertasten Sie Kanten, Rillen und Temperatur bei offenen Augen. Schließen Sie dann die Augen. Rekonstruieren Sie rein das taktile Empfinden: die metallische Kühle, die Riefen, das Gewicht in der Handfläche. Erzwingen Sie kein visuelles Bild. Konzentrieren Sie sich zu 100% auf die taktile Propriozeption.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="109" />
         <source>Anchoring conceptual models in intact somatosensory cortices builds top-down frontoparietal scaffolding (Dawes et al. 2024; Kelly 2020).</source>
-        <translation type="unfinished">Anchoring conceptual models in intact somatosensory cortices builds top-down frontoparietal scaffolding (Dawes et al. 2024; Kelly 2020).</translation>
+        <translation>Die Verankerung in intakten somatosensorischen Arealen bildet ein neuronales Gerüst über frontoparietale Netzwerke (Dawes et al. 2024; Kelly 2020).</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="112" />
         <source>Day 2: Spatial Coordinate Mapping</source>
-        <translation type="unfinished">Day 2: Spatial Coordinate Mapping</translation>
+        <translation>Tag 2: Räumliche Koordinatenkartierung</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="113" />
         <source>Constructing a 3x3 mental coordinate grid without visual rendering.</source>
-        <translation type="unfinished">Constructing a 3x3 mental coordinate grid without visual rendering.</translation>
+        <translation>Aufbau eines mentalen 3x3-Koordinatenrasters ohne bildhafte Visualisierung.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="115" />
         <source>Mentally construct a 3x3 grid in the space directly before your chest. Assign objects to positions: Top-Left = Book, Center = Water Glass, Bottom-Right = Key. Mentally reach toward each position, feeling the physical spatial distance and coordinates. Move between positions without requiring a picture.</source>
-        <translation type="unfinished">Mentally construct a 3x3 grid in the space directly before your chest. Assign objects to positions: Top-Left = Book, Center = Water Glass, Bottom-Right = Key. Mentally reach toward each position, feeling the physical spatial distance and coordinates. Move between positions without requiring a picture.</translation>
+        <translation>Konstruieren Sie mental ein 3x3-Gitter im Raum vor Ihrer Brust. Weisen Sie Positionen Objekte zu: Oben-Links = Buch, Mitte = Wasserglas, Unten-Rechts = Schlüssel. Greifen Sie mental nach jeder Position und spüren Sie die räumliche Distanz und Richtung, ohne ein Bild zu benötigen.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="116" />
         <source>Visuospatial working memory and egocentric spatial coordinates operate independently of visual imagery vividness (Monzel 2025; Jacobs et al. 2018).</source>
-        <translation type="unfinished">Visuospatial working memory and egocentric spatial coordinates operate independently of visual imagery vividness (Monzel 2025; Jacobs et al. 2018).</translation>
+        <translation>Visuoräumliches Arbeitsgedächtnis und egozentrische Koordinaten arbeiten unabhängig von visueller Bildhaftigkeit (Monzel 2025; Jacobs et al. 2018).</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="119" />
         <source>Day 3: Acoustic Resonance Anchors</source>
-        <translation type="unfinished">Day 3: Acoustic Resonance Anchors</translation>
+        <translation>Tag 3: Akustische Resonanz-Anker</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="120" />
         <source>Recalling auditory pitch, timbre, and rhythm as mental anchors.</source>
-        <translation type="unfinished">Recalling auditory pitch, timbre, and rhythm as mental anchors.</translation>
+        <translation>Abruf von Tonhöhe, Klangfarbe und Rhythmus als mentale Gedächtnisanker.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="122" />
         <source>Focus on a specific acoustic event: the rhythmic ticking of a clock, raindrops pattering on a window, or a familiar doorbell. Replay the sound in your mind with exact timing, pitch, and timbre. Notice the spatial direction from which the sound originates.</source>
-        <translation type="unfinished">Focus on a specific acoustic event: the rhythmic ticking of a clock, raindrops pattering on a window, or a familiar doorbell. Replay the sound in your mind with exact timing, pitch, and timbre. Notice the spatial direction from which the sound originates.</translation>
+        <translation>Fokussieren Sie ein bestimmtes Geräusch: das Ticken einer Uhr, Regentropfen am Fenster oder eine Türklingel. Spielen Sie den Klang im Geist mit exaktem Timing, Tonhöhe und Klangfarbe ab. Achten Sie auf die räumliche Richtung.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="123" />
         <source>Dawes et al. (2024) demonstrated that auditory imagery is preserved in unimodal aphantasics and can prime visual association networks.</source>
-        <translation type="unfinished">Dawes et al. (2024) demonstrated that auditory imagery is preserved in unimodal aphantasics and can prime visual association networks.</translation>
+        <translation>Dawes et al. (2024) zeigten, dass auditorische Vorstellungskraft bei unimodaler Afantasie intakt ist und Assoziationsareale bahnen kann.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="126" />
         <source>Day 4: Thermal &amp; Weight Invariance</source>
-        <translation type="unfinished">Day 4: Thermal &amp; Weight Invariance</translation>
+        <translation>Tag 4: Thermische &amp; Schwere-Invarianz</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="127" />
         <source>Synthesizing physical mass and thermal contrast internally.</source>
-        <translation type="unfinished">Synthesizing physical mass and thermal contrast internally.</translation>
+        <translation>Mentale Synthese von physikalischer Masse und thermischem Kontrast.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="129" />
         <source>Imagine holding an ice cube in your left hand and a warm ceramic mug of tea in your right hand. Alternate your mental attention between the intense cold melting in your left palm and the soothing radiant heat warming your right fingers.</source>
-        <translation type="unfinished">Imagine holding an ice cube in your left hand and a warm ceramic mug of tea in your right hand. Alternate your mental attention between the intense cold melting in your left palm and the soothing radiant heat warming your right fingers.</translation>
+        <translation>Stellen Sie sich vor, in der linken Hand einen Eiswürfel und in der rechten eine warme Keramiktasse Tee zu halten. Wechseln Sie die Aufmerksamkeit zwischen der schmelzenden Kälte links und der wohligen Wärme rechts.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="130" />
         <source>Somatosensory integration activates insular and parietal neural pathways that strengthen subsequent multi-modal imagery (Rhodes et al. 2024).</source>
-        <translation type="unfinished">Somatosensory integration activates insular and parietal neural pathways that strengthen subsequent multi-modal imagery (Rhodes et al. 2024).</translation>
+        <translation>Somatosensorische Integration aktiviert insuläre und parietale Pfade, die spätere multisensorische Vorstellungen stärken (Rhodes et al. 2024).</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="133" />
         <source>Day 5: Semantic Feature Association</source>
-        <translation type="unfinished">Day 5: Semantic Feature Association</translation>
+        <translation>Tag 5: Semantische Merkmalsassoziation</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="134" />
         <source>Propositional attribute matrices for object reconstruction.</source>
-        <translation type="unfinished">Propositional attribute matrices for object reconstruction.</translation>
+        <translation>Propositionale Eigenschaftsmatrizen zur mentalen Objektrekonstruktion.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="136" />
         <source>Choose an everyday object (e.g., an apple). Do not try to visualize it immediately. Instead, systematically list its propositional attributes: Shape = spherical with indentations; Material = organic skin; Weight = ~180g; Smell = crisp sweet floral; Sound = sharp crunch. Feel the structural completeness of the concept.</source>
-        <translation type="unfinished">Choose an everyday object (e.g., an apple). Do not try to visualize it immediately. Instead, systematically list its propositional attributes: Shape = spherical with indentations; Material = organic skin; Weight = ~180g; Smell = crisp sweet floral; Sound = sharp crunch. Feel the structural completeness of the concept.</translation>
+        <translation>Wählen Sie ein Alltagsobjekt (z.B. einen Apfel). Versuchen Sie nicht, ihn bildhaft zu sehen, sondern listen Sie propositionale Merkmale auf: Form = kugelähnlich mit Dellen; Schale = glatt; Gewicht = ~180g; Duft = fruchtig; Klang = knackig. Spüren Sie die begriffliche Vollständigkeit.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="137" />
         <source>Monzel (2025) highlights propositional knowledge and semantic networks as the core compensatory cognitive mechanism in aphantasia.</source>
-        <translation type="unfinished">Monzel (2025) highlights propositional knowledge and semantic networks as the core compensatory cognitive mechanism in aphantasia.</translation>
+        <translation>Monzel (2025) hebt propositionales Wissen und semantische Netzwerke als zentralen kognitiven Kompensationsmechanismus bei Afantasie hervor.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="140" />
         <source>Day 6: Dual-Modal Cross-Priming</source>
-        <translation type="unfinished">Day 6: Dual-Modal Cross-Priming</translation>
+        <translation>Tag 6: Dual-modales Cross-Priming</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="141" />
         <source>Simultaneously binding sound and tactile texture.</source>
-        <translation type="unfinished">Simultaneously binding sound and tactile texture.</translation>
+        <translation>Gleichzeitige Verknüpfung von Klang und taktiler Oberflächentextur.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="143" />
         <source>Combine two non-visual modalities: imagine writing on a dry chalkboard with a crisp piece of chalk. Feel the chalk dust and friction on your fingertips while mentally hearing the squeak and tap of the chalk against the slate.</source>
-        <translation type="unfinished">Combine two non-visual modalities: imagine writing on a dry chalkboard with a crisp piece of chalk. Feel the chalk dust and friction on your fingertips while mentally hearing the squeak and tap of the chalk against the slate.</translation>
+        <translation>Verbinden Sie zwei nicht-visuelle Sinne: Stellen Sie sich vor, mit Kreide auf eine Tafel zu schreiben. Spüren Sie die Kreidestaub-Reibung an den Fingerspitzen und hören Sie gleichzeitig das Klacken und Quietschen auf dem Schiefer.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="144" />
         <source>Multi-sensory binding recruits supramodal associative regions in the temporal and parietal lobes (Dawes et al. 2024).</source>
-        <translation type="unfinished">Multi-sensory binding recruits supramodal associative regions in the temporal and parietal lobes (Dawes et al. 2024).</translation>
+        <translation>Multisensorische Bindung rekrutiert supramodale Assoziationsareale in Temporal- und Parietallappen (Dawes et al. 2024).</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="147" />
         <source>Day 7: Week 1 Integration &amp; Restorative Consolidation</source>
-        <translation type="unfinished">Day 7: Week 1 Integration &amp; Restorative Consolidation</translation>
+        <translation>Tag 7: Konsolidierung &amp; Erholung Woche 1</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="148" />
         <source>Reviewing non-visual anchors and assessing ease of activation.</source>
-        <translation type="unfinished">Reviewing non-visual anchors and assessing ease of activation.</translation>
+        <translation>Überprüfung der nicht-visuellen Anker und Bewertung der Abrufbarkeit.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="150" />
         <source>Revisit your strongest anchor from Days 1-6 (tactile, spatial, auditory, or thermal). Spend 8 minutes gently activating this anchor and holding it stable for 30-second intervals. Celebrate the clarity of your non-visual cognitive models.</source>
-        <translation type="unfinished">Revisit your strongest anchor from Days 1-6 (tactile, spatial, auditory, or thermal). Spend 8 minutes gently activating this anchor and holding it stable for 30-second intervals. Celebrate the clarity of your non-visual cognitive models.</translation>
+        <translation>Wiederholen Sie Ihren stärksten Anker der Tage 1-6 (taktil, räumlich, akustisch oder thermisch). Halten Sie ihn für 30-Sekunden-Intervalle stabil. Schätzen Sie die Klarheit Ihrer nicht-visuellen Modelle.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="151" />
         <source>Weekly consolidation periods prevent cognitive fatigue and facilitate synaptic consolidation (Rhodes et al. 2024).</source>
-        <translation type="unfinished">Weekly consolidation periods prevent cognitive fatigue and facilitate synaptic consolidation (Rhodes et al. 2024).</translation>
+        <translation>Wöchentliche Konsolidierungsphasen beugen kognitiver Ermüdung vor und fördern synaptische Konsolidierung (Rhodes et al. 2024).</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="158" />
         <source>Day 8: High-Contrast Monochromatic Cross</source>
-        <translation type="unfinished">Day 8: High-Contrast Monochromatic Cross</translation>
+        <translation>Tag 8: Kontrastreiches monochromes Kreuz</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="159" />
         <source>Retinal afterimage induction via 30-second fixation.</source>
-        <translation type="unfinished">Retinal afterimage induction via 30-second fixation.</translation>
+        <translation>Induktion eines retinalen Nachbilds durch 30-sekündige Fixation.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="161" />
         <source>Fixate your gaze strictly upon the small red dot in the center of the high-contrast white cross for exactly 30 seconds. Do not let your eyes wander. When the timer ends and the screen turns black, gently close your eyes. Observe the dark cross / complementary retinal afterimage floating before you. Try to hold its outline steady without blinking.</source>
-        <translation type="unfinished">Fixate your gaze strictly upon the small red dot in the center of the high-contrast white cross for exactly 30 seconds. Do not let your eyes wander. When the timer ends and the screen turns black, gently close your eyes. Observe the dark cross / complementary retinal afterimage floating before you. Try to hold its outline steady without blinking.</translation>
+        <translation>Fixieren Sie den kleinen roten Punkt in der Mitte des weißen Kreuzes genau 30 Sekunden lang. Wenn der Bildschirm schwarz wird, schließen Sie sanft die Augen. Beobachten Sie das dunkle Nachbild vor Ihrem inneren Auge und versuchen Sie, seine Kontur stabil zu halten.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="162" />
         <source>Retinal afterimages provide a physiological visual signal to V1/V2, bypassing impaired top-down generation while exercising mental image stabilization (Rhodes et al. 2024).</source>
-        <translation type="unfinished">Retinal afterimages provide a physiological visual signal to V1/V2, bypassing impaired top-down generation while exercising mental image stabilization (Rhodes et al. 2024).</translation>
+        <translation>Retinale Nachbilder senden ein physiologisches Signal an V1/V2, umgehen die gehemmte Top-Down-Generierung und trainieren die Stabilisierung (Rhodes et al. 2024).</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="165" />
         <source>Day 9: Concentric Rings &amp; Radial Patterns</source>
-        <translation type="unfinished">Day 9: Concentric Rings &amp; Radial Patterns</translation>
+        <translation>Tag 9: Konzentrische Ringe &amp; Radiale Muster</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="166" />
         <source>Observing retinal contrast dissipation and edge contours.</source>
-        <translation type="unfinished">Observing retinal contrast dissipation and edge contours.</translation>
+        <translation>Beobachtung des retinalen Kontrastabbaus und der Kantenkonturen.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="168" />
         <source>Fixate on the center point of the high-contrast alternating black and white rings for 30 seconds. When the timer signals, close your eyes. Notice the concentric rings inverted in brightness. Track how long the geometric edges remain detectable in your visual field.</source>
-        <translation type="unfinished">Fixate on the center point of the high-contrast alternating black and white rings for 30 seconds. When the timer signals, close your eyes. Notice the concentric rings inverted in brightness. Track how long the geometric edges remain detectable in your visual field.</translation>
+        <translation>Fixieren Sie den Mittelpunkt der schwarz-weißen Ringe 30 Sekunden lang. Schließen Sie danach die Augen. Beobachten Sie die helligkeitsinvertierten Ringe und stoppen Sie, wie lange die geometrischen Kanten sichtbar bleiben.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="169" />
         <source>Concentric high-spatial-frequency patterns maximally stimulate oriented receptive fields in early visual cortex (Hubel &amp; Wiesel; Zeman 2024).</source>
-        <translation type="unfinished">Concentric high-spatial-frequency patterns maximally stimulate oriented receptive fields in early visual cortex (Hubel &amp; Wiesel; Zeman 2024).</translation>
+        <translation>Muster mit hoher Ortsfrequenz stimulieren orientierungsselektive rezeptive Felder im visuellen Kortex maximal (Hubel &amp; Wiesel; Zeman 2024).</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="172" />
         <source>Day 10: Geometric Silhouette Stabilization</source>
-        <translation type="unfinished">Day 10: Geometric Silhouette Stabilization</translation>
+        <translation>Tag 10: Stabilisierung geometrischer Silhouetten</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="173" />
         <source>Actively holding a fading afterimage in mental focus.</source>
-        <translation type="unfinished">Actively holding a fading afterimage in mental focus.</translation>
+        <translation>Aktives Halten eines verblassenden Nachbildes im mentalen Fokus.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="175" />
         <source>Fixate on the high-contrast geometric shape (equilateral triangle) for 30 seconds. Close your eyes. When the afterimage begins to fade, actively mentally reinforce the three vertices: 'Point A at top, Point B bottom-left, Point C bottom-right'. Note whether verbal labelling prolongs the visual sensation.</source>
-        <translation type="unfinished">Fixate on the high-contrast geometric shape (equilateral triangle) for 30 seconds. Close your eyes. When the afterimage begins to fade, actively mentally reinforce the three vertices: 'Point A at top, Point B bottom-left, Point C bottom-right'. Note whether verbal labelling prolongs the visual sensation.</translation>
+        <translation>Fixieren Sie das Dreieck 30 Sekunden lang. Schließen Sie die Augen. Wenn das Nachbild verblasst, verstärken Sie mental die Eckpunkte: 'Punkt A oben, Punkt B unten links, Punkt C unten rechts'. Prüfen Sie, ob verbale Benennung das Bild verlängert.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="176" />
         <source>Dual-coding (verbal propositional reinforcement coupled with sensory afterimage) enhances attentional persistence (Monzel 2025).</source>
-        <translation type="unfinished">Dual-coding (verbal propositional reinforcement coupled with sensory afterimage) enhances attentional persistence (Monzel 2025).</translation>
+        <translation>Duale Kodierung (verbale Verstärkung gekoppelt mit Nachbild) steigert die Aufmerksamkeitspersistenz (Monzel 2025).</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="179" />
         <source>Day 11: Chromatic Complementary Afterimages</source>
-        <translation type="unfinished">Day 11: Chromatic Complementary Afterimages</translation>
+        <translation>Tag 11: Chromatische Komplementär-Nachbilder</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="180" />
         <source>Color-opponent retinal stimulation (Red/Cyan).</source>
-        <translation type="unfinished">Color-opponent retinal stimulation (Red/Cyan).</translation>
+        <translation>Farbopponente retinale Stimulation (Rot/Cyan).</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="182" />
         <source>Fixate upon the saturated red circular disc for 30 seconds. Close your eyes. Observe the complementary cyan/blue-green hue that emerges on the dark visual field. Pay close attention to the hue saturation and the border between the circle and the dark surround.</source>
-        <translation type="unfinished">Fixate upon the saturated red circular disc for 30 seconds. Close your eyes. Observe the complementary cyan/blue-green hue that emerges on the dark visual field. Pay close attention to the hue saturation and the border between the circle and the dark surround.</translation>
+        <translation>Fixieren Sie die rote Kreisscheibe 30 Sekunden lang. Schließen Sie die Augen. Beobachten Sie den komplementären cyan-türkisen Farbton, der auf dem dunklen Feld entsteht. Achten Sie auf Farbsättigung und Begrenzung.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="183" />
         <source>Color-opponent retinal ganglion cells create vivid complementary afterimages that activate chromatic processing pathways in area V4.</source>
-        <translation type="unfinished">Color-opponent retinal ganglion cells create vivid complementary afterimages that activate chromatic processing pathways in area V4.</translation>
+        <translation>Farbopponente Ganglienzellen erzeugen Komplementärnachbilder, die chromatische Verarbeitungspfade in Areal V4 ansprechen.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="186" />
         <source>Day 12: Saccadic Motion &amp; Afterimage Tracking</source>
-        <translation type="unfinished">Day 12: Saccadic Motion &amp; Afterimage Tracking</translation>
+        <translation>Tag 12: Sakkadische Bewegung &amp; Nachbild-Tracking</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="187" />
         <source>Moving an afterimage across the internal visual field.</source>
-        <translation type="unfinished">Moving an afterimage across the internal visual field.</translation>
+        <translation>Gezieltes Verschieben eines Nachbildes im inneren Sehfeld.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="189" />
         <source>Induce the cross afterimage (30s fixation). With eyes closed, slowly shift your physical gaze to the upper-left, then center, then upper-right. Notice how the afterimage tracks your eye movements. Practice intentionally 'pinning' the image in one mental quadrant.</source>
-        <translation type="unfinished">Induce the cross afterimage (30s fixation). With eyes closed, slowly shift your physical gaze to the upper-left, then center, then upper-right. Notice how the afterimage tracks your eye movements. Practice intentionally 'pinning' the image in one mental quadrant.</translation>
+        <translation>Erzeugen Sie das Kreuz-Nachbild (30s Fixation). Bewegen Sie die geschlossenen Augen langsam nach oben links, zur Mitte, nach oben rechts. Beobachten Sie, wie das Nachbild der Blickrichtung folgt, und versuchen Sie, es an einer Stelle zu fixieren.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="190" />
         <source>Dissociating retinocentric from spatiocentric visual coordinates strengthens frontoparietal attentional steering (Keogh &amp; Pearson 2024).</source>
-        <translation type="unfinished">Dissociating retinocentric from spatiocentric visual coordinates strengthens frontoparietal attentional steering (Keogh &amp; Pearson 2024).</translation>
+        <translation>Die Dissoziation retinozentrischer und spatiozentrischer Koordinaten stärkt die frontoparietale Aufmerksamkeitssteuerung (Keogh &amp; Pearson 2024).</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="193" />
         <source>Day 13: Bridging Afterimage to Voluntary Imagery</source>
-        <translation type="unfinished">Day 13: Bridging Afterimage to Voluntary Imagery</translation>
+        <translation>Tag 13: Brückenschlag vom Nachbild zur willentlichen Vorstellung</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="194" />
         <source>Transitioning from a fading retinal image into mental recall.</source>
-        <translation type="unfinished">Transitioning from a fading retinal image into mental recall.</translation>
+        <translation>Übergang vom verblassenden physiologischen Nachbild zum bewussten Abruf.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="196" />
         <source>Induce the geometric afterimage. As it fades toward blackness, immediately transition into mentally reconstructing the identical shape using your spatial knowledge from Week 1. Try to maintain the 'feeling of shape' even as the physiological retinal signal disappears.</source>
-        <translation type="unfinished">Induce the geometric afterimage. As it fades toward blackness, immediately transition into mentally reconstructing the identical shape using your spatial knowledge from Week 1. Try to maintain the 'feeling of shape' even as the physiological retinal signal disappears.</translation>
+        <translation>Erzeugen Sie das Nachbild. Sobald es verblasst, rekonstruieren Sie die identische Form mental mit Ihrem räumlichen Wissen aus Woche 1. Halten Sie das 'Gefühl der Form' auch nach Verschwinden des Netzhautsignals aufrecht.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="197" />
         <source>The critical breakthrough in Functional Imagery Training is transitioning from bottom-up perceptual signal to top-down voluntary maintenance (Rhodes et al. 2024).</source>
-        <translation type="unfinished">The critical breakthrough in Functional Imagery Training is transitioning from bottom-up perceptual signal to top-down voluntary maintenance (Rhodes et al. 2024).</translation>
+        <translation>Der Durchbruch im Functional Imagery Training liegt im Übergang von Bottom-Up-Signalen zur willentlichen Top-Down-Aufrechterhaltung (Rhodes et al. 2024).</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="200" />
         <source>Day 14: Week 2 Retinal Integration Review</source>
-        <translation type="unfinished">Day 14: Week 2 Retinal Integration Review</translation>
+        <translation>Tag 14: Retinale Integration &amp; Wochenüberprüfung</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="201" />
         <source>Assessing afterimage duration, color fidelity, and stability.</source>
-        <translation type="unfinished">Assessing afterimage duration, color fidelity, and stability.</translation>
+        <translation>Messung von Nachbilddauer, Farbtreue und Haltestabilität.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="203" />
         <source>Conduct two consecutive 30-second afterimage sessions. Measure the duration (in seconds) that the afterimage remains observable. Log whether the edges felt sharper or lasted longer compared to Day 8.</source>
-        <translation type="unfinished">Conduct two consecutive 30-second afterimage sessions. Measure the duration (in seconds) that the afterimage remains observable. Log whether the edges felt sharper or lasted longer compared to Day 8.</translation>
+        <translation>Führen Sie zwei Durchgänge durch. Messen Sie die Dauer (in Sekunden), die das Nachbild sichtbar bleibt. Notieren Sie, ob Kanten schärfer wirkten als an Tag 8.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="204" />
         <source>Systematic tracking of visual persistence provides objective behavioral markers of sensory engagement.</source>
-        <translation type="unfinished">Systematic tracking of visual persistence provides objective behavioral markers of sensory engagement.</translation>
+        <translation>Die systematische Erfassung visueller Persistenz liefert objektive Verhaltensmarker der sensorischen Aktivierung.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="211" />
         <source>Day 15: Layer 1 - Geometric Wireframe</source>
-        <translation type="unfinished">Day 15: Layer 1 - Geometric Wireframe</translation>
+        <translation>Tag 15: Schicht 1 - Geometrisches Drahtgitter</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="212" />
         <source>Focusing exclusively on boundary lines and silhouettes.</source>
-        <translation type="unfinished">Focusing exclusively on boundary lines and silhouettes.</translation>
+        <translation>Fokussierung ausschließlich auf Begrenzungslinien und Umrisse.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="214" />
         <source>Study the single object outline (an apple silhouette). Do not think about color, texture, or lighting. Focus solely on the outer contour: the curved sides, the top cleft where the stem sits, the gentle tapered bottom. Close your eyes and trace this outline in mental space.</source>
-        <translation type="unfinished">Study the single object outline (an apple silhouette). Do not think about color, texture, or lighting. Focus solely on the outer contour: the curved sides, the top cleft where the stem sits, the gentle tapered bottom. Close your eyes and trace this outline in mental space.</translation>
+        <translation>Betrachten Sie die Apfelsilhouette. Denken Sie weder an Farbe noch an Licht. Konzentrieren Sie sich rein auf die äußere Kontur: Wölbungen, Stielbucht oben, Verjüngung unten. Zeichnen Sie diese Linie mit geschlossenen Augen mental nach.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="215" />
         <source>Decomposing complex scenes into isolated dimensional layers prevents cognitive overload in low baseline imagers (Rhodes et al. 2024).</source>
-        <translation type="unfinished">Decomposing complex scenes into isolated dimensional layers prevents cognitive overload in low baseline imagers (Rhodes et al. 2024).</translation>
+        <translation>Die Zerlegung komplexer Szenen in Einzelschichten verhindert kognitive Überlastung bei geringer Basiskapazität (Rhodes et al. 2024).</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="218" />
         <source>Day 16: Layer 2 - Flat Monochromatic Color Fill</source>
-        <translation type="unfinished">Day 16: Layer 2 - Flat Monochromatic Color Fill</translation>
+        <translation>Tag 16: Schicht 2 - Flächige Farbfüllung</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="219" />
         <source>Applying a uniform, unshaded color field within boundaries.</source>
-        <translation type="unfinished">Applying a uniform, unshaded color field within boundaries.</translation>
+        <translation>Auftragen eines einheitlichen, unschattierten Farbfeldes in den Grenzen.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="221" />
         <source>Recall the silhouette from Day 15. Now imagine filling the interior with a single uniform, flat hue: deep crimson red. No highlights, no shadows, no texture—just a solid block of color inside the boundary lines.</source>
-        <translation type="unfinished">Recall the silhouette from Day 15. Now imagine filling the interior with a single uniform, flat hue: deep crimson red. No highlights, no shadows, no texture—just a solid block of color inside the boundary lines.</translation>
+        <translation>Rufen Sie die Silhouette von Tag 15 ab. Füllen Sie das Innere nun mit einer einheitlichen, flachen Farbe: Tiefrot. Keine Glanzpunkte, keine Schatten, keine Textur – nur ein sattes Farbfeld innerhalb der Kontur.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="222" />
         <source>Separating chromatic assignment from illumination reduces working memory demands during feature synthesis.</source>
-        <translation type="unfinished">Separating chromatic assignment from illumination reduces working memory demands during feature synthesis.</translation>
+        <translation>Die Trennung von Farbzuweisung und Beleuchtung entlastet das Arbeitsgedächtnis bei der Merkmalszusammensetzung.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="225" />
         <source>Day 17: Layer 3 - Surface Texture &amp; Material</source>
-        <translation type="unfinished">Day 17: Layer 3 - Surface Texture &amp; Material</translation>
+        <translation>Tag 17: Schicht 3 - Oberflächentextur &amp; Material</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="226" />
         <source>Integrating tactile roughness, smoothness, and waxiness.</source>
-        <translation type="unfinished">Integrating tactile roughness, smoothness, and waxiness.</translation>
+        <translation>Integration von taktiler Glätte, Wachsigkeit und Haptik.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="228" />
         <source>Onto the colored shape, superimpose the tactile surface quality: the smooth waxy skin of an apple, tiny natural stipples, and a stiff brown fibrous stem. Use your Week 1 tactile anchors to ground the surface feel.</source>
-        <translation type="unfinished">Onto the colored shape, superimpose the tactile surface quality: the smooth waxy skin of an apple, tiny natural stipples, and a stiff brown fibrous stem. Use your Week 1 tactile anchors to ground the surface feel.</translation>
+        <translation>Fügen Sie die taktile Oberflächenbeschaffenheit hinzu: die wachsige, glatte Schale, winzige Punkte und den faserigen braunen Stiel. Nutzen Sie Ihre Tastanker aus Woche 1.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="229" />
         <source>Connecting tactile memory to visual surface representation activates the ventral visual stream and collateral sulcus (Monzel 2025).</source>
-        <translation type="unfinished">Connecting tactile memory to visual surface representation activates the ventral visual stream and collateral sulcus (Monzel 2025).</translation>
+        <translation>Die Verknüpfung taktiler Erinnerungen mit visueller Oberfläche aktiviert den ventralen Pfad und den Sulcus collateralis (Monzel 2025).</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="232" />
         <source>Day 18: Layer 4 - Directional Light &amp; Cast Shadow</source>
-        <translation type="unfinished">Day 18: Layer 4 - Directional Light &amp; Cast Shadow</translation>
+        <translation>Tag 18: Schicht 4 - Gerichtetes Licht &amp; Schattenwurf</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="233" />
         <source>Introducing a light source and mental illumination.</source>
-        <translation type="unfinished">Introducing a light source and mental illumination.</translation>
+        <translation>Einführung einer Lichtquelle und mentaler Schattierung.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="235" />
         <source>Position an imaginary light source at the top-left (10 o'clock position). Picture a soft white reflection gleam on the upper-left curve of the apple, and a crescent of darker shading on the lower-right side, with a soft oval shadow cast onto the table below.</source>
-        <translation type="unfinished">Position an imaginary light source at the top-left (10 o'clock position). Picture a soft white reflection gleam on the upper-left curve of the apple, and a crescent of darker shading on the lower-right side, with a soft oval shadow cast onto the table below.</translation>
+        <translation>Platzieren Sie eine gedachte Lichtquelle oben links (10-Uhr-Position). Stellen Sie sich einen weißen Glanzfleck oben links, dunklere Schattierung unten rechts und einen weichen ovalen Schattenwurf auf dem Tisch vor.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="236" />
         <source>Illumination modeling recruits 3D shape-from-shading mechanisms in parietal-occipital circuits (Zeman 2024).</source>
-        <translation type="unfinished">Illumination modeling recruits 3D shape-from-shading mechanisms in parietal-occipital circuits (Zeman 2024).</translation>
+        <translation>Beleuchtungsmodelle nutzen Mechanismen der 3D-Form-aus-Schattierung in parieto-okzipitalen Netzwerken (Zeman 2024).</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="239" />
         <source>Day 19: Complete Object Synthesis (The Apple)</source>
-        <translation type="unfinished">Day 19: Complete Object Synthesis (The Apple)</translation>
+        <translation>Tag 19: Gesamtsynthese des Objekts (Der Apfel)</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="240" />
         <source>Stacking all 4 layers sequentially into a cohesive representation.</source>
-        <translation type="unfinished">Stacking all 4 layers sequentially into a cohesive representation.</translation>
+        <translation>Sequenzielles Aufeinanderschichten aller 4 Ebenen zu einem Ganzen.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="242" />
         <source>Systematically construct the complete object in 4 timed 2-minute steps: Step 1 (0-2m): Contour silhouette; Step 2 (2-4m): Red color fill; Step 3 (4-6m): Waxy texture &amp; stem; Step 4 (6-8m): Light highlight &amp; cast shadow. Observe how stacking makes visualization manageable.</source>
-        <translation type="unfinished">Systematically construct the complete object in 4 timed 2-minute steps: Step 1 (0-2m): Contour silhouette; Step 2 (2-4m): Red color fill; Step 3 (4-6m): Waxy texture &amp; stem; Step 4 (6-8m): Light highlight &amp; cast shadow. Observe how stacking makes visualization manageable.</translation>
+        <translation>Bauen Sie das Objekt in vier 2-Minuten-Schritten auf: Schritt 1 (0-2m): Umrisslinie; Schritt 2 (2-4m): Rote Farbfüllung; Schritt 3 (4-6m): Wachsige Textur &amp; Stiel; Schritt 4 (6-8m): Glanzlicht &amp; Schattenwurf. Erleben Sie, wie Zerlegung Vorstellungen handhabbar macht.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="243" />
         <source>Stepwise feature stacking directly mirrors the core protocol of Rhodes et al. (2024), yielding measurable gains in athletes with imagery deficits.</source>
-        <translation type="unfinished">Stepwise feature stacking directly mirrors the core protocol of Rhodes et al. (2024), yielding measurable gains in athletes with imagery deficits.</translation>
+        <translation>Schrittweises Schichten entspricht dem FIT-Kernprotokoll nach Rhodes et al. (2024), das messbare Zuwächse erzielte.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="246" />
         <source>Day 20: Layered Assembly with Familiar Everyday Objects</source>
-        <translation type="unfinished">Day 20: Layered Assembly with Familiar Everyday Objects</translation>
+        <translation>Tag 20: Schichtenaufbau mit Alltagsgegenständen</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="247" />
         <source>Applying the 4-layer method to a ceramic coffee mug.</source>
-        <translation type="unfinished">Applying the 4-layer method to a ceramic coffee mug.</translation>
+        <translation>Anwendung der 4-Schichten-Methode auf eine Kaffeetasse.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="249" />
         <source>Apply the 4-layer method to a new object: a coffee mug. 1) Cylinder outline with a looped handle; 2) Glossy ceramic cobalt-blue color; 3) Cool smooth porcelain texture; 4) Bright light reflection on the rim and dark shadow inside the hollow interior.</source>
-        <translation type="unfinished">Apply the 4-layer method to a new object: a coffee mug. 1) Cylinder outline with a looped handle; 2) Glossy ceramic cobalt-blue color; 3) Cool smooth porcelain texture; 4) Bright light reflection on the rim and dark shadow inside the hollow interior.</translation>
+        <translation>Wenden Sie die 4 Ebenen auf eine Tasse an: 1) Zylinderform mit Henkel; 2) Kobaltblaue Farbe; 3) Kühle, glatte Porzellanhaptik; 4) Glanzreflex am Rand und Schatten im Inneren.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="250" />
         <source>Generalizing the feature-stacking strategy to varied shapes reinforces cognitive schema transfer.</source>
-        <translation type="unfinished">Generalizing the feature-stacking strategy to varied shapes reinforces cognitive schema transfer.</translation>
+        <translation>Die Übertragung der Strategie auf neue Formen festigt den kognitiven Schematransfer.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="253" />
         <source>Day 21: Week 3 Scaffolding Synthesis &amp; Review</source>
-        <translation type="unfinished">Day 21: Week 3 Scaffolding Synthesis &amp; Review</translation>
+        <translation>Tag 21: Scaffolding-Synthese &amp; Wochenreview</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="254" />
         <source>Consolidating the 4-layer decomposition pipeline.</source>
-        <translation type="unfinished">Consolidating the 4-layer decomposition pipeline.</translation>
+        <translation>Festigung des 4-Schichten-Zerlegungsablaufs.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="256" />
         <source>Select any object currently in the room. Deconstruct it mentally into its 4 layers (Outline, Color, Texture, Lighting) over 8 minutes. Rate how structured the mental assembly feels compared to attempting an immediate holistic visual image.</source>
-        <translation type="unfinished">Select any object currently in the room. Deconstruct it mentally into its 4 layers (Outline, Color, Texture, Lighting) over 8 minutes. Rate how structured the mental assembly feels compared to attempting an immediate holistic visual image.</translation>
+        <translation>Wählen Sie ein beliebiges Objekt im Raum. Zerlegen Sie es 8 Minuten lang mental in die 4 Schichten (Umriss, Farbe, Textur, Licht). Bewerten Sie die Struktur im Vergleich zu unzerlegten Versuchen.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="257" />
         <source>Rhodes et al. (2024) noted that low-imagers frequently fail when trying to summon holistic images instantly; stepwise assembly solves this barrier.</source>
-        <translation type="unfinished">Rhodes et al. (2024) noted that low-imagers frequently fail when trying to summon holistic images instantly; stepwise assembly solves this barrier.</translation>
+        <translation>Personen mit geringer Vorstellungskraft scheitern oft am sofortigen ganzheitlichen Bild; stufenweiser Aufbau überwindet diese Hürde (Rhodes et al. 2024).</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="264" />
         <source>Day 22: 2D Planar Mental Rotation</source>
-        <translation type="unfinished">Day 22: 2D Planar Mental Rotation</translation>
+        <translation>Tag 22: Planare 2D-Mentalrotation</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="265" />
         <source>Rotating letters and asymmetrical symbols in 2D space.</source>
-        <translation type="unfinished">Rotating letters and asymmetrical symbols in 2D space.</translation>
+        <translation>Rotation von Buchstaben und asymmetrischen Symbolen in der Ebene.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="267" />
         <source>Examine the letter 'F' displayed on screen. Mentally rotate it clockwise by 90 degrees (facing downward). Then rotate it another 90 degrees (facing upside down). Trace where the crossbars point at each step. Verify against the interactive rotating preview.</source>
-        <translation type="unfinished">Examine the letter 'F' displayed on screen. Mentally rotate it clockwise by 90 degrees (facing downward). Then rotate it another 90 degrees (facing upside down). Trace where the crossbars point at each step. Verify against the interactive rotating preview.</translation>
+        <translation>Betrachten Sie das 'F'. Drehen Sie es mental um 90 Grad im Uhrzeigersinn (nach unten gerichtet), dann um weitere 90 Grad (auf den Kopf). Prüfen Sie, wohin die Querbalken zeigen, und vergleichen Sie mit dem Regler.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="268" />
         <source>Classic Shepard &amp; Metzler (1971) paradigm: mental rotation speed is proportional to angular disparity, utilizing motor and premotor cortex.</source>
-        <translation type="unfinished">Classic Shepard &amp; Metzler (1971) paradigm: mental rotation speed is proportional to angular disparity, utilizing motor and premotor cortex.</translation>
+        <translation>Klassisches Paradigma nach Shepard &amp; Metzler (1971): Die Rotationszeit ist proportional zum Drehwinkel unter Nutzung motorischer Areale.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="271" />
         <source>Day 23: 3D Isometric Wireframe Cube</source>
-        <translation type="unfinished">Day 23: 3D Isometric Wireframe Cube</translation>
+        <translation>Tag 23: Isometrischer 3D-Drahtgitterwürfel</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="272" />
         <source>Tracking vertices and edges during 3D spatial rotation.</source>
-        <translation type="unfinished">Tracking vertices and edges during 3D spatial rotation.</translation>
+        <translation>Verfolgung von Ecken und Kanten während räumlicher 3D-Drehung.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="274" />
         <source>Look at the 3D isometric wireframe cube. Identify the front-top-right corner. Mentally rotate the cube slowly around its vertical axis by 45 degrees. Which vertex comes toward you? Which face disappears into the background? Use the interactive rotation controller to verify.</source>
-        <translation type="unfinished">Look at the 3D isometric wireframe cube. Identify the front-top-right corner. Mentally rotate the cube slowly around its vertical axis by 45 degrees. Which vertex comes toward you? Which face disappears into the background? Use the interactive rotation controller to verify.</translation>
+        <translation>Betrachten Sie den 3D-Würfel. Identifizieren Sie die vordere rechte obere Ecke. Drehen Sie den Würfel mental um 45 Grad um die Hochachse. Welche Ecke nähert sich? Verifizieren Sie mit der 3D-Steuerung.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="275" />
         <source>3D mental rotation activates the intraparietal sulcus and dorsal visual stream, which remain intact in congenital aphantasia (Monzel 2021).</source>
-        <translation type="unfinished">3D mental rotation activates the intraparietal sulcus and dorsal visual stream, which remain intact in congenital aphantasia (Monzel 2021).</translation>
+        <translation>3D-Mentalrotation aktiviert den Sulcus intraparietalis und dorsalen Pfad, welche bei angeborener Afantasie intakt sind (Monzel 2021).</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="278" />
         <source>Day 24: Mental Zooming &amp; Scale Alteration</source>
-        <translation type="unfinished">Day 24: Mental Zooming &amp; Scale Alteration</translation>
+        <translation>Tag 24: Mentaler Zoom &amp; Skalierung</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="279" />
         <source>Dynamically varying mental focal length from macro to detail.</source>
-        <translation type="unfinished">Dynamically varying mental focal length from macro to detail.</translation>
+        <translation>Dynamische Veränderung der mentalen Brennweite von Makro bis Detail.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="281" />
         <source>Mentally picture a grandfather clock from 5 meters away (full wooden cabinet, ticking pendulum). Now mentally 'zoom in' like a camera lens until you are 10 centimeters from the watch face, inspecting the metallic hands and roman numerals. Zoom smoothly back out.</source>
-        <translation type="unfinished">Mentally picture a grandfather clock from 5 meters away (full wooden cabinet, ticking pendulum). Now mentally 'zoom in' like a camera lens until you are 10 centimeters from the watch face, inspecting the metallic hands and roman numerals. Zoom smoothly back out.</translation>
+        <translation>Stellen Sie sich eine Standuhr aus 5 Metern Entfernung vor. Zoomen Sie wie mit einem Kameraobjektiv heran, bis Sie 10 Zentimeter vor dem Zifferblatt sind. Zoomen Sie wieder ruhig zurück.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="282" />
         <source>Mental zoom exercises recruit topographic visual buffers and attentional magnification mechanisms.</source>
-        <translation type="unfinished">Mental zoom exercises recruit topographic visual buffers and attentional magnification mechanisms.</translation>
+        <translation>Mentale Zoomübungen aktivieren retinotope visuelle Puffer und Mechanismen der Aufmerksamkeitsvergrößerung.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="285" />
         <source>Day 25: Mental Orbiting (Camera Perspective Shifts)</source>
-        <translation type="unfinished">Day 25: Mental Orbiting (Camera Perspective Shifts)</translation>
+        <translation>Tag 25: Mentales Umkreisen (Perspektivwechsel)</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="286" />
         <source>Moving your viewpoint around a stationary central object.</source>
-        <translation type="unfinished">Moving your viewpoint around a stationary central object.</translation>
+        <translation>Verschiebung des eigenen Blickwinkels um ein ruhendes Objekt.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="288" />
         <source>Picture a wooden chair in the center of the room. Keep the chair completely still, but imagine walking in a smooth circle around it. View it from the front, from the side profile, from directly behind the backrest, and from the other side.</source>
-        <translation type="unfinished">Picture a wooden chair in the center of the room. Keep the chair completely still, but imagine walking in a smooth circle around it. View it from the front, from the side profile, from directly behind the backrest, and from the other side.</translation>
+        <translation>Stellen Sie sich einen Stuhl in der Raummitte vor. Halten Sie den Stuhl unbeweglich, umrunden Sie ihn mental im Kreis und betrachten Sie ihn von vorne, der Seite und von hinten.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="289" />
         <source>Allocentric to egocentric reference frame transformations stimulate hippocampal and retro-splenial spatial navigation networks.</source>
-        <translation type="unfinished">Allocentric to egocentric reference frame transformations stimulate hippocampal and retro-splenial spatial navigation networks.</translation>
+        <translation>Allolozentrische zu egozentrischen Transformationen stimulieren hippocampale und retrospleniale Navigationsnetzwerke.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="292" />
         <source>Day 26: Spatial Unfolding (Net to 3D Polyhedron)</source>
-        <translation type="unfinished">Day 26: Spatial Unfolding (Net to 3D Polyhedron)</translation>
+        <translation>Tag 26: Räumliches Auffalten (Körpernetz zu 3D)</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="293" />
         <source>Folding a 2D cross-shaped net into a 3D closed box.</source>
-        <translation type="unfinished">Folding a 2D cross-shaped net into a 3D closed box.</translation>
+        <translation>Falten eines 2D-Kreuznetzes zu einer geschlossenen 3D-Schachtel.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="295" />
         <source>Visualize a flat cross made of 6 squares (a cube net). Mentally fold the bottom flap up 90 degrees to form the front wall. Fold the left and right flaps up to form side walls. Fold the top square over to form the lid. Confirm the completed 3D box.</source>
-        <translation type="unfinished">Visualize a flat cross made of 6 squares (a cube net). Mentally fold the bottom flap up 90 degrees to form the front wall. Fold the left and right flaps up to form side walls. Fold the top square over to form the lid. Confirm the completed 3D box.</translation>
+        <translation>Stellen Sie sich ein Würfelnetz aus 6 Quadraten vor. Klappen Sie die Seitenlaschen um 90 Grad nach oben und das obere Quadrat als Deckel um. Bestätigen Sie die geschlossene Schachtel.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="296" />
         <source>Spatial origami and paper-folding tasks measure pure spatial transformation without requiring photorealistic color rendering.</source>
-        <translation type="unfinished">Spatial origami and paper-folding tasks measure pure spatial transformation without requiring photorealistic color rendering.</translation>
+        <translation>Aufgaben zum räumlichen Falten erfassen reine Raumtransformationen unabhängig von fotorealistischer Farbwiedergabe.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="299" />
         <source>Day 27: Multi-Object Spatial Choreography</source>
-        <translation type="unfinished">Day 27: Multi-Object Spatial Choreography</translation>
+        <translation>Tag 27: Räumliche Multi-Objekt-Choreografie</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="300" />
         <source>Maintaining spatial relationships between 3 interacting objects.</source>
-        <translation type="unfinished">Maintaining spatial relationships between 3 interacting objects.</translation>
+        <translation>Aufrechterhaltung räumlicher Relationen zwischen drei interagierenden Objekten.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="302" />
         <source>Place 3 items in mental space on a tabletop: a red apple, a glass bottle, and a small coin. Mentally swap the positions of the apple and bottle. Then slide the coin between them. Track the relative left/right and front/back spatial distances at each movement.</source>
-        <translation type="unfinished">Place 3 items in mental space on a tabletop: a red apple, a glass bottle, and a small coin. Mentally swap the positions of the apple and bottle. Then slide the coin between them. Track the relative left/right and front/back spatial distances at each movement.</translation>
+        <translation>Platzieren Sie 3 Objekte auf einem Tisch: Apfel, Glasflasche, Münze. Tauschen Sie gedanklich die Position von Apfel und Flasche. Schieben Sie die Münze dazwischen. Verfolgen Sie die Abstände.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="303" />
         <source>Multi-object spatial tracking recruits parietal working memory buffers and strengthens spatial relational models.</source>
-        <translation type="unfinished">Multi-object spatial tracking recruits parietal working memory buffers and strengthens spatial relational models.</translation>
+        <translation>Räumliches Multi-Objekt-Tracking stärkt parietale Puffer und relationale Modelle.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="306" />
         <source>Day 28: Week 4 Spatial Manipulation Review</source>
-        <translation type="unfinished">Day 28: Week 4 Spatial Manipulation Review</translation>
+        <translation>Tag 28: Wochenüberprüfung Räumliche Manipulation</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="307" />
         <source>Evaluating speed and confidence of 3D mental rotation.</source>
-        <translation type="unfinished">Evaluating speed and confidence of 3D mental rotation.</translation>
+        <translation>Bewertung von Geschwindigkeit und Sicherheit bei der 3D-Mentalrotation.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="309" />
         <source>Take a 3D pyramid or cube. Rotate it smoothly along two axes simultaneously (yaw and pitch) for 8 minutes. Log whether keeping track of vertices felt more intuitive and fluid compared to Day 22.</source>
-        <translation type="unfinished">Take a 3D pyramid or cube. Rotate it smoothly along two axes simultaneously (yaw and pitch) for 8 minutes. Log whether keeping track of vertices felt more intuitive and fluid compared to Day 22.</translation>
+        <translation>Drehen Sie einen 3D-Würfel 8 Minuten lang flüssig um zwei Achsen gleichzeitig. Protokollieren Sie, ob das Verfolgen der Ecken intuitiver fiel als an Tag 22.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="310" />
         <source>Spatial manipulation mastery provides the structural skeleton for complex scene generation in Weeks 5 and 6.</source>
-        <translation type="unfinished">Spatial manipulation mastery provides the structural skeleton for complex scene generation in Weeks 5 and 6.</translation>
+        <translation>Die Beherrschung räumlicher Manipulation bildet das tragende Gerüst für komplexe Szenen in Woche 5 und 6.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="317" />
         <source>Day 29: Emotionally Salient Natural Landscape</source>
-        <translation type="unfinished">Day 29: Emotionally Salient Natural Landscape</translation>
+        <translation>Tag 29: Emotional bedeutsame Naturlandschaft</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="318" />
         <source>Using emotional calm and safety to amplify sensory details.</source>
-        <translation type="unfinished">Using emotional calm and safety to amplify sensory details.</translation>
+        <translation>Nutzung emotionaler Ruhe und Geborgenheit zur Verstärkung von Sinnesdetails.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="320" />
         <source>Choose an outdoor setting where you felt profound peace (e.g. a secluded pine forest or a tranquil lakeshore). Re-activate the visceral feeling of safety and calm in your chest. Let this emotional tone draw in the ambient details: the gentle breeze on your face, the smell of pine needles, the green canopy.</source>
-        <translation type="unfinished">Choose an outdoor setting where you felt profound peace (e.g. a secluded pine forest or a tranquil lakeshore). Re-activate the visceral feeling of safety and calm in your chest. Let this emotional tone draw in the ambient details: the gentle breeze on your face, the smell of pine needles, the green canopy.</translation>
+        <translation>Wählen Sie einen Ort in der Natur, an dem Sie tiefe Ruhe spürten (Wald, Seeufer). Rufen Sie das Gefühl von Geborgenheit im Brustraum wach. Lassen Sie diese Emotion Details herbeiziehen: Windhauch, Nadelduft, Blätterdach.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="321" />
         <source>Emotional valence activates the amygdala and ventromedial prefrontal cortex, which powerfully boost visual cortex sensitivity (Wicken et al. 2021; Rhodes et al. 2024).</source>
-        <translation type="unfinished">Emotional valence activates the amygdala and ventromedial prefrontal cortex, which powerfully boost visual cortex sensitivity (Wicken et al. 2021; Rhodes et al. 2024).</translation>
+        <translation>Emotionale Valenz aktiviert Amygdala und vmPFC, was die Empfindlichkeit des visuellen Kortex nachweislich steigert (Wicken et al. 2021; Rhodes et al. 2024).</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="324" />
         <source>Day 30: Soundscape-Driven Visual Construction</source>
-        <translation type="unfinished">Day 30: Soundscape-Driven Visual Construction</translation>
+        <translation>Tag 30: Klanggestützte Szenenkonstruktion</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="325" />
         <source>Using rich acoustic soundscapes to generate spatial imagery.</source>
-        <translation type="unfinished">Using rich acoustic soundscapes to generate spatial imagery.</translation>
+        <translation>Einsatz dichter Klanglandschaften zur Erzeugung räumlicher Vorstellungen.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="327" />
         <source>Imagine sitting on a sea cliff. First, fill your mind with sound: rhythmic roaring waves crashing against rocks below, distant seagulls calling, wind gusting past your ears. As the soundscape stabilizes, allow the visual horizon and white ocean foam to materialize from the sound sources.</source>
-        <translation type="unfinished">Imagine sitting on a sea cliff. First, fill your mind with sound: rhythmic roaring waves crashing against rocks below, distant seagulls calling, wind gusting past your ears. As the soundscape stabilizes, allow the visual horizon and white ocean foam to materialize from the sound sources.</translation>
+        <translation>Stellen Sie sich vor, an einer Klippe zu sitzen. Hören Sie zuerst die Brandung, Möwenrufe, Windstöße. Wenn die Klangkulisse steht, lassen Sie daraus die Brandungsgischt und den Horizont entstehen.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="328" />
         <source>Auditory-to-visual cross-modal transfer is one of the most effective compensatory pathways identified in low-imagery athletes (Rhodes et al. 2024).</source>
-        <translation type="unfinished">Auditory-to-visual cross-modal transfer is one of the most effective compensatory pathways identified in low-imagery athletes (Rhodes et al. 2024).</translation>
+        <translation>Auditorisch-visueller Transfer ist einer der effektivsten Kompensationspfade bei Sportlern mit schwacher Vorstellungskraft (Rhodes et al. 2024).</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="331" />
         <source>Day 31: Kinesthetic Motor Imagery Rehearsal</source>
-        <translation type="unfinished">Day 31: Kinesthetic Motor Imagery Rehearsal</translation>
+        <translation>Tag 31: Kinästhetische Bewegungsvorstellung</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="332" />
         <source>Internal physical sensation of athletic or expressive movement.</source>
-        <translation type="unfinished">Internal physical sensation of athletic or expressive movement.</translation>
+        <translation>Spüren des Körpers bei sportlichen oder ausdrucksstarken Bewegungsabläufen.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="334" />
         <source>Mentally perform a physical movement you know well: swimming a stroke, swinging a racket, or dancing. Feel the exact muscle contractions, the balance adjustments, the acceleration, and the air resistance. Experience the movement from the first-person perspective ('internal imagery').</source>
-        <translation type="unfinished">Mentally perform a physical movement you know well: swimming a stroke, swinging a racket, or dancing. Feel the exact muscle contractions, the balance adjustments, the acceleration, and the air resistance. Experience the movement from the first-person perspective ('internal imagery').</translation>
+        <translation>Führen Sie eine vertraute Bewegung mental durch: Schwimmzug, Schlag, Tanzschritt. Spüren Sie Muskelanspannung, Gleichgewicht und Luftwiderstand aus der Ich-Perspektive.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="335" />
         <source>Motor imagery activates supplementary motor area (SMA) and primary motor cortex even in individuals with complete visual aphantasia.</source>
-        <translation type="unfinished">Motor imagery activates supplementary motor area (SMA) and primary motor cortex even in individuals with complete visual aphantasia.</translation>
+        <translation>Motorische Vorstellung aktiviert das SMA und den motorischen Kortex auch bei vollständiger Afantasie nachweisbar.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="338" />
         <source>Day 32: Autobiographical Room Recall</source>
-        <translation type="unfinished">Day 32: Autobiographical Room Recall</translation>
+        <translation>Tag 32: Autobiografische Raumerinnerung</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="339" />
         <source>Reconstructing a familiar physical room from childhood.</source>
-        <translation type="unfinished">Reconstructing a familiar physical room from childhood.</translation>
+        <translation>Rekonstruktion eines vertrauten Raumes aus der Kindheit.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="341" />
         <source>Think of a bedroom or living room from your childhood or past. Stand mentally at the doorway. What was immediately to your left? Where was the window? What was the floor covering? Combine spatial memory with nostalgic emotional resonance to tour the room.</source>
-        <translation type="unfinished">Think of a bedroom or living room from your childhood or past. Stand mentally at the doorway. What was immediately to your left? Where was the window? What was the floor covering? Combine spatial memory with nostalgic emotional resonance to tour the room.</translation>
+        <translation>Denken Sie an ein Zimmer Ihrer Kindheit. Stehen Sie mental an der Türschwelle: Was war links? Wo das Fenster? Welcher Bodenbelag? Durchschreiten Sie den Raum mit nostalgischer Resonanz.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="342" />
         <source>Autobiographical memory retrieval engages the default mode network (DMN), linking episodic knowledge with spatial layouts.</source>
-        <translation type="unfinished">Autobiographical memory retrieval engages the default mode network (DMN), linking episodic knowledge with spatial layouts.</translation>
+        <translation>Autobiografischer Abruf aktiviert das Default Mode Network (DMN) und verknüpft Episoden mit räumlichen Grundrissen.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="345" />
         <source>Day 33: Multi-Sensory Meal Experience</source>
-        <translation type="unfinished">Day 33: Multi-Sensory Meal Experience</translation>
+        <translation>Tag 33: Multisensorisches Mahlzeiterlebnis</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="346" />
         <source>Fusing taste, aroma, warmth, and visual table arrangement.</source>
-        <translation type="unfinished">Fusing taste, aroma, warmth, and visual table arrangement.</translation>
+        <translation>Verbindung von Geschmack, Duft, Temperatur und Tischumgebung.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="348" />
         <source>Imagine preparing your favorite comforting meal. Experience the aroma wafting from the pan, the sizzle of food cooking, the weight of the fork, the temperature of the first bite, and the rich flavor on your tongue. Bring all senses together simultaneously.</source>
-        <translation type="unfinished">Imagine preparing your favorite comforting meal. Experience the aroma wafting from the pan, the sizzle of food cooking, the weight of the fork, the temperature of the first bite, and the rich flavor on your tongue. Bring all senses together simultaneously.</translation>
+        <translation>Stellen Sie sich die Zubereitung Ihres Lieblingsgerichts vor: Pfannenduft, Bratgeräusch, Gabelgewicht, Temperatur des ersten Bissens und Geschmack auf der Zunge. Vereinen Sie alle Sinne.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="349" />
         <source>Flavor and food imagery maximally engage multi-sensory orbitofrontal and gustatory cortices, providing rich multi-modal reinforcement.</source>
-        <translation type="unfinished">Flavor and food imagery maximally engage multi-sensory orbitofrontal and gustatory cortices, providing rich multi-modal reinforcement.</translation>
+        <translation>Geschmacksvorstellungen sprechen orbitofrontale Areale an und bieten eine exzellente multisensorische Verstärkung.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="352" />
         <source>Day 34: Dynamic Weather Transition</source>
-        <translation type="unfinished">Day 34: Dynamic Weather Transition</translation>
+        <translation>Tag 34: Dynamischer Wetterübergang</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="353" />
         <source>Visualizing continuous change: sunlight breaking through storm clouds.</source>
-        <translation type="unfinished">Visualizing continuous change: sunlight breaking through storm clouds.</translation>
+        <translation>Vorstellung kontinuierlicher Veränderung: Sonnenstrahlen durchbrechen Gewitterwolken.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="355" />
         <source>Start with a dark, overcast, rainy sky. Hear the rain and feel the damp chill. Now mentally simulate gradual change: the clouds thinning, a golden beam of sunlight piercing through, the raindrops sparkling in the light, and a colorful rainbow forming across the sky (Scenario B of VVIQ).</source>
-        <translation type="unfinished">Start with a dark, overcast, rainy sky. Hear the rain and feel the damp chill. Now mentally simulate gradual change: the clouds thinning, a golden beam of sunlight piercing through, the raindrops sparkling in the light, and a colorful rainbow forming across the sky (Scenario B of VVIQ).</translation>
+        <translation>Beginnen Sie mit verregnetem Himmel, Regenrauschen und Kühle. Simulieren Sie den Wandel: Wolken reißen auf, ein Sonnenstrahl bricht durch, Tropfen glitzern und ein Regenbogen spannt sich über den Himmel (VVIQ-Szenario B).</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="356" />
         <source>Simulating temporal dynamism trains temporal-parietal continuity in voluntary visualization.</source>
-        <translation type="unfinished">Simulating temporal dynamism trains temporal-parietal continuity in voluntary visualization.</translation>
+        <translation>Die Simulation zeitlicher Dynamik trainiert temporo-parietale Kontinuität in der willentlichen Vorstellung.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="359" />
         <source>Day 35: Week 5 Multisensory Immersion Review</source>
-        <translation type="unfinished">Day 35: Week 5 Multisensory Immersion Review</translation>
+        <translation>Tag 35: Wochenüberprüfung Multisensorische Immersion</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="360" />
         <source>Assessing the richness of emotionally grounded scenes.</source>
-        <translation type="unfinished">Assessing the richness of emotionally grounded scenes.</translation>
+        <translation>Bewertung der Detaildichte emotional verankerter Szenen.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="362" />
         <source>Spend 8 minutes in your favorite synthesized scenario from Days 29-34. Notice whether sensory details arrive more effortlessly when anchored in physical feelings and emotional valence.</source>
-        <translation type="unfinished">Spend 8 minutes in your favorite synthesized scenario from Days 29-34. Notice whether sensory details arrive more effortlessly when anchored in physical feelings and emotional valence.</translation>
+        <translation>Verweilen Sie 8 Minuten in Ihrem bevorzugten Szenario der Tage 29-34. Prüfen Sie, ob Details müheloser entstehen, wenn sie emotional verankert sind.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="363" />
         <source>Consolidation of multi-modal associative circuits prior to real-world integration.</source>
-        <translation type="unfinished">Consolidation of multi-modal associative circuits prior to real-world integration.</translation>
+        <translation>Konsolidierung multisensorischer Assoziationsschaltkreise vor der Alltagsanwendung.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="370" />
         <source>Day 36: Dual-Coding Spatial Pegboard</source>
-        <translation type="unfinished">Day 36: Dual-Coding Spatial Pegboard</translation>
+        <translation>Tag 36: Dual-kodierende räumliche Pegboard-Methode</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="371" />
         <source>Applying spatial anchors and semantic pegs for memory recall.</source>
-        <translation type="unfinished">Applying spatial anchors and semantic pegs for memory recall.</translation>
+        <translation>Einsatz räumlicher Anker und semantischer Merkposten für das Gedächtnis.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="373" />
         <source>Learn a list of 5 unrelated items using spatial pegs in your current room (e.g., 1=Doorway, 2=Sofa, 3=Desk, 4=Window, 5=Bookshelf). Place an unusual item at each location using the 4-layer method. Walk mentally through the room and retrieve all 5 items effortlessly.</source>
-        <translation type="unfinished">Learn a list of 5 unrelated items using spatial pegs in your current room (e.g., 1=Doorway, 2=Sofa, 3=Desk, 4=Window, 5=Bookshelf). Place an unusual item at each location using the 4-layer method. Walk mentally through the room and retrieve all 5 items effortlessly.</translation>
+        <translation>Lernen Sie 5 Begriffe über Raumanker in Ihrem Zimmer (1=Tür, 2=Sofa, 3=Schreibtisch, 4=Fenster, 5=Regal). Platzieren Sie dort Objekte mit der 4-Ebenen-Methode und rufen Sie sie im Geiste ab.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="374" />
         <source>The Method of Loci operates through spatial mapping and intact hippocampal navigation, offering immense memory utility for aphantasics (Kelly 2020).</source>
-        <translation type="unfinished">The Method of Loci operates through spatial mapping and intact hippocampal navigation, offering immense memory utility for aphantasics (Kelly 2020).</translation>
+        <translation>Die Loci-Methode nutzt intakte hippocampale Raumnavigation und bietet enorme Gedächtnisvorteile für Aphantasiker (Kelly 2020).</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="377" />
         <source>Day 37: Pre-Action Mental Rehearsal</source>
-        <translation type="unfinished">Day 37: Pre-Action Mental Rehearsal</translation>
+        <translation>Tag 37: Mentale Handlungsvorbereitung</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="378" />
         <source>Mentally walking through a planned real-world task before doing it.</source>
-        <translation type="unfinished">Mentally walking through a planned real-world task before doing it.</translation>
+        <translation>Mentales Durchspielen einer geplanten Alltagsaufgabe vor der Ausführung.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="380" />
         <source>Select a practical task you need to complete today (e.g. preparing an ingredient, packing a bag, or walking a specific route). Rehearse every physical step in advance in your mind: opening drawers, selecting objects, checking off items. Notice how this primes real execution.</source>
-        <translation type="unfinished">Select a practical task you need to complete today (e.g. preparing an ingredient, packing a bag, or walking a specific route). Rehearse every physical step in advance in your mind: opening drawers, selecting objects, checking off items. Notice how this primes real execution.</translation>
+        <translation>Wählen Sie eine heutige Aufgabe (Kochen, Tasche packen, Route gehen). Gehen Sie jeden Schritt im Vorfeld im Geist durch: Schublade öffnen, Dinge greifen. Spüren Sie die Bahnung für die Praxis.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="381" />
         <source>Functional Imagery Training (FIT) utilizes pre-action mental simulation to boost performance, goal adherence, and self-efficacy (Rhodes et al. 2024).</source>
-        <translation type="unfinished">Functional Imagery Training (FIT) utilizes pre-action mental simulation to boost performance, goal adherence, and self-efficacy (Rhodes et al. 2024).</translation>
+        <translation>FIT nutzt mentale Simulation vor der Handlung, um Leistung, Zieltreue und Selbstwirksamkeit zu steigern (Rhodes et al. 2024).</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="384" />
         <source>Day 38: Creative Problem Solving via Spatial Models</source>
-        <translation type="unfinished">Day 38: Creative Problem Solving via Spatial Models</translation>
+        <translation>Tag 38: Problemlösung über räumliche Modelle</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="385" />
         <source>Rearranging furniture or conceptual layouts mentally.</source>
-        <translation type="unfinished">Rearranging furniture or conceptual layouts mentally.</translation>
+        <translation>Mentales Umstellen von Möbeln oder Konzeptentwürfen.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="387" />
         <source>Imagine wanting to rearrange a room or fit multiple large suitcases into the trunk of a car. Use your Week 4 mental rotation and Week 1 spatial mapping skills to test different configurations mentally before touching any physical object.</source>
-        <translation type="unfinished">Imagine wanting to rearrange a room or fit multiple large suitcases into the trunk of a car. Use your Week 4 mental rotation and Week 1 spatial mapping skills to test different configurations mentally before touching any physical object.</translation>
+        <translation>Stellen Sie sich vor, Koffer im Kofferraum zu verstauen oder Möbel umzustellen. Nutzen Sie Mentalrotation und Raumkartierung, um Konfigurationen vorab mental zu testen.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="388" />
         <source>Spatial reasoning without visual phenomenology is a documented cognitive strength in aphantasic individuals (Zeman 2010; Monzel 2025).</source>
-        <translation type="unfinished">Spatial reasoning without visual phenomenology is a documented cognitive strength in aphantasic individuals (Zeman 2010; Monzel 2025).</translation>
+        <translation>Räumliches Denken ohne Bildphänomenologie ist eine dokumentierte Stärke von Personen mit Afantasie (Zeman 2010; Monzel 2025).</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="391" />
         <source>Day 39: Cognitive Flexibility &amp; Strategy Switching</source>
-        <translation type="unfinished">Day 39: Cognitive Flexibility &amp; Strategy Switching</translation>
+        <translation>Tag 39: Kognitive Flexibilität &amp; Strategiewechsel</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="392" />
         <source>Consciously toggling between propositional, spatial, and visual modes.</source>
-        <translation type="unfinished">Consciously toggling between propositional, spatial, and visual modes.</translation>
+        <translation>Bewusster Wechsel zwischen propositionalem, räumlichem und visuellem Modus.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="394" />
         <source>Take a single concept (e.g. 'A sailboat at sunset'). Spend 2 minutes experiencing it purely propositionally (word lists and facts). Then spend 2 minutes experiencing it spatially (distances, mast height, hull angle). Then spend 2 minutes checking for visual flashes. Observe the differences.</source>
-        <translation type="unfinished">Take a single concept (e.g. 'A sailboat at sunset'). Spend 2 minutes experiencing it purely propositionally (word lists and facts). Then spend 2 minutes experiencing it spatially (distances, mast height, hull angle). Then spend 2 minutes checking for visual flashes. Observe the differences.</translation>
+        <translation>Wählen Sie ein Konzept ('Segelboot im Sonnenuntergang'). Erleben Sie es 2 Min. rein propositional (Fakten), 2 Min. räumlich (Distanzen, Masthöhe) und 2 Min. visuell suchend. Vergleichen Sie die Modi.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="395" />
         <source>Metacognitive flexibility allows individuals to deploy the optimal cognitive strategy for specific tasks (Monzel 2025).</source>
-        <translation type="unfinished">Metacognitive flexibility allows individuals to deploy the optimal cognitive strategy for specific tasks (Monzel 2025).</translation>
+        <translation>Metakognitive Flexibilität ermöglicht es, die für jede Aufgabe optimale Kognitionsstrategie einzusetzen (Monzel 2025).</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="398" />
         <source>Day 40: Lifelong Imagery Maintenance Protocol</source>
-        <translation type="unfinished">Day 40: Lifelong Imagery Maintenance Protocol</translation>
+        <translation>Tag 40: Nachhaltige Alltagsroutine</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="399" />
         <source>Establishing a sustainable daily 5-minute micro-routine.</source>
-        <translation type="unfinished">Establishing a sustainable daily 5-minute micro-routine.</translation>
+        <translation>Etablierung einer nachhaltigen täglichen 5-Minuten-Mikroroutine.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="401" />
         <source>Design your personal sustainable maintenance habit: 1 minute breathing calibration, 3 minutes with your most effective exercise (e.g. afterimage conditioning or 4-layer assembly), and 1 minute reflection. Consistency preserves neuroplastic gains long-term.</source>
-        <translation type="unfinished">Design your personal sustainable maintenance habit: 1 minute breathing calibration, 3 minutes with your most effective exercise (e.g. afterimage conditioning or 4-layer assembly), and 1 minute reflection. Consistency preserves neuroplastic gains long-term.</translation>
+        <translation>Entwickeln Sie Ihre persönliche 5-Minuten-Gewohnheit: 1 Min. Atmung, 3 Min. Ihrer effektivsten Übung (Nachbild oder 4 Ebenen) und 1 Min. Reflexion. Kontinuität sichert Plastizitätsgewinne.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="402" />
         <source>Rhodes et al. (2024) proved that training gains were maintained at a 6-month follow-up when key exercises were periodically integrated into daily habits.</source>
-        <translation type="unfinished">Rhodes et al. (2024) proved that training gains were maintained at a 6-month follow-up when key exercises were periodically integrated into daily habits.</translation>
+        <translation>Rhodes et al. (2024) belegten, dass Trainingsgewinne bei regelmäßiger Erhaltung auch nach 6 Monaten stabil blieben.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="405" />
         <source>Day 41: Post-Training Assessment Preparation</source>
-        <translation type="unfinished">Day 41: Post-Training Assessment Preparation</translation>
+        <translation>Tag 41: Vorbereitung auf den Re-Test</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="406" />
         <source>Reflecting on the 6-week journey and internal changes.</source>
-        <translation type="unfinished">Reflecting on the 6-week journey and internal changes.</translation>
+        <translation>Reflexion der 6-wöchigen Entwicklung und inneren Veränderungen.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="408" />
         <source>Review your training streak and logged notes from Week 1 to Week 6. Notice how your relationship with your inner mind has evolved—whether through increased visual flashes, heightened tactile/spatial clarity, or deeper appreciation of your unique cognitive architecture.</source>
-        <translation type="unfinished">Review your training streak and logged notes from Week 1 to Week 6. Notice how your relationship with your inner mind has evolved—whether through increased visual flashes, heightened tactile/spatial clarity, or deeper appreciation of your unique cognitive architecture.</translation>
+        <translation>Blicken Sie auf Ihre Notizen aus Woche 1 bis 6 zurück. Beobachten Sie, wie sich Ihr inneres Erleben verändert hat – durch mehr visuelle Eindrücke, klarere Raummodelle oder Akzeptanz der eigenen Denkweise.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="409" />
         <source>Preparing cognitive state for unbiased psychometric post-training re-evaluation.</source>
-        <translation type="unfinished">Preparing cognitive state for unbiased psychometric post-training re-evaluation.</translation>
+        <translation>Vorbereitung des kognitiven Zustands auf eine unvoreingenommene psychometrische Re-Test-Erfassung.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="412" />
         <source>Day 42: Final Post-Training Re-Assessment</source>
-        <translation type="unfinished">Day 42: Final Post-Training Re-Assessment</translation>
+        <translation>Tag 42: Finaler Abschluss-Re-Test</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="413" />
         <source>Re-taking the VVIQ &amp; Apple Test to quantify longitudinal progress.</source>
-        <translation type="unfinished">Re-taking the VVIQ &amp; Apple Test to quantify longitudinal progress.</translation>
+        <translation>Wiederholung von VVIQ &amp; Apfel-Test zur Quantifizierung des Fortschritts.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="415" />
         <source>Congratulations on completing the full 6-week curriculum! Today you will retake the standardized VVIQ and Apple Test under identical conditions to your Week 1 baseline. The application will compute your longitudinal score delta and generate your comprehensive completion report.</source>
-        <translation type="unfinished">Congratulations on completing the full 6-week curriculum! Today you will retake the standardized VVIQ and Apple Test under identical conditions to your Week 1 baseline. The application will compute your longitudinal score delta and generate your comprehensive completion report.</translation>
+        <translation>Herzlichen Glückwunsch zum Abschluss des 6-Wochen-Curriculums! Heute wiederholen Sie den standardisierten VVIQ und Apfel-Test unter identischen Bedingungen. Die App berechnet Ihre Zuwächse und erstellt den Abschlussbericht.</translation>
     </message>
     <message>
         <location filename="../src/trainingengine.cpp" line="416" />
         <source>Empirical re-administration of validated psychometric instruments to evaluate intervention efficacy (Rhodes et al. 2024; Marks 1973).</source>
-        <translation type="unfinished">Empirical re-administration of validated psychometric instruments to evaluate intervention efficacy (Rhodes et al. 2024; Marks 1973).</translation>
+        <translation>Empirische Wiederholungsmessung validierter Instrumente zur Überprüfung der Interventionseffektivität (Rhodes et al. 2024; Marks 1973).</translation>
     </message>
 </context>
 <context>
@@ -1879,17 +1879,17 @@ Achten Sie auf Form, Komplementärfarben und Umrissstabilität.</translation>
     <message>
         <location filename="../src/vviqengine.cpp" line="153" />
         <source>Total Aphantasia</source>
-        <translation>Vollständige Aphantasie</translation>
+        <translation>Vollständige Afantasie</translation>
     </message>
     <message>
         <location filename="../src/vviqengine.cpp" line="155" />
         <source>Congenital / Marked Aphantasia</source>
-        <translation>Ausgeprägte / Angeborene Aphantasie</translation>
+        <translation>Ausgeprägte / Angeborene Afantasie</translation>
     </message>
     <message>
         <location filename="../src/vviqengine.cpp" line="157" />
         <source>Hypophantasia (Weak Imagery)</source>
-        <translation>Hypophantasie (Geringe Vorstellungskraft)</translation>
+        <translation>Hypofantasie (Geringe Vorstellungskraft)</translation>
     </message>
     <message>
         <location filename="../src/vviqengine.cpp" line="159" />
@@ -1899,22 +1899,22 @@ Achten Sie auf Form, Komplementärfarben und Umrissstabilität.</translation>
     <message>
         <location filename="../src/vviqengine.cpp" line="161" />
         <source>Hyperphantasia (Extreme Imagery)</source>
-        <translation>Hyperphantasie (Extreme Vorstellungskraft)</translation>
+        <translation>Hyperfantasie (Extreme Vorstellungskraft)</translation>
     </message>
     <message>
         <location filename="../src/vviqengine.cpp" line="183" />
         <source>You scored 16 out of 80 points. According to established scientific consensus (Dance et al. 2022; Zeman et al. 2015, 2020), this corresponds to complete / total aphantasia. You process visual concepts abstractly and semantically without voluntary internal visual representations.</source>
-        <translation>Sie haben 16 von 80 Punkten erreicht. Nach dem wissenschaftlichen Konsens (Dance et al. 2022; Zeman et al. 2015, 2020) entspricht dies einer vollständigen Aphantasie. Sie verarbeiten visuelle Konzepte abstrakt und semantisch ohne willentliche innere Bilder.</translation>
+        <translation>Sie haben 16 von 80 Punkten erreicht. Nach dem wissenschaftlichen Konsens (Dance et al. 2022; Zeman et al. 2015, 2020) entspricht dies einer vollständigen Afantasie. Sie verarbeiten visuelle Konzepte abstrakt und semantisch ohne willentliche innere Bilder.</translation>
     </message>
     <message>
         <location filename="../src/vviqengine.cpp" line="185" />
         <source>You scored %1 out of 80 points. Scores below 32 are classified in scientific literature as marked aphantasia (Dance et al. 2022). While occasional fleeting flashes or faint silhouettes may occur, voluntary visual reconstruction is severely attenuated.</source>
-        <translation>Sie haben %1 von 80 Punkten erreicht. Punktwerte unter 32 werden in der Fachliteratur als ausgeprägte Aphantasie klassifiziert (Dance et al. 2022). Während gelegentliche flüchtige Eindrücke auftreten können, ist eine willentliche visuelle Rekonstruktion stark gehemmt.</translation>
+        <translation>Sie haben %1 von 80 Punkten erreicht. Punktwerte unter 32 werden in der Fachliteratur als ausgeprägte Afantasie klassifiziert (Dance et al. 2022). Während gelegentliche flüchtige Eindrücke auftreten können, ist eine willentliche visuelle Rekonstruktion stark gehemmt.</translation>
     </message>
     <message>
         <location filename="../src/vviqengine.cpp" line="187" />
         <source>You scored %1 out of 80 points. This falls into the hypophantasia range (32-54 points). You have partial or dim voluntary mental imagery, with noticeable variation in clarity, detail, or stability across different scenarios.</source>
-        <translation>Sie haben %1 von 80 Punkten erreicht. Dies fällt in den Bereich der Hypophantasie (32-54 Punkte). Sie verfügen über eine teilweise oder trübe Vorstellungskraft mit spürbaren Schwankungen in Klarheit und Stabilität.</translation>
+        <translation>Sie haben %1 von 80 Punkten erreicht. Dies fällt in den Bereich der Hypofantasie (32-54 Punkte). Sie verfügen über eine teilweise oder trübe Vorstellungskraft mit spürbaren Schwankungen in Klarheit und Stabilität.</translation>
     </message>
     <message>
         <location filename="../src/vviqengine.cpp" line="189" />
@@ -1924,7 +1924,7 @@ Achten Sie auf Form, Komplementärfarben und Umrissstabilität.</translation>
     <message>
         <location filename="../src/vviqengine.cpp" line="191" />
         <source>You scored %1 out of 80 points. Scores of 75 and above denote hyperphantasia (Zeman et al. 2020), an imagery capability that is as vivid, sharp, and rich in color as real-world ocular perception.</source>
-        <translation>Sie haben %1 von 80 Punkten erreicht. Werte ab 75 bezeichnen eine Hyperphantasie (Zeman et al. 2020) – eine Vorstellungskraft, die so scharf, detailreich und farbintensiv ist wie reales Sehen.</translation>
+        <translation>Sie haben %1 von 80 Punkten erreicht. Werte ab 75 bezeichnen eine Hyperfantasie (Zeman et al. 2020) – eine Vorstellungskraft, die so scharf, detailreich und farbintensiv ist wie reales Sehen.</translation>
     </message>
     <message>
         <location filename="../src/vviqengine.cpp" line="210" />
@@ -1934,27 +1934,27 @@ Achten Sie auf Form, Komplementärfarben und Umrissstabilität.</translation>
     <message>
         <location filename="../src/vviqengine.cpp" line="226" />
         <source>Unimodal Visual Aphantasia</source>
-        <translation>Unimodale visuelle Aphantasie</translation>
+        <translation>Unimodale visuelle Afantasie</translation>
     </message>
     <message>
         <location filename="../src/vviqengine.cpp" line="228" />
         <source>Multisensory Aphantasia</source>
-        <translation>Multisensorische Aphantasie</translation>
+        <translation>Multisensorische Afantasie</translation>
     </message>
     <message>
         <location filename="../src/vviqengine.cpp" line="235" />
         <source>Your visual imagery is in the typical or hypophantasia range. Your multi-modal sensory profile shows normal cross-sensory imagination.</source>
-        <translation>Ihre visuelle Vorstellungskraft liegt im typischen Bereich oder im Bereich der Hypophantasie. Ihr Sinnesprofil zeigt normale Fähigkeiten.</translation>
+        <translation>Ihre visuelle Vorstellungskraft liegt im typischen Bereich oder im Bereich der Hypofantasie. Ihr Sinnesprofil zeigt normale Fähigkeiten.</translation>
     </message>
     <message>
         <location filename="../src/vviqengine.cpp" line="251" />
         <source>Based on Dawes et al. (2024), your results indicate Unimodal Visual Aphantasia. Your lack of imagery is selective to the visual modality, while non-visual channels (such as hearing, touch, or motor simulation) remain functional and provide excellent anchors for neurocognitive training.</source>
-        <translation>Gemäß Dawes et al. (2024) weisen Ihre Ergebnisse auf eine Unimodale Visuelle Aphantasie hin. Die verminderte Vorstellungskraft betrifft rein den visuellen Kanal, während Hören, Tasten oder Motorik intakt sind und ideale Ankerpunkte für das Training bieten.</translation>
+        <translation>Gemäß Dawes et al. (2024) weisen Ihre Ergebnisse auf eine Unimodale Visuelle Afantasie hin. Die verminderte Vorstellungskraft betrifft rein den visuellen Kanal, während Hören, Tasten oder Motorik intakt sind und ideale Ankerpunkte für das Training bieten.</translation>
     </message>
     <message>
         <location filename="../src/vviqengine.cpp" line="253" />
         <source>Based on Dawes et al. (2024), your results indicate Multisensory Aphantasia. Your imagery reduction spans multiple sensory domains beyond vision. Training protocols will begin with semantic, proprioceptive, and physiological afterimage stimuli rather than auditory or sensory pegs.</source>
-        <translation>Gemäß Dawes et al. (2024) weisen Ihre Ergebnisse auf eine Multisensorische Aphantasie hin. Die reduzierte Vorstellungskraft erstreckt sich über mehrere Sinne. Das Training setzt daher primär auf semantische, propriozeptive und physiologische Nachbildreize.</translation>
+        <translation>Gemäß Dawes et al. (2024) weisen Ihre Ergebnisse auf eine Multisensorische Afantasie hin. Die reduzierte Vorstellungskraft erstreckt sich über mehrere Sinne. Das Training setzt daher primär auf semantische, propriozeptive und physiologische Nachbildreize.</translation>
     </message>
     <message>
         <location filename="../src/vviqengine.cpp" line="270" />
@@ -2019,7 +2019,7 @@ Achten Sie auf Form, Komplementärfarben und Umrissstabilität.</translation>
     <message>
         <location filename="../src/vviqengine.cpp" line="286" />
         <source>Level 5: Complete Aphantasia</source>
-        <translation>Stufe 5: Vollständige Aphantasie</translation>
+        <translation>Stufe 5: Vollständige Afantasie</translation>
     </message>
     <message>
         <location filename="../src/vviqengine.cpp" line="287" />
